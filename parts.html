@@ -1,0 +1,2424 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>パーツ図鑑 - ミニ四駆GB Let's&amp;Go!! 徹底攻略</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:#EDEDED;
+    color:#111;
+    font-family:"MS PGothic","Hiragino Kaku Gothic ProN",sans-serif;
+    font-size:13px;
+  }
+  a{color:#0000EE;}
+  a:visited{color:#551A8B;}
+  a:hover{color:#CC0000;}
+
+  #siteband{
+    background:#1B3358;color:#fff;padding:6px 14px;font-size:11px;
+    display:flex;justify-content:space-between;
+  }
+  #siteband a{color:#cfe0f5;margin-left:10px;}
+
+  #navstrip{
+    background:#fff;border-bottom:2px solid #1B3358;
+    padding:8px 14px;font-size:12px;font-weight:bold;
+  }
+  #navstrip a{margin-right:10px;white-space:nowrap;}
+  #navstrip .sep{color:#999;margin-right:10px;}
+
+  #wrap{max-width:900px;margin:12px auto;background:#fff;border:1px solid #999;padding:14px 18px 26px;}
+
+  .breadcrumb{font-size:11px;color:#555;margin-bottom:10px;}
+
+  h1.page-title{
+    font-size:19px;border-bottom:3px solid #1B3358;padding-bottom:6px;margin:0 0 4px;
+  }
+  p.page-desc{font-size:12.5px;color:#444;margin:0 0 18px;}
+
+  h2.blk{
+    background:#1B3358;color:#fff;font-size:13px;padding:5px 9px;margin:22px 0 8px;
+  }
+  h3.blk2{
+    border-left:5px solid #1B3358;padding-left:7px;font-size:13px;margin:16px 0 6px;
+  }
+
+  table.dat{
+    border-collapse:collapse;width:100%;font-size:12px;margin-bottom:12px;
+  }
+  table.dat th,table.dat td{border:1px solid #999;padding:4px 6px;text-align:left;}
+  table.dat th{background:#DCE4EC;}
+  table.dat tr:nth-child(even) td{background:#F7F9FB;}
+
+  .note{
+    background:#FFF9DB;border:1px dashed #C9AF52;padding:6px 9px;font-size:11.5px;color:#665500;margin:8px 0;
+  }
+
+  .part-card{
+    display:flex;border:1px solid #999;margin-bottom:10px;background:#fff;
+  }
+  .part-img{
+    width:96px;flex-shrink:0;border-right:1px solid #999;
+    background-image:
+      linear-gradient(45deg,#ddd 25%,transparent 25%),
+      linear-gradient(-45deg,#ddd 25%,transparent 25%),
+      linear-gradient(45deg,transparent 75%,#ddd 75%),
+      linear-gradient(-45deg,transparent 75%,#ddd 75%);
+    background-size:16px 16px;
+    background-position:0 0,0 8px,8px -8px,-8px 0px;
+    background-color:#f5f5f5;
+    display:flex;align-items:center;justify-content:center;
+    flex-direction:column;color:#b3b3b3;font-size:9px;text-align:center;
+  }
+  .part-img .ph-mark{font-size:20px;color:#c9c9c9;}
+  .part-img img{max-width:100%;max-height:130px;display:block;image-rendering:pixelated;}
+  .part-info{flex:1;padding:6px 8px;min-width:0;}
+  .part-name{font-weight:bold;font-size:12.5px;margin-bottom:3px;}
+  table.dat.mini{font-size:10.5px;margin-bottom:4px;}
+  table.dat.mini th,table.dat.mini td{padding:2px 4px;}
+  .part-desc{font-size:11.5px;color:#333;margin:2px 0 0;}
+
+  table.mat{border-collapse:collapse;width:100%;font-size:11.5px;margin-bottom:4px;}
+  table.mat th,table.mat td{border:1px solid #999;padding:4px 6px;text-align:left;}
+  table.mat th{background:#DCE4EC;}
+  table.mat td.num{text-align:center;white-space:nowrap;}
+  table.mat tr:nth-child(even) td{background:#F7F9FB;}
+
+  #sidebar{
+    float:right;width:190px;margin-left:14px;margin-bottom:10px;
+    border:1px solid #ccc;background:#FAFAFA;font-size:11.5px;
+  }
+  #sidebar .hd{background:#333;color:#fff;padding:4px 7px;font-weight:bold;}
+  #sidebar ul{list-style:none;margin:0;padding:6px 9px;}
+  #sidebar li{padding:2px 0;border-bottom:1px dotted #ccc;}
+
+  #toc{
+    background:#F4F6F8;border:1px solid #ccc;padding:8px 12px;font-size:12px;margin-bottom:16px;
+  }
+  #toc .hd{font-weight:bold;margin-bottom:4px;}
+  #toc ul{margin:0;padding-left:18px;}
+
+  #ftr{
+    max-width:900px;margin:0 auto 30px;text-align:center;font-size:10.5px;color:#666;
+  }
+</style>
+</head>
+<body>
+
+<div id="siteband">
+  <span>ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式)</span>
+  <span><a href="index.html">トップへ戻る</a></span>
+</div>
+
+<div id="navstrip">
+  <a href="index.html">TOP</a><span class="sep">|</span>
+  <a href="about.html">このゲームについて</a><span class="sep">|</span>
+  <a href="chart.html">攻略チャート(RTA)</a><span class="sep">|</span>
+  <a href="walkthrough.html">攻略チャート(通常)</a><span class="sep">|</span>
+  <a href="parts.html">パーツ図鑑</a><span class="sep">|</span>
+  <a href="upgrade.html">パーツ強化について</a><span class="sep">|</span>
+  <a href="shops.html">取扱店</a><span class="sep">|</span>
+  <a href="towns.html">街・マップ</a><span class="sep">|</span>
+  <a href="characters.html">キャラ図鑑</a><span class="sep">|</span>
+  <a href="courses.html">コース</a><span class="sep">|</span>
+  <a href="events.html">大会一覧</a><span class="sep">|</span>
+  <a href="comm.html">通信について</a><span class="sep">|</span>
+  <a href="system.html">システム解説</a><span class="sep">|</span>
+  <a href="tips.html">小技・裏技</a><span class="sep">|</span>
+  <a href="glossary.html">用語集</a>
+</div>
+
+<div id="wrap">
+  <div class="breadcrumb"><a href="index.html">TOP</a> &gt; パーツ図鑑</div>
+
+  <div id="sidebar">
+    <div class="hd">パーツ図鑑 内目次</div>
+    <ul>
+      <li><a href="#body">マシン本体</a></li>
+      <li><a href="#motor">モーター</a></li>
+      <li><a href="#tire">タイヤ</a></li>
+      <li><a href="#roller">ローラー</a></li>
+      <li><a href="#wing">ウイング</a></li>
+      <li><a href="#bumper">バンパー</a></li>
+      <li><a href="#rear">リヤー</a></li>
+      <li><a href="#side">サイド</a></li>
+      <li><a href="#battery">でんち</a></li>
+      <li><a href="#option">オプション</a></li>
+      <li><a href="#material">素材</a></li>
+    </ul>
+  </div>
+
+  <h1 class="page-title">パーツ図鑑</h1>
+  <p class="page-desc">作中に登場するマシン本体・各種パーツのデータをまとめています。数値は実プレイでの確認および攻略本の記載を参考にしていますが、表現は独自にまとめ直したものです。</p>
+
+  <div id="toc">
+    <div class="hd">このページの内容</div>
+    <ul>
+      <li>マシン本体・モーター・タイヤ・ローラー・ウイング・バンパー・リヤー・サイド・でんち・オプション・素材、全11カテゴリのデータが反映済み</li>
+    </ul>
+  </div>
+
+  <h2 class="blk" id="body">■ マシン本体</h2>
+  <div class="note">📷 公式ガイドブックp.24-34「マシンカタログ」、およびオフィシャル常勝ガイドp.66-71「マシン&amp;パーツ完全データ」の写真から、ステータス数値を転記(2026/07/29分)。2冊の数値を突き合わせたところ、ほぼ全項目が一致しましたが、セイバー600とブラックセイバーの「安定度リヤー」のみ表記に差異があったため、数値表として整理されている常勝ガイド側の値(233)を採用しています。紹介コメントは独自の言葉でまとめ直しています。</div>
+  <p>マシン本体は全11種類確認できています(公式ガイドブック掲載10種+常勝ガイドのみ掲載のプロトセイバーEVO)。各項目の見方は<a href="system.html#machinedata">システム解説のマシンデータの項目</a>を参照。摩擦力は全マシン共通でフロント(L/R)160・リヤー(L/R)160で固定されており、下表では省略しています。</p>
+  <div class="note">CLV(コンプリートレベル)はレースに5勝するごとに10%上昇し、20%/40%/60%/80%/100%に到達するたびにマシンの各性能が1ポイントずつアップします。ただしビークスパイダーのみ上昇タイミングが異なり、10%/30%/50%/70%/90%到達時に性能がアップします。</div>
+
+  <div class="part-card" id="m01"><div class="part-img"><img src="images/machine_neo_tridagger_zmc.jpeg" alt="ネオトライダガーZMC"></div><div class="part-info">
+    <div class="part-name">ネオトライダガーZMC <span style="font-weight:normal;color:#888;font-size:10.5px;">NEOTRIDAGGER ZMC</span></div>
+    <table class="dat mini"><tr><th>直線MAX</th><th>コーナーMAX</th><th>坂MAX</th><th>安定度(F/R)</th><th>総DF</th><th>総空力</th></tr>
+    <tr><td>217</td><td>220</td><td>284</td><td>228/233</td><td>293</td><td>0</td></tr></table>
+    <table class="dat mini"><tr><th>発熱度</th><th>消費電気</th><th>総重量</th><th>取扱店(価格)</th><th>所有者</th></tr>
+    <tr><td>20</td><td>20</td><td>22.8WT</td><td><a href="shops.html#shop01">おもちゃのナガイ</a>など模型店1〜8(600G)</td><td>リョウ、二郎丸など</td></tr></table>
+    <p class="part-desc">次世代物質ZMCのボディを持つ、主人公リョウの愛車。全マシン中トップクラスの総ダウンフォースを誇り、路面に吸いつくような安定した高速走行が持ち味。</p>
+  </div></div>
+
+  <div class="part-card" id="m02"><div class="part-img"><img src="images/machine_spin_cobra.jpeg" alt="スピンコブラ"></div><div class="part-info">
+    <div class="part-name">スピンコブラ <span style="font-weight:normal;color:#888;font-size:10.5px;">SPIN COBRA</span></div>
+    <table class="dat mini"><tr><th>直線MAX</th><th>コーナーMAX</th><th>坂MAX</th><th>安定度(F/R)</th><th>総DF</th><th>総空力</th></tr>
+    <tr><td>215</td><td>223</td><td>286</td><td>232/237</td><td>287</td><td>0</td></tr></table>
+    <table class="dat mini"><tr><th>発熱度</th><th>消費電気</th><th>総重量</th><th>取扱店(価格)</th><th>所有者</th></tr>
+    <tr><td>15</td><td>20</td><td>22.8WT</td><td>模型店1〜8(600G、例:<a href="shops.html#shop02">JET模型店</a>)</td><td>藤吉</td></tr></table>
+    <p class="part-desc">先代スピンアックスの系譜を継ぐ藤吉の稲妻マシン。内蔵コンピュータでコース形状を自動判別し、速度を落とさずコーナーを駆け抜けるサンダードリフト走行を得意とする。</p>
+  </div></div>
+
+  <div class="part-card" id="m03"><div class="part-img"><img src="images/machine_cyclone_magnum.jpeg" alt="サイクロンマグナム"></div><div class="part-info">
+    <div class="part-name">サイクロンマグナム <span style="font-weight:normal;color:#888;font-size:10.5px;">CYCLONE MAGNUM</span></div>
+    <table class="dat mini"><tr><th>直線MAX</th><th>コーナーMAX</th><th>坂MAX</th><th>安定度(F/R)</th><th>総DF</th><th>総空力</th></tr>
+    <tr><td>218</td><td>220</td><td>284</td><td>228/233</td><td>287</td><td>0</td></tr></table>
+    <table class="dat mini"><tr><th>発熱度</th><th>消費電気</th><th>総重量</th><th>取扱店(価格)</th><th>所有者</th></tr>
+    <tr><td>20</td><td>20</td><td>43.6WT</td><td>模型店1〜8(600G)</td><td>ゴー、ジュンなど</td></tr></table>
+    <p class="part-desc">先代Vマグナムをさらに進化させた、ゴーの弾丸マシン。ZMC粒子を混ぜ込んだボディが風を切って走る直線重視のセッティングで、オーバルコースや直線区間の長いコースで本領を発揮する。</p>
+  </div></div>
+
+  <div class="part-card" id="m04"><div class="part-img"><img src="images/machine_hurricane_sonic.jpeg" alt="ハリケーンソニック"></div><div class="part-info">
+    <div class="part-name">ハリケーンソニック <span style="font-weight:normal;color:#888;font-size:10.5px;">HURRICANE SONIC</span></div>
+    <table class="dat mini"><tr><th>直線MAX</th><th>コーナーMAX</th><th>坂MAX</th><th>安定度(F/R)</th><th>総DF</th><th>総空力</th></tr>
+    <tr><td>215</td><td>223</td><td>284</td><td>232/237</td><td>291</td><td>0</td></tr></table>
+    <table class="dat mini"><tr><th>発熱度</th><th>消費電気</th><th>総重量</th><th>取扱店(価格)</th><th>所有者</th></tr>
+    <tr><td>20</td><td>20</td><td>43.6WT</td><td>模型店1〜8(600G)</td><td>レツ、チイコ</td></tr></table>
+    <p class="part-desc">「コーナリングの貴公子」と呼ばれた先代Vソニックの性能を受け継いだレツのマシン。どんなコースにも対応する芸術的なバランスの良さが持ち味で、トップクラスの総合力を誇る。</p>
+  </div></div>
+
+  <div class="part-card" id="m05"><div class="part-img"><img src="images/machine_saber600.jpeg" alt="セイバー600"></div><div class="part-info">
+    <div class="part-name">セイバー600 <span style="font-weight:normal;color:#888;font-size:10.5px;">SABER 600</span></div>
+    <table class="dat mini"><tr><th>直線MAX</th><th>コーナーMAX</th><th>坂MAX</th><th>安定度(F/R)</th><th>総DF</th><th>総空力</th></tr>
+    <tr><td>210</td><td>215</td><td>279</td><td>248/233</td><td>287</td><td>0</td></tr></table>
+    <table class="dat mini"><tr><th>発熱度</th><th>消費電気</th><th>総重量</th><th>取扱店(価格)</th><th>所有者</th></tr>
+    <tr><td>20</td><td>20</td><td>44.6WT</td><td>模型店1〜8(600G)</td><td>まこと、草レース仲間など</td></tr></table>
+    <p class="part-desc">星馬兄弟や黒沢たちが使用していたセイバー系マシンのデータをもとに開発された量産機。尖った性能はないが、どんなコースにも無難に対応できるオールマイティなバランス型で、初心者にも扱いやすい。</p>
+  </div></div>
+
+  <div class="part-card" id="m06"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ブラックセイバー <span style="font-weight:normal;color:#888;font-size:10.5px;">BLACK SABER</span></div>
+    <table class="dat mini"><tr><th>直線MAX</th><th>コーナーMAX</th><th>坂MAX</th><th>安定度(F/R)</th><th>総DF</th><th>総空力</th></tr>
+    <tr><td>212</td><td>215</td><td>279</td><td>248/233</td><td>291</td><td>4</td></tr></table>
+    <table class="dat mini"><tr><th>発熱度</th><th>消費電気</th><th>総重量</th><th>取扱店(価格)</th><th>所有者</th></tr>
+    <tr><td>18</td><td>20</td><td>44.6WT</td><td><a href="shops.html#shop08">土屋模型店</a>のみ(600G)</td><td>黒沢、ブラックセイバー軍団</td></tr></table>
+    <p class="part-desc">黒沢のマシン。セイバー600系のデータをもとに改造され、フロント安定度と総ダウンフォースをさらに底上げしている。</p>
+  </div></div>
+
+  <div class="part-card" id="m07"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ビークスパイダー <span style="font-weight:normal;color:#888;font-size:10.5px;">BEAK SPIDER</span></div>
+    <table class="dat mini"><tr><th>直線MAX</th><th>コーナーMAX</th><th>坂MAX</th><th>安定度(F/R)</th><th>総DF</th><th>総空力</th></tr>
+    <tr><td>216</td><td>223</td><td>284</td><td>232/237</td><td>287</td><td>0</td></tr></table>
+    <table class="dat mini"><tr><th>発熱度</th><th>消費電気</th><th>総重量</th><th>取扱店(価格)</th><th>所有者</th></tr>
+    <tr><td>20</td><td>20</td><td>43.6WT</td><td><a href="shops.html#shop09">大神模型店</a>/<a href="shops.html#shop10">学園購買部</a>(600G)</td><td>カイ</td></tr></table>
+    <p class="part-desc">カイのマシン。丸みを帯びたボディで安定性と旋回性能を両立。CLVによる性能アップのタイミングが他のマシンと異なる特殊な個体(注記参照)。</p>
+  </div></div>
+
+  <div class="part-card" id="m08"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ブロッケンギガント <span style="font-weight:normal;color:#888;font-size:10.5px;">BROCKEN GIGANT</span></div>
+    <table class="dat mini"><tr><th>直線MAX</th><th>コーナーMAX</th><th>坂MAX</th><th>安定度(F/R)</th><th>総DF</th><th>総空力</th></tr>
+    <tr><td>214</td><td>219</td><td>287</td><td>232/237</td><td>289</td><td>0</td></tr></table>
+    <table class="dat mini"><tr><th>発熱度</th><th>消費電気</th><th>総重量</th><th>取扱店(価格)</th><th>所有者</th></tr>
+    <tr><td>15</td><td>20</td><td>43.8WT</td><td><a href="shops.html#shop09">大神模型店</a>/<a href="shops.html#shop10">学園購買部</a>(600G)</td><td>ゲン</td></tr></table>
+    <p class="part-desc">ゲンのマシン。フロントに重さを寄せたボディ構成で、坂道での安定性と加速性能が高く、上り下りの多いコースで強さを見せる。</p>
+  </div></div>
+
+  <div class="part-card" id="m09"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">レイスティンガー <span style="font-weight:normal;color:#888;font-size:10.5px;">RAYSTINGR</span></div>
+    <table class="dat mini"><tr><th>直線MAX</th><th>コーナーMAX</th><th>坂MAX</th><th>安定度(F/R)</th><th>総DF</th><th>総空力</th></tr>
+    <tr><td>219</td><td>221</td><td>285</td><td>228/233</td><td>287</td><td>6</td></tr></table>
+    <table class="dat mini"><tr><th>発熱度</th><th>消費電気</th><th>総重量</th><th>取扱店(価格)</th><th>所有者</th></tr>
+    <tr><td>20</td><td>20</td><td>43.4WT</td><td><a href="shops.html#shop09">大神模型店</a>/<a href="shops.html#shop10">学園購買部</a>(600G)</td><td>レイ</td></tr></table>
+    <p class="part-desc">レイのマシン。細く鋭いノーズ形状で全マシン中最高の総空力を誇り、直線が続くコースでトップクラスのタイムを狙える。</p>
+  </div></div>
+
+  <div class="part-card" id="m10"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">プロトセイバーJB <span style="font-weight:normal;color:#888;font-size:10.5px;">PROTOSABER JB</span></div>
+    <table class="dat mini"><tr><th>直線MAX</th><th>コーナーMAX</th><th>坂MAX</th><th>安定度(F/R)</th><th>総DF</th><th>総空力</th></tr>
+    <tr><td>218</td><td>222</td><td>285</td><td>230/235</td><td>291</td><td>2</td></tr></table>
+    <table class="dat mini"><tr><th>発熱度</th><th>消費電気</th><th>総重量</th><th>取扱店(価格)</th><th>所有者</th></tr>
+    <tr><td>20</td><td>20</td><td>43.6WT</td><td><a href="shops.html#shop08">土屋模型店</a>(600G)。<b>グランドスラム達成後でないと購入不可</b></td><td>J、PS戦隊など</td></tr></table>
+    <p class="part-desc">JやPS戦隊が使うエアロマシン。直線・コーナーともに高水準で安定度も高く、購入にはグランドスラム達成という条件がつく。</p>
+  </div></div>
+
+  <div class="part-card" id="m11"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">プロトセイバーEVO <span style="font-weight:normal;color:#888;font-size:10.5px;">PROTO-SABER EVO</span></div>
+    <table class="dat mini"><tr><th>直線MAX</th><th>コーナーMAX</th><th>坂MAX</th><th>安定度(F/R)</th><th>総DF</th><th>総空力</th></tr>
+    <tr><td>218</td><td>222</td><td>286</td><td>232/237</td><td>291</td><td>2</td></tr></table>
+    <table class="dat mini"><tr><th>発熱度</th><th>消費電気</th><th>総重量</th><th>取扱店(価格)</th><th>所有者</th></tr>
+    <tr><td>10</td><td>20</td><td>43.6WT</td><td><a href="shops.html#shop08">土屋模型店</a>(600G)。クリア後、<a href="towns.html#tokyo">都庁ビル</a>で開催されるアダルトカップ(→<a href="events.html#e18">大会一覧</a>)で優勝すると販売開始</td><td>J</td></tr></table>
+    <p class="part-desc">Jの最新マシン、プロトセイバーJBの発展型。イルカの体をヒントにしたドルフィンシステムが脅威のトップスピードを生む。サマーカップ本戦でJが初めて使用し、電池消費以外のほぼ全ステータスでJBと同等かそれ以上の性能を持つ。</p>
+  </div></div>
+
+  <div class="note">🎁 豆知識:ゲームデータ上には、これら11種のほかに「バックブレーダー」というマシンも存在するようです。ただし入手方法はコロコロコミック誌の懸賞のみだったとのことで、現在は入手不可能とされています。詳しいステータスは未確認のため、当サイトのマシン本体一覧には含めていません。</div>
+
+  <h2 class="blk" id="motor">■ モーター</h2>
+  <div class="note">📷 公式ガイドブックp.96-99の写真から転記(2026/07/28分)。表の数値はパーツ年齢0の初期値です。多くのモーターは使うほど回転数・トルクが伸び、コメント欄の「最高時」はその上限値です。発熱度・消費電気の上昇率は、でんちの容量やモーターの発熱度が大きいほど早くなる関係にあります(→<a href="system.html">システム解説</a>)。</div>
+
+  <h3 class="blk2">基本モーター(Lv1)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ミニモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>7.0</td><td>7</td><td>55</td><td>55</td><td>20</td><td>80</td><td>0〜60</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">新品の状態から性能が最大値。扱いやすい入門モーター。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ハイパーミニモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>7.0</td><td>7</td><td>42</td><td>42</td><td>25</td><td>90</td><td>10〜70</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">少ない消費電力で高性能。最高時は回転数60・トルク60。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">レブチューンモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>7.5</td><td>7</td><td>52</td><td>45</td><td>28</td><td>100</td><td>10〜70</td><td>JET模型店</td></tr></table>
+    <p class="part-desc">回転数重視のスピードモーター。最高時は回転数75・トルク65。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">トルクチューンモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>7.5</td><td>7</td><td>45</td><td>52</td><td>28</td><td>100</td><td>10〜70</td><td>JET模型店</td></tr></table>
+    <p class="part-desc">トルク重視、坂道やコーナーに強い。最高時は回転数65・トルク75。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">Sダッシュモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>8.0</td><td>7</td><td>62</td><td>56</td><td>30</td><td>110</td><td>10〜70</td><td>デパート</td></tr></table>
+    <p class="part-desc">レブチューンの改良版。最高時は回転数90・トルク80。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ネオトルクモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>8.0</td><td>7</td><td>56</td><td>62</td><td>30</td><td>110</td><td>10〜70</td><td>デパート</td></tr></table>
+    <p class="part-desc">トルク性能がさらにアップ。最高時は回転数80・トルク90。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">Xモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>8.5</td><td>7</td><td>35</td><td>28</td><td>110</td><td>120</td><td>70〜99</td><td>デパート</td></tr></table>
+    <p class="part-desc">発熱度が高い不思議なモーター。最高時は回転数120・トルク95。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スペシャルモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>9.0</td><td>7</td><td>73</td><td>66</td><td>32</td><td>120</td><td>10〜70</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">レブチューンタイプの高速用。最高時は回転数105・トルク95。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ハイトルクモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>9.0</td><td>7</td><td>66</td><td>73</td><td>32</td><td>120</td><td>10〜70</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">パワー十分なトルク系。最高時は回転数95・トルク105。</p>
+  </div></div>
+
+  <h3 class="blk2">中級モーター(Lv2〜4)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">マッハダッシュモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>9.5</td><td>6</td><td>83</td><td>76</td><td>34</td><td>130</td><td>10〜70</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">回転数を大幅アップ、直線に強い。最高時は回転数120・トルク110。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ビッグトルクモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>9.5</td><td>6</td><td>76</td><td>83</td><td>34</td><td>130</td><td>10〜70</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">坂道に強い大トルク。最高時は回転数110・トルク120。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">Jダッシュモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>10.0</td><td>6</td><td>94</td><td>87</td><td>36</td><td>140</td><td>10〜70</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">回転数を大きくしたスピードモーター。最高時は回転数135・トルク125。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">メガトルクモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>10.0</td><td>6</td><td>87</td><td>94</td><td>36</td><td>140</td><td>10〜70</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">スタートダッシュや坂道に強いトルクモーター。最高時は回転数125・トルク135。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">グングンモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>10.5</td><td>6</td><td>47</td><td>40</td><td>110</td><td>150</td><td>70〜99</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">使うほど性能が上がる。最高時は回転数160・トルク135。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">Uダッシュモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>11.0</td><td>6</td><td>104</td><td>97</td><td>38</td><td>150</td><td>10〜70</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">高回転数で爆発的なスピード。最高時は回転数150・トルク140。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ギガトルクモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>11.0</td><td>6</td><td>97</td><td>104</td><td>38</td><td>150</td><td>10〜70</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">圧倒的パワーでテクニカルコースに対応。最高時は回転数140・トルク150。</p>
+  </div></div>
+
+  <h3 class="blk2">上級モーター(Lv5〜6)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ちょうでんどうモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>11.5</td><td>6</td><td>114</td><td>107</td><td>40</td><td>160</td><td>10〜70</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">超伝導システムによる高速モーター。最高時は回転数165・トルク155。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">エレファントモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>11.5</td><td>6</td><td>107</td><td>114</td><td>40</td><td>160</td><td>10〜70</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">象のような巨大パワー。最高時は回転数155・トルク165。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">メテオモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>12.0</td><td>6</td><td>125</td><td>118</td><td>42</td><td>170</td><td>10〜70</td><td>トイランド</td></tr></table>
+    <p class="part-desc">隕石のような超スピードモーター。最高時は回転数180・トルク170。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ストロングモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>12.0</td><td>6</td><td>118</td><td>125</td><td>42</td><td>170</td><td>10〜70</td><td>トイランド</td></tr></table>
+    <p class="part-desc">もうれつなトルクで路面をキャッチ。最高時は回転数170・トルク180。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">XモーターMK2</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>12.0</td><td>6</td><td>62</td><td>56</td><td>110</td><td>180</td><td>70〜99</td><td>トイランド</td></tr></table>
+    <p class="part-desc">ナゾのXモーターのパワーアップ版。最高時は回転数210・トルク190。</p>
+  </div></div>
+
+  <h3 class="blk2">最上級モーター(Lv7〜8)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ライトニングモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>13.0</td><td>6</td><td>135</td><td>128</td><td>44</td><td>180</td><td>10〜70</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">いなずまのようなスピードモーター。最高時は回転数195・トルク185。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ダークモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>13.0</td><td>6</td><td>128</td><td>135</td><td>44</td><td>180</td><td>10〜70</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">大神博士製のトルク重視モデル。最高時は回転数185・トルク195。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ワンダーモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>13.0</td><td>6</td><td>176</td><td>160</td><td>100</td><td>190</td><td>40〜99</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">不思議な能力変動を見せる。最高時は回転数220・トルク200。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">サンダーモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>13.5</td><td>6</td><td>145</td><td>138</td><td>46</td><td>190</td><td>10〜70</td><td>トイランド</td></tr></table>
+    <p class="part-desc">レブチューンの最高モデル。最高時は回転数210・トルク200。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ファイヤーモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>13.5</td><td>6</td><td>138</td><td>145</td><td>46</td><td>190</td><td>10〜70</td><td>トイランド</td></tr></table>
+    <p class="part-desc">激しいトルクの炎の走り。最高時は回転数200・トルク210。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">SPグングンモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>13.5</td><td>6</td><td>68</td><td>65</td><td>120</td><td>200</td><td>70〜99</td><td>トイランド</td></tr></table>
+    <p class="part-desc">未知の力を発揮する最高の不思議モーター。最高時は回転数230・トルク220。</p>
+  </div></div>
+
+  <h3 class="blk2">特殊入手パーツ(変化パーツ／シルバー・ゴールド)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">Qスペシャルモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>13.5</td><td>6</td><td>235</td><td>200</td><td>66</td><td>180</td><td>?</td><td>変化パーツ</td></tr></table>
+    <p class="part-desc">究極のスピードモーター。回転数・トルクともに究極レベル。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">Tモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>13.5</td><td>4</td><td>152</td><td>159</td><td>35</td><td>170</td><td>?</td><td>変化パーツ</td></tr></table>
+    <p class="part-desc">土屋博士開発の夢のモーター。高水準の数字をはじき出す。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">シルバーモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>9.0</td><td>6</td><td>80</td><td>80</td><td>30</td><td>115</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">バランスの取れた高性能モーター。→<a href="upgrade.html">パーツ強化について</a></p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ゴールドモーター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>回転数</th><th>トルク</th><th>発熱度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>13.0</td><td>10</td><td>152</td><td>152</td><td>40</td><td>180</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">無敵の性能を秘めた超モーター。激レアな逸品。</p>
+  </div></div>
+
+  <h2 class="blk" id="roller">■ ローラー</h2>
+  <div class="note">📷 公式ガイドブックp.88-93の写真から転記(2026/07/28分)。ローラーは「空力性能・ダウンフォース」の代わりに「摩擦力」が記載される形式です。特徴欄は本文そのままではなく独自の一言コメントです。</div>
+
+  <h3 class="blk2">基本ローラー(Lv1)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.4</td><td>7</td><td>70</td><td>10</td><td>160</td><td>0〜60</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">特に癖のない、低価格で買いやすいローラー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.4</td><td>7</td><td>70</td><td>10</td><td>160</td><td>0〜60</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">重さがSと同じなので、フロントに使いやすい。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">コーンローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.4</td><td>7</td><td>110</td><td>15</td><td>180</td><td>0〜60</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">すり鉢状の形状でカベに当たっても復帰しやすい。安定性がよい。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">コーンローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.4</td><td>7</td><td>110</td><td>15</td><td>180</td><td>0〜60</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">フロントに使うならこちらのLサイズが向く。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スムースローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.5</td><td>7</td><td>80</td><td>15</td><td>150</td><td>0〜60</td><td>JET模型店</td></tr></table>
+    <p class="part-desc">摩擦力が低く、スピードの減速を抑えられる。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スムースローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.5</td><td>7</td><td>80</td><td>15</td><td>150</td><td>0〜60</td><td>JET模型店</td></tr></table>
+    <p class="part-desc">摩擦力の低いローラーは、リヤー寄りに付けるのが鉄則。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スタビライザーポールS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.5</td><td>7</td><td>150</td><td>25</td><td>190</td><td>0〜60</td><td>JET模型店</td></tr></table>
+    <p class="part-desc">コーナリング中の傾きを防ぎ、コースアウトを減らす。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スタビライザーポールL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.5</td><td>7</td><td>150</td><td>25</td><td>190</td><td>0〜60</td><td>JET模型店</td></tr></table>
+    <p class="part-desc">摩擦力が高めなので、コーナーでの減速に注意。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ハイスムースローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.6</td><td>7</td><td>90</td><td>20</td><td>140</td><td>0〜60</td><td>デパート</td></tr></table>
+    <p class="part-desc">摩擦力がさらに低下し、コーナーでの減速を防ぐ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ハイスムースローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.6</td><td>7</td><td>90</td><td>20</td><td>140</td><td>0〜60</td><td>デパート</td></tr></table>
+    <p class="part-desc">スムース系は耐久度が低めなので壊れやすい。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ショートスタビローラS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.6</td><td>7</td><td>95</td><td>25</td><td>160</td><td>0〜60</td><td>デパート</td></tr></table>
+    <p class="part-desc">スタビライザーポールにローラーを組み込み、摩擦力を低減。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ショートスタビローラL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.6</td><td>7</td><td>95</td><td>25</td><td>160</td><td>0〜60</td><td>デパート</td></tr></table>
+    <p class="part-desc">スタビライザーポールに比べ、意外と耐久度が低いので注意。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">GTローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.7</td><td>7</td><td>105</td><td>30</td><td>150</td><td>0〜60</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">摩擦力を抑えた実戦向き。安定性がとても高い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">GTローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.7</td><td>7</td><td>105</td><td>30</td><td>150</td><td>0〜60</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">コーナリングコースなどで真価を発揮する。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">セーフローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.7</td><td>7</td><td>100</td><td>25</td><td>130</td><td>0〜60</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">耐久度・安定性・摩擦力のバランスが取れた高性能ローラー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">セーフローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.7</td><td>7</td><td>100</td><td>25</td><td>130</td><td>0〜60</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">コーナーでの減速を抑えたタイプ。</p>
+  </div></div>
+
+  <h3 class="blk2">中級ローラー(Lv2〜4)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">EXスムースローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>0.8</td><td>6</td><td>115</td><td>30</td><td>120</td><td>0〜60</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">摩擦力をギリギリまで抑えたコーナリング重視型。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">EXスムースローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>0.8</td><td>6</td><td>115</td><td>30</td><td>120</td><td>0〜60</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">強化するなら耐久度・安定性アップがおすすめ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ミドルスタビポールS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>0.8</td><td>6</td><td>160</td><td>45</td><td>160</td><td>0〜60</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">安定性を高めたスタビライザーポールの改良版。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ミドルスタビポールL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>0.8</td><td>6</td><td>160</td><td>45</td><td>160</td><td>0〜60</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">耐久度も高く、壊れにくく長持ちする。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">GTローラーMK2 S</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>0.9</td><td>6</td><td>125</td><td>35</td><td>110</td><td>0〜60</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">摩擦力をさらに小さくし、レースで有利になる設計。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">GTローラーMK2 L</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>0.9</td><td>6</td><td>125</td><td>35</td><td>110</td><td>0〜60</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">摩擦力の少なさはコースアウトの危険性もはらむ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ロングスタビローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>0.9</td><td>6</td><td>120</td><td>40</td><td>130</td><td>0〜60</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">摩擦力を減らし安定性も高めたショートスタビの改良版。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ロングスタビローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>0.9</td><td>6</td><td>120</td><td>40</td><td>130</td><td>0〜60</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">スタビポールに組み込んだローラーを大型化したもの。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リニアローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>1.0</td><td>6</td><td>130</td><td>40</td><td>100</td><td>0〜60</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">内蔵マイクロコイルの働きで摩擦力を大幅カット。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リニアローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>1.0</td><td>6</td><td>130</td><td>40</td><td>100</td><td>0〜60</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">コーナーでの減速を抑えたい、コーナリングコース向け。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">MAXスタビポールS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>1.0</td><td>6</td><td>135</td><td>55</td><td>140</td><td>0〜60</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">安定性が極めて高い、スタビポールの最高峰。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">MAXスタビポールL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>1.0</td><td>6</td><td>135</td><td>55</td><td>140</td><td>0〜60</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">やや摩擦力が大きいので、コーナー減速を活かしたい時に。</p>
+  </div></div>
+
+  <h3 class="blk2">上級ローラー(Lv5〜6)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ハイブリッドローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>1.1</td><td>6</td><td>145</td><td>45</td><td>90</td><td>0〜60</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">各種樹脂を混合。耐久度の高さが魅力。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ハイブリッドローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>1.1</td><td>6</td><td>145</td><td>45</td><td>90</td><td>0〜60</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">能力のバランスが取れ、扱いやすい。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">NVスタビローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>1.1</td><td>6</td><td>140</td><td>50</td><td>110</td><td>0〜60</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">摩擦力が小さく、コーナーでもスピードが落ちにくい。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">NVスタビローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>1.1</td><td>6</td><td>140</td><td>50</td><td>110</td><td>0〜60</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">抜群の安定性とコーナースピードを両立。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ちょうでんじローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>1.2</td><td>6</td><td>155</td><td>50</td><td>80</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">超伝導システムによる、摩擦力の非常に小さいローラー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ちょうでんじローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>1.2</td><td>6</td><td>155</td><td>50</td><td>80</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">性能だけでなく耐久度も高く長持ちする。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">セーフローラーベータS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>1.2</td><td>6</td><td>150</td><td>55</td><td>100</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">コーナーでの安定性に改良を加えたセーフローラー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">セーフローラーベータL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>1.2</td><td>6</td><td>150</td><td>55</td><td>100</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">どんなコースにも対応できる順応性を持つ。</p>
+  </div></div>
+
+  <h3 class="blk2">最上級ローラー(Lv7〜8)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ダークローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>1.3</td><td>6</td><td>160</td><td>55</td><td>70</td><td>0〜60</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">大神博士開発。強力な性能のローラー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ダークローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>1.3</td><td>6</td><td>160</td><td>55</td><td>70</td><td>0〜60</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">大神博士による、摩擦力の小さいローラー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">セーフローラーガンマS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>1.3</td><td>6</td><td>165</td><td>60</td><td>90</td><td>0〜60</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">非常に安定性の高い、トップクラスのセーフローラー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">セーフローラーガンマL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>1.3</td><td>6</td><td>165</td><td>60</td><td>90</td><td>0〜60</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">トップスピードのままでもコーナリングがスムース。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">セーフスタビローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>1.4</td><td>6</td><td>170</td><td>65</td><td>60</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">スタビポールにセーフローラーを組み合わせ、優れた安定性を発揮。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">セーフスタビローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>1.4</td><td>6</td><td>170</td><td>65</td><td>60</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">摩擦力の大幅な減少で、コーナーでの減速もほぼ皆無。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">グングンローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>1.4</td><td>6</td><td>110</td><td>22</td><td>67</td><td>70〜99</td><td>トイランド</td></tr></table>
+    <p class="part-desc">使うほど化けるグングン系。ピーク時は高い安定性と摩擦力を発揮。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">グングンローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>1.4</td><td>6</td><td>110</td><td>22</td><td>67</td><td>70〜99</td><td>トイランド</td></tr></table>
+    <p class="part-desc">Sローラー同様、パーツ年齢70超で本領発揮。</p>
+  </div></div>
+
+  <h3 class="blk2">特殊入手パーツ(変化パーツ／シルバー・ゴールド)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">TローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>1.3</td><td>4</td><td>180</td><td>75</td><td>40</td><td>?</td><td>変化パーツ</td></tr></table>
+    <p class="part-desc">土屋博士開発、理想に限りなく近いスーパーローラー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">TローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>1.3</td><td>4</td><td>180</td><td>75</td><td>40</td><td>?</td><td>変化パーツ</td></tr></table>
+    <p class="part-desc">通信交換での変化でしか入手できない特別なローラー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">シルバーローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.7</td><td>6</td><td>105</td><td>40</td><td>120</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">バランスの取れた高性能シルバーパーツの一つ。→<a href="upgrade.html">パーツ強化について</a></p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">シルバーローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.7</td><td>6</td><td>105</td><td>40</td><td>120</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">同じく幻とまで言われるシルバーパーツの一つ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ゴールドローラーS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>1.2</td><td>10</td><td>180</td><td>70</td><td>30</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">全能力が異常なまでに高い、究極のローラー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ゴールドローラーL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>摩擦力</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>1.2</td><td>10</td><td>180</td><td>70</td><td>30</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">重さや強化数にも注目したい、能力の高いローラー。</p>
+  </div></div>
+
+  <h2 class="blk" id="wing">■ ウイング</h2>
+  <div class="note">📷 公式ガイドブックp.76-78の写真から転記(2026/07/28分)。数字は写真がクリアだったため高い精度で反映しています。特徴欄は本文そのままではなく、数値から独自にまとめた一言コメントです。</div>
+
+  <h3 class="blk2">基本ウイング(Lv1)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ノーマルウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>3.5</td><td>7</td><td>70</td><td>13</td><td>0</td><td>50</td><td>0〜60</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">最初から装備されている標準ウイング。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">エアロウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>3.5</td><td>7</td><td>70</td><td>10</td><td>5</td><td>60</td><td>0〜60</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">空力を高めた初期パーツ。ノーマルよりDFが高い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ハイマウント</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>3.5</td><td>7</td><td>110</td><td>27</td><td>0</td><td>57</td><td>0〜60</td><td>JET模型店</td></tr></table>
+    <p class="part-desc">ローラー装備可。耐久度重視。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">エアロウイングベータ</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>3.7</td><td>7</td><td>100</td><td>15</td><td>5</td><td>67</td><td>0〜60</td><td>JET模型店</td></tr></table>
+    <p class="part-desc">エアロウイングの強化版。やや重いが性能アップ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スピードウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>3.9</td><td>7</td><td>110</td><td>20</td><td>10</td><td>63</td><td>0〜60</td><td>デパート</td></tr></table>
+    <p class="part-desc">オーバルコース向けのスピード寄りセッティング。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ダウンフォースウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>3.9</td><td>7</td><td>110</td><td>20</td><td>0</td><td>83</td><td>0〜60</td><td>デパート</td></tr></table>
+    <p class="part-desc">DF重視で安定感を狙ったタイプ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ハイスピードウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.5</td><td>7</td><td>120</td><td>25</td><td>10</td><td>70</td><td>0〜60</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">安定性を高めたスピード型。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スライドダンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.3</td><td>7</td><td>130</td><td>42</td><td>0</td><td>70</td><td>0〜60</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">ローラー装備可。ショック吸収で安定性アップ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">グングンウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.6</td><td>7</td><td>28</td><td>12</td><td>−84</td><td>29</td><td>70〜99</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">使うほど化ける変則パーツ。ただし非常に壊れやすい。</p>
+  </div></div>
+
+  <h3 class="blk2">中級ウイング(Lv2〜4)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">アローウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>4.7</td><td>6</td><td>130</td><td>30</td><td>15</td><td>77</td><td>0〜60</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">鋭い形状でスピードアップに寄与。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スプラッシュウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>4.7</td><td>6</td><td>130</td><td>30</td><td>0</td><td>97</td><td>0〜60</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">ダウンフォース特化型。坂道が安定しやすい。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">カナードウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>4.9</td><td>6</td><td>140</td><td>35</td><td>15</td><td>83</td><td>0〜60</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">空力・安定・DFのバランス型。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">オイルスライドダンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>4.7</td><td>6</td><td>150</td><td>52</td><td>0</td><td>83</td><td>0〜60</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">安定性が頭一つ抜けている安定重視型。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ロングアローウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>5.5</td><td>6</td><td>150</td><td>40</td><td>20</td><td>90</td><td>0〜60</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">空力性能が高くスピード寄り。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ダブルウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>5.5</td><td>6</td><td>150</td><td>40</td><td>0</td><td>110</td><td>0〜60</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">この価格帯ではダウンフォース最大級。</p>
+  </div></div>
+
+  <h3 class="blk2">上級ウイング(Lv5〜6)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">かへんウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>5.7</td><td>6</td><td>160</td><td>45</td><td>20</td><td>97</td><td>0〜60</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">可変機構でバランスよく高性能。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">かへんマウント</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>5.5</td><td>6</td><td>170</td><td>62</td><td>0</td><td>97</td><td>0〜60</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">ローラー装備可の可変ウイング。安定性が高い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">フォーミュラウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>5.9</td><td>6</td><td>170</td><td>50</td><td>25</td><td>103</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">F1由来の設計という高性能ウイング。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">デルタウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>5.9</td><td>6</td><td>170</td><td>50</td><td>5</td><td>123</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">特殊形状でダウンフォースがさらに高い。</p>
+  </div></div>
+
+  <h3 class="blk2">最上級ウイング(Lv7〜8)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ダークウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>6.5</td><td>6</td><td>190</td><td>55</td><td>25</td><td>110</td><td>0〜60</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">大神博士製の高性能ウイング。バランス型。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">Vマウント</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>6.3</td><td>6</td><td>200</td><td>72</td><td>0</td><td>110</td><td>0〜60</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">ダウンフォースが高く、コーナーでも減速しにくい。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ワンダーマウント</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>6.5</td><td>6</td><td>85</td><td>64</td><td>−14</td><td>96</td><td>40〜99</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">一度性能が落ちた後、パーツ年齢40あたりから再上昇する特殊挙動。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">Vウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.7</td><td>6</td><td>200</td><td>60</td><td>30</td><td>117</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">弱点が少なく、どのコースにも対応しやすい。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">トライアングルウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.7</td><td>6</td><td>200</td><td>60</td><td>5</td><td>137</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">デルタウイングの上位版。DFがさらに高い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">SPグングンウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.9</td><td>6</td><td>95</td><td>21</td><td>−78</td><td>44</td><td>70〜99</td><td>トイランド</td></tr></table>
+    <p class="part-desc">グングンウイングの改良版。耐久度が向上。</p>
+  </div></div>
+
+  <h3 class="blk2">特殊入手パーツ(変化パーツ／シルバー・ゴールド)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">メガワンダーマウント</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.5</td><td>6</td><td>140</td><td>72</td><td>−14</td><td>96</td><td>?</td><td>変化パーツ</td></tr></table>
+    <p class="part-desc">ワンダーマウントの改良版。組み合わせ交換で入手。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">Tウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.5</td><td>4</td><td>220</td><td>70</td><td>30</td><td>130</td><td>?</td><td>変化パーツ</td></tr></table>
+    <p class="part-desc">変化パーツの中でも最上位クラスの性能。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">シルバーウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.5</td><td>6</td><td>130</td><td>35</td><td>15</td><td>80</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">通常販売なし。交換で集めるシルバーパーツの1つ。→<a href="upgrade.html">パーツ強化について</a></p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ゴールドウイング</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.5</td><td>10</td><td>220</td><td>75</td><td>35</td><td>130</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">全パーツ中トップクラスの性能。入手が非常に困難。</p>
+  </div></div>
+
+  <h2 class="blk" id="bumper">■ バンパー</h2>
+  <div class="note">📷 公式ガイドブックp.79-81の写真から転記(2026/07/28分)。前回OCRで「?」を付けた数値も、この写真で全て確認・確定できました。特徴欄は本文そのままではなく独自の一言コメントです。</div>
+
+  <h3 class="blk2">基本バンパー(Lv1)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">バンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.5</td><td>7</td><td>70</td><td>35</td><td>0</td><td>18</td><td>0〜60</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">全マシンに最初から装備されている基本パーツ。能力のバランスがよい。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">エアロバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.5</td><td>7</td><td>60</td><td>30</td><td>3</td><td>15</td><td>0〜60</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">空力性能がわずかにアップ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ハードバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.7</td><td>7</td><td>100</td><td>45</td><td>0</td><td>25</td><td>0〜60</td><td>JET模型店</td></tr></table>
+    <p class="part-desc">耐久度がかなり上昇し、性能的にも優れたバンパー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スピードバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.7</td><td>7</td><td>90</td><td>40</td><td>5</td><td>22</td><td>0〜60</td><td>JET模型店</td></tr></table>
+    <p class="part-desc">高速仕様のマシンセッティングに合わせて開発されたバンパー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">かへんバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.9</td><td>7</td><td>110</td><td>55</td><td>0</td><td>32</td><td>0〜60</td><td>デパート</td></tr></table>
+    <p class="part-desc">バンパーに付けられたアームが、マシンの安定性を高める。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">かへんエアロバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.9</td><td>7</td><td>100</td><td>50</td><td>7</td><td>29</td><td>0〜60</td><td>デパート</td></tr></table>
+    <p class="part-desc">空力性能も考えて作られた、可変(変形)式のバンパー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ネオハードバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.6</td><td>7</td><td>120</td><td>65</td><td>0</td><td>35</td><td>0〜60</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">さらに安定性と耐久度を高めた、改良型のハードバンパー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ダウンフォースバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.4</td><td>7</td><td>110</td><td>62</td><td>0</td><td>45</td><td>0〜60</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">ダウンフォースが大きいため、下り坂などの高速走行に強いはず。</p>
+  </div></div>
+
+  <h3 class="blk2">中級バンパー(Lv2〜4)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">かへんスライドバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>5.8</td><td>6</td><td>130</td><td>75</td><td>0</td><td>45</td><td>0〜60</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">ローラー取り付け部分が左右に動き、ショックを吸収して安定性を高める。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">エアロバンパーセカンド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>5.6</td><td>6</td><td>120</td><td>70</td><td>9</td><td>42</td><td>0〜60</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">ストレートでのトップスピードに寄与する空力強化型。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">グングンバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>5.8</td><td>6</td><td>35</td><td>27</td><td>−86</td><td>12</td><td>70〜99</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">使うほど急激に性能アップ。ただし耐久度は非常に低い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ハードバンパーMK2</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>6.0</td><td>6</td><td>140</td><td>85</td><td>0</td><td>49</td><td>0〜60</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">ハードバンパー系の完成形。安定度も高い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スプラッシュバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>5.8</td><td>6</td><td>130</td><td>82</td><td>0</td><td>59</td><td>0〜60</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">ダウンフォースを集中的に高めたバンパー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ネオスライドバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>6.5</td><td>6</td><td>150</td><td>95</td><td>0</td><td>58</td><td>0〜60</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">安定性能アップで、どんなコーナーにも対応できる。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">アローバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>6.3</td><td>6</td><td>140</td><td>90</td><td>11</td><td>55</td><td>0〜60</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">矢じり型の形状で、空力性能がアップする。</p>
+  </div></div>
+
+  <h3 class="blk2">上級バンパー(Lv5〜6)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スポイラー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>6.7</td><td>6</td><td>160</td><td>105</td><td>0</td><td>62</td><td>0〜60</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">より大きな安定性と耐久度を求めたバンパー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スプラッシュバンパー2</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>6.5</td><td>6</td><td>150</td><td>102</td><td>0</td><td>72</td><td>0〜60</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">スプラッシュバンパーの改良型。ダウンフォースが大きくアップ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スライドバンパーゴッド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>6.9</td><td>6</td><td>175</td><td>115</td><td>0</td><td>72</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">安定性トップクラスの、最強クラスのスライド系バンパー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">グレートアローバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>6.7</td><td>6</td><td>170</td><td>110</td><td>13</td><td>69</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">アローバンパーの空力性能を極限までアップさせたタイプ。</p>
+  </div></div>
+
+  <h3 class="blk2">最上級バンパー(Lv7〜8)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">オイルスライドバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>7.4</td><td>6</td><td>190</td><td>125</td><td>0</td><td>79</td><td>0〜60</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">スライド部分を油圧式に改良し、高い安定性を実現。ちょっと重い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ダークバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>7.2</td><td>6</td><td>180</td><td>120</td><td>15</td><td>76</td><td>0〜60</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">大神博士が開発したバンパー。バランスの取れた性能。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ワンダーバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>7.4</td><td>6</td><td>85</td><td>104</td><td>−6</td><td>68</td><td>40〜99</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">パーツ年齢20あたりで一度性能が落ちるが、その後の上昇が大きい。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スポイラーMK2</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>7.6</td><td>6</td><td>200</td><td>135</td><td>0</td><td>86</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">強烈なダウンフォースで、路面に吸い付くような走りを狙える。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">フォーミュラーバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>7.4</td><td>6</td><td>195</td><td>130</td><td>17</td><td>83</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">F1由来の設計という、使いやすさに定評のあるパーツ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">SPグングンバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>7.6</td><td>6</td><td>95</td><td>43</td><td>−81</td><td>27</td><td>70〜99</td><td>トイランド</td></tr></table>
+    <p class="part-desc">グングンバンパーの完成形。最大まで化けると安定性145・空力性能30・DF90に達する。</p>
+  </div></div>
+
+  <h3 class="blk2">特殊入手パーツ(変化パーツ／シルバー・ゴールド)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">エアスラッシュバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>7.2</td><td>6</td><td>210</td><td>132</td><td>35</td><td>80</td><td>?</td><td>変化パーツ</td></tr></table>
+    <p class="part-desc">空力性能に優れた変化パーツ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">Tバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.8</td><td>4</td><td>220</td><td>145</td><td>20</td><td>90</td><td>?</td><td>変化パーツ</td></tr></table>
+    <p class="part-desc">土屋博士開発という、完全無欠クラスの超高性能パーツ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">シルバーバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.4</td><td>6</td><td>120</td><td>80</td><td>7</td><td>49</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">序盤戦で役立つシルバーパーツの1つ。→<a href="upgrade.html">パーツ強化について</a></p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ゴールドバンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>7.2</td><td>10</td><td>220</td><td>145</td><td>30</td><td>90</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">無限の可能性を秘めた、入手困難な究極パーツ。</p>
+  </div></div>
+
+  <h2 class="blk" id="rear">■ リヤー</h2>
+  <div class="note">📷 公式ガイドブックp.82-84の写真から転記(2026/07/28分)。特徴欄は本文そのままではなく独自の一言コメントです。</div>
+
+  <h3 class="blk2">基本リヤー(Lv1)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーステー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.0</td><td>7</td><td>75</td><td>40</td><td>0</td><td>20</td><td>0〜60</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">最も標準的なリヤーパーツ。癖がなく扱いやすい。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤースキッド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.2</td><td>7</td><td>85</td><td>50</td><td>0</td><td>27</td><td>0〜60</td><td>JET模型店</td></tr></table>
+    <p class="part-desc">マシンの浮き上がりを防ぐ形状。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーダンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.4</td><td>7</td><td>105</td><td>60</td><td>0</td><td>34</td><td>0〜60</td><td>デパート</td></tr></table>
+    <p class="part-desc">ローラー取り付け部を可動式にし、安定性を高めたタイプ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーブレーキ</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.6</td><td>7</td><td>110</td><td>55</td><td>0</td><td>79</td><td>0〜60</td><td>デパート</td></tr></table>
+    <p class="part-desc">登り坂でマシンを減速させ、コースアウトを防ぐ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーエアロステー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.4</td><td>7</td><td>100</td><td>55</td><td>5</td><td>37</td><td>0〜60</td><td>デパート</td></tr></table>
+    <p class="part-desc">空力性能を得て、直線でのスピードの伸びを助ける。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーハイパーステー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.9</td><td>7</td><td>115</td><td>70</td><td>0</td><td>40</td><td>0〜60</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">リヤーステーの改良版。耐久度・安定性アップ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーブレーキ2</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.9</td><td>7</td><td>125</td><td>65</td><td>0</td><td>85</td><td>0〜60</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">リヤーブレーキの改良版。ダウンフォースがさらに高い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーワイドスキッド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>6.1</td><td>6</td><td>125</td><td>80</td><td>0</td><td>47</td><td>0〜60</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">マシンの飛び出しを防ぐスキッドを大型化。安定性アップ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤースピードステー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>6.1</td><td>6</td><td>120</td><td>75</td><td>7</td><td>50</td><td>0〜60</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">安定性を保ちつつ空力性能を高めたタイプ。</p>
+  </div></div>
+
+  <h3 class="blk2">中級リヤー(Lv2〜4)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">グングンリヤー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>6.4</td><td>6</td><td>35</td><td>29</td><td>−87</td><td>24</td><td>70〜99</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">使い込むと能力が上がるグングン系パーツ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーダンパーダッシュ</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>6.3</td><td>6</td><td>135</td><td>90</td><td>0</td><td>54</td><td>0〜60</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">ダンパーの動きをスムースにし、安定性を高めたパーツ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーミドルブレーキ</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>6.3</td><td>6</td><td>160</td><td>85</td><td>0</td><td>99</td><td>0〜60</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">バランス重視のリヤーブレーキ改良版。DFの高さが特徴。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーグランドステー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>6.8</td><td>6</td><td>145</td><td>100</td><td>0</td><td>60</td><td>0〜60</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">高い安定性となかなかのDFを両立した使いやすいパーツ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤースポイラー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>6.8</td><td>6</td><td>140</td><td>95</td><td>9</td><td>63</td><td>0〜60</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">安定性を保ちつつスピードアップを実現した高性能タイプ。</p>
+  </div></div>
+
+  <h3 class="blk2">上級リヤー(Lv5〜6)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーダブルステー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>7.0</td><td>6</td><td>160</td><td>110</td><td>0</td><td>67</td><td>0〜60</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">ステーを2枚重ねにして安定性を強化。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーハードブレーキ</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>7.0</td><td>6</td><td>195</td><td>105</td><td>0</td><td>114</td><td>0〜60</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">高性能かつバランスの良いリヤーパーツ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーかへんスキッド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>7.2</td><td>6</td><td>175</td><td>120</td><td>0</td><td>74</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">可変機構を組み込んだスキッド。安定性が高い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーフレームステー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>7.2</td><td>6</td><td>170</td><td>115</td><td>11</td><td>77</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">スピードアップ狙いのステー。耐久度はやや低め。</p>
+  </div></div>
+
+  <h3 class="blk2">最上級リヤー(Lv7〜8)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーダークステー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>7.7</td><td>6</td><td>195</td><td>130</td><td>0</td><td>80</td><td>0〜60</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">大神博士開発。高水準の性能。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーブレーキ3</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>7.7</td><td>6</td><td>210</td><td>125</td><td>0</td><td>129</td><td>0〜60</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">リヤーブレーキシリーズの最高峰。強力なDFを生み出す。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ワンダーリヤー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>8.0</td><td>6</td><td>85</td><td>108</td><td>−14</td><td>72</td><td>40〜99</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">パーツ年齢によって性能が大きく変化する不思議系。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーオイルダンパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>7.9</td><td>6</td><td>210</td><td>140</td><td>0</td><td>87</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">油圧式でさらに安定性を向上させた最高クラス。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤースポイラー2</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>7.9</td><td>6</td><td>205</td><td>135</td><td>13</td><td>90</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">リヤースポイラーの改良版。スピードアップ能力がさらに高い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">グングンリヤーマックス</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>8.3</td><td>6</td><td>95</td><td>44</td><td>−84</td><td>29</td><td>70〜99</td><td>トイランド</td></tr></table>
+    <p class="part-desc">最大化すると安定性150・空力性能20・DF100を維持できる。</p>
+  </div></div>
+
+  <h3 class="blk2">特殊入手パーツ(変化パーツ／シルバー・ゴールド)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーロングスキッド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>7.5</td><td>6</td><td>220</td><td>135</td><td>15</td><td>130</td><td>?</td><td>変化パーツ</td></tr></table>
+    <p class="part-desc">全方面で高性能な最高級リヤーパーツ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リヤーTスキッド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>7.9</td><td>4</td><td>230</td><td>150</td><td>20</td><td>93</td><td>?</td><td>変化パーツ</td></tr></table>
+    <p class="part-desc">土屋博士渾身の、究極のリヤーパーツ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">シルバーステー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.9</td><td>6</td><td>130</td><td>90</td><td>10</td><td>70</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">バランスの取れた性能のシルバーパーツの1つ。→<a href="upgrade.html">パーツ強化について</a></p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ゴールドステー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>7.9</td><td>10</td><td>220</td><td>150</td><td>20</td><td>120</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">強化次第で底知らずの能力を発揮する超強力パーツ。</p>
+  </div></div>
+
+  <h2 class="blk" id="side">■ サイド</h2>
+  <div class="note">📷 公式ガイドブックp.85-87の写真から転記(2026/07/28分)。特徴欄は本文そのままではなく独自の一言コメントです。</div>
+
+  <h3 class="blk2">基本サイド(Lv1)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ノーマルサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.0</td><td>7</td><td>70</td><td>40</td><td>0</td><td>20</td><td>0〜60</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">どんなコースにもそこそこ対応できる標準パーツ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ダンパーサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.2</td><td>7</td><td>100</td><td>50</td><td>0</td><td>26</td><td>0〜60</td><td>JET模型店</td></tr></table>
+    <p class="part-desc">スライドダンパーを組み込み安定性を向上。耐久度も高い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">エアロサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.2</td><td>7</td><td>90</td><td>45</td><td>3</td><td>31</td><td>0〜60</td><td>JET模型店</td></tr></table>
+    <p class="part-desc">空力性能とDFでスピードアップに一役買う。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ヘビーサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.4</td><td>7</td><td>110</td><td>60</td><td>0</td><td>33</td><td>0〜60</td><td>デパート</td></tr></table>
+    <p class="part-desc">耐久度が高く長持ちしそうなタイプ。バランスも良い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スピードサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.4</td><td>7</td><td>100</td><td>55</td><td>5</td><td>38</td><td>0〜60</td><td>デパート</td></tr></table>
+    <p class="part-desc">わずかな空力性能アップで直線の伸びを助ける。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ヘビーダンパーサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.9</td><td>7</td><td>120</td><td>70</td><td>0</td><td>40</td><td>0〜60</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">高い安定性と耐久度を両立したスライドダンパー式。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">エアロサイドマキシマム</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.9</td><td>7</td><td>110</td><td>65</td><td>7</td><td>45</td><td>0〜60</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">バランスを保ちつつ空力性能を高めたタイプ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">グングンサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.2</td><td>7</td><td>28</td><td>27</td><td>−86</td><td>18</td><td>70〜99</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">使ううちに能力が上がるグングン系。ピーク時の性能に期待。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">グランドサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>5.1</td><td>6</td><td>130</td><td>80</td><td>0</td><td>46</td><td>0〜60</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">耐久度が高く性能バランスの取れた高品質パーツ。</p>
+  </div></div>
+
+  <h3 class="blk2">中級サイド(Lv2〜4)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ツインアローサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>5.1</td><td>6</td><td>120</td><td>75</td><td>9</td><td>51</td><td>0〜60</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">スピード重視、空力性能の高いタイプ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ヘビーサイドMK2</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>5.3</td><td>6</td><td>140</td><td>90</td><td>0</td><td>53</td><td>0〜60</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">耐久度アップで壊れにくい。安定度も高い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">マッハスピードサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>5.3</td><td>6</td><td>130</td><td>85</td><td>11</td><td>58</td><td>0〜60</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">ストレートでの伸びを狙ったスピード仕様。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">かへんサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>5.8</td><td>6</td><td>150</td><td>100</td><td>0</td><td>60</td><td>0〜60</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">可変機構で安定性アップ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ウイングサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>5.8</td><td>6</td><td>140</td><td>95</td><td>13</td><td>65</td><td>0〜60</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">羽根型形状で空力性能とDFを両立。</p>
+  </div></div>
+
+  <h3 class="blk2">上級サイド(Lv5〜6)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">トライアングルサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>6.0</td><td>6</td><td>160</td><td>110</td><td>0</td><td>66</td><td>0〜60</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">三角形の珍しい形状。耐久度と安定性が高い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ツインアローサイド2</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>6.0</td><td>6</td><td>150</td><td>105</td><td>15</td><td>71</td><td>0〜60</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">全能力が高水準。高速仕様セッティング向け。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">グランドサイドベータ</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>6.2</td><td>6</td><td>175</td><td>120</td><td>0</td><td>73</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">グランドサイドの大幅強化版。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ウイングサイド2</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>6.2</td><td>6</td><td>170</td><td>115</td><td>17</td><td>78</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">改良型で直線でのスピードアップに貢献。</p>
+  </div></div>
+
+  <h3 class="blk2">最上級サイド(Lv7〜8)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">トライアングルサイド2</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>6.7</td><td>6</td><td>190</td><td>130</td><td>0</td><td>80</td><td>0〜60</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">トライアングルサイドの安定性強化版。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ダークサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>6.7</td><td>6</td><td>180</td><td>125</td><td>19</td><td>85</td><td>0〜60</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">大神博士製。どんなコースにも対応する高性能パーツ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ワンダーサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>7.0</td><td>6</td><td>85</td><td>108</td><td>−7</td><td>72</td><td>40〜99</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">使いこなせれば頼もしい、不思議な挙動のパーツ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">オイルダンパーサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.9</td><td>6</td><td>200</td><td>140</td><td>0</td><td>86</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">油圧式でコーナー安定性アップ。頑丈。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">Vサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.9</td><td>6</td><td>195</td><td>135</td><td>21</td><td>91</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">直線での加速力はサイド系随一。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">グングンサイドドリーム</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>7.3</td><td>6</td><td>95</td><td>44</td><td>−81</td><td>28</td><td>70〜99</td><td>トイランド</td></tr></table>
+    <p class="part-desc">グングンサイドの強化版。ピーク時の性能がさらに高い。</p>
+  </div></div>
+
+  <h3 class="blk2">特殊入手パーツ(変化パーツ／シルバー・ゴールド)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">Tサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.9</td><td>4</td><td>220</td><td>150</td><td>25</td><td>92</td><td>0〜60</td><td>変化パーツ</td></tr></table>
+    <p class="part-desc">土屋博士渾身の、超高性能サイド。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">シルバーサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>4.9</td><td>6</td><td>110</td><td>85</td><td>10</td><td>60</td><td>0〜60</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">バランスの取れた使いやすいシルバーパーツ。→<a href="upgrade.html">パーツ強化について</a></p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ゴールドサイド</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>安定性</th><th>空力性能</th><th>DF</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.7</td><td>10</td><td>220</td><td>155</td><td>25</td><td>95</td><td>0〜60</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">超高性能なスペシャルパーツ。強化でさらに性能アップ。</p>
+  </div></div>
+
+  <h2 class="blk" id="battery">■ でんち</h2>
+  <div class="note">📷 公式ガイドブックp.93-96の写真から転記(2026/07/28分)。でんちは「安定性・空力性能・DF」の代わりに「容量・パワー」が記載される形式です。特徴欄は本文そのままではなく独自の一言コメントです。</div>
+
+  <h3 class="blk2">基本でんち(Lv1)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">マンガンでんち</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>9.0</td><td>7</td><td>60</td><td>50</td><td>0〜60</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">最も一般的な電池。価格の割に安定したパワー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ロケットでんち</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>9.0</td><td>7</td><td>45</td><td>55</td><td>0〜70</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">瞬間的なパワーはあるが、使うほど落ちていく。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">アルカリでんち</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>9.5</td><td>7</td><td>70</td><td>65</td><td>0〜60</td><td>JET模型店</td></tr></table>
+    <p class="part-desc">容量が大きくパワーも長持ちするレース向け。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">PROバッテリー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>9.5</td><td>7</td><td>65</td><td>49</td><td>0〜60</td><td>JET模型店</td></tr></table>
+    <p class="part-desc">熟練職人製、クセのある性能。上級者向け。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">マンガンでんちハイパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>10.0</td><td>7</td><td>90</td><td>80</td><td>0〜60</td><td>デパート</td></tr></table>
+    <p class="part-desc">通常のアルカリ電池を上回る容量とパワー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ライトパワー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>7.0</td><td>7</td><td>85</td><td>70</td><td>0〜70</td><td>デパート</td></tr></table>
+    <p class="part-desc">非常に軽量なのに高性能。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">Xパワー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>10.2</td><td>7</td><td>1</td><td>31</td><td>70〜99</td><td>デパート</td></tr></table>
+    <p class="part-desc">パーツ年齢70超えで真価を発揮する変則型。最大パワー105。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ダッシュアルカリでんち</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>11.0</td><td>7</td><td>100</td><td>95</td><td>0〜60</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">マシン性能を存分に引き出す、安定したパワー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">カスタムバッテリー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>11.0</td><td>7</td><td>95</td><td>60</td><td>20〜70</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">特注品というナゾの電池。性能にムラがある。</p>
+  </div></div>
+
+  <h3 class="blk2">中級でんち(Lv2〜4)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ロングパワー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>11.5</td><td>6</td><td>120</td><td>110</td><td>0〜60</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">長時間安定したパワーが持続するタフな電池。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ニッカドでんち</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>2</td><td>11.5</td><td>6</td><td>105</td><td>115</td><td>0〜70</td><td>ゴールド模型店</td></tr></table>
+    <p class="part-desc">バランス型。徐々にパワーを失うので注意。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リチウムでんち</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>12.0</td><td>6</td><td>115</td><td>130</td><td>0〜70</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">パワーがあり比較的軽量。徐々にパワーダウン。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">グングンパワー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>12.3</td><td>6</td><td>30</td><td>44</td><td>70〜99</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">使い込むと最大150まで化ける不思議な電池。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スパークアルカリでんち</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>13.0</td><td>6</td><td>130</td><td>140</td><td>0〜60</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">アルカリ電池の改良版。長時間安定したパワー。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">SPPROバッテリー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>13.0</td><td>6</td><td>125</td><td>100</td><td>0〜60</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">熟練職人製、能力にクセがある電池。</p>
+  </div></div>
+
+  <h3 class="blk2">上級でんち(Lv5〜6)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">アルカリでんちMAX</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>13.5</td><td>6</td><td>140</td><td>155</td><td>0〜60</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">アルカリ電池の最高峰。長期戦向き。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">オメガパワー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>13.5</td><td>6</td><td>140</td><td>160</td><td>0〜70</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">強力なパワーだが、年齢を重ねるとゆっくり低下。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ワンダーパワー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>13.5</td><td>6</td><td>80</td><td>144</td><td>40〜99</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">パーツ年齢40以降でパワー180に達する特殊型。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ロングパワーボンバー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>14.0</td><td>6</td><td>160</td><td>170</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">ロングパワーの改良版。長期戦に欠かせない。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">アトミックパワー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>14.0</td><td>6</td><td>150</td><td>175</td><td>0〜70</td><td>トイランド</td></tr></table>
+    <p class="part-desc">爆発力に優れた激パワー型。徐々にパワーダウン。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">XパワーMK2</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>14.2</td><td>6</td><td>60</td><td>55</td><td>70〜99</td><td>トイランド</td></tr></table>
+    <p class="part-desc">不可解な挙動の電池。最高時はパワー185。</p>
+  </div></div>
+
+  <h3 class="blk2">最上級でんち(Lv7〜8)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ダークパワー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>15.0</td><td>6</td><td>160</td><td>190</td><td>0〜70</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">大神博士製の高性能電池。徐々にパワーが低下。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ワンダーパワーGMX</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>15.0</td><td>6</td><td>100</td><td>168</td><td>40〜99</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">最高時はパワー210に達するギガミックス級。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ロングパワーギガント</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>15.5</td><td>6</td><td>170</td><td>200</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">驚異的なパワーを長時間安定して発揮。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">バッテリーオブサンダー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>15.5</td><td>6</td><td>170</td><td>205</td><td>0〜70</td><td>トイランド</td></tr></table>
+    <p class="part-desc">瞬間のキレは強力だが徐々に低下。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">グングンパワーハイパー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>15.5</td><td>6</td><td>80</td><td>67</td><td>70〜99</td><td>トイランド</td></tr></table>
+    <p class="part-desc">最高時はパワー225を安定発揮するグングン系最高傑作。</p>
+  </div></div>
+
+  <h3 class="blk2">特殊入手パーツ(変化パーツ／シルバー・ゴールド)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">Tパワー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>15.0</td><td>4</td><td>160</td><td>215</td><td>0〜60</td><td>変化パーツ</td></tr></table>
+    <p class="part-desc">パワー・持続性ともに優れた、土屋博士渾身の電池。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">シルバーでんち</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>11.0</td><td>6</td><td>100</td><td>110</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">バランスの取れた性能でどんなコースにも対応。→<a href="upgrade.html">パーツ強化について</a></p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ゴールドでんち</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>容量</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>15.5</td><td>10</td><td>160</td><td>225</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">パワー・持続性ともにモンスター級の最高峰。</p>
+  </div></div>
+
+  <h2 class="blk" id="option">■ オプション</h2>
+  <div class="note">📷 公式ガイドブックp.100-101の写真から転記(2026/07/28分)。オプションは効果の種類ごとに記載項目が異なるため、機能別に表を分けています。特徴欄は本文そのままではなく独自の一言コメントです。</div>
+
+  <h3 class="blk2">重量調整系</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ウェイト</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.2</td><td>210</td><td>0〜99</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">マシンに取り付けるおもり。コースアウトしやすい時に。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ヘビーウェイト</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.5</td><td>210</td><td>0〜99</td><td>デパート</td></tr></table>
+    <p class="part-desc">ウェイトの2倍以上の重さで、マシンを押さえ込む。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">アンチウェイト</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>−1.0</td><td>210</td><td>0〜99</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">反重力理論から生まれた、マシンを軽くできるパーツ。</p>
+  </div></div>
+
+  <h3 class="blk2">コースアウト防止系</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ショックアブソーバ</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.2</td><td>210</td><td>0〜99</td><td>デパート</td></tr></table>
+    <p class="part-desc">ジャンプ着地の衝撃を和らげ、コースアウトを軽減。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">メガショックアブソーバ</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>0.4</td><td>210</td><td>0〜99</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">ショックアブソーバの改良版。さらにコースアウトを抑える。</p>
+  </div></div>
+
+  <h3 class="blk2">冷却系(モーター発熱抑制)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ほうねつフィン</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>発熱度</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>0.3</td><td>210</td><td>−15</td><td>0〜60</td><td>デパート</td></tr></table>
+    <p class="part-desc">モーター表面に付ける金属板。発熱を抑える。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">れいきゃくファン</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>発熱度</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>0.5</td><td>210</td><td>−25</td><td>0〜60</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">風を吹き付け、加熱したモーターの温度を下げる。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ペルチェクーラー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>発熱度</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>6</td><td>0.7</td><td>210</td><td>−35</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">コンピュータチップ用電動扇風機。モーターの発熱を抑える。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">すいれいクーラー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>発熱度</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>1.0</td><td>210</td><td>−50</td><td>0〜60</td><td>トイランド</td></tr></table>
+    <p class="part-desc">水の力で強力に温度を下げる。効果は高いが重い。</p>
+  </div></div>
+
+  <h3 class="blk2">節電系</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">エレクトロコンデンサ</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>0.2</td><td>210</td><td>−10</td><td>0〜60</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">電気の流れを正常化し、消費電気を抑える。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">メガコンデンサ</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>消費電気</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>0.4</td><td>210</td><td>−20</td><td>0〜60</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">消費電気を大幅に抑え、電池の寿命を延ばす。</p>
+  </div></div>
+
+  <h3 class="blk2">モーター回転数UP系</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">リニヤブースター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>消費電気</th><th>回転数</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>0.4</td><td>210</td><td>4</td><td>5</td><td>0〜65</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">磁石の力でモーターの回転数をアップさせる。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">メガリニヤブースター</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>消費電気</th><th>回転数</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>5</td><td>0.5</td><td>210</td><td>9</td><td>10</td><td>0〜60</td><td>大神模型店</td></tr></table>
+    <p class="part-desc">リニヤブースターの強化版。回転数をさらに引き上げる。</p>
+  </div></div>
+
+  <h3 class="blk2">モータートルクUP系</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">エレクトリックターボ</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>消費電気</th><th>トルク</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>3</td><td>0.2</td><td>210</td><td>2</td><td>9</td><td>0〜60</td><td>スピード模型店</td></tr></table>
+    <p class="part-desc">土屋理論を応用、モーターのトルクを上昇させる。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">メガエレクトロターボ</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>消費電気</th><th>トルク</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>0.4</td><td>210</td><td>4</td><td>17</td><td>0〜60</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">トルク上昇率を大幅に高めた強力ターボパーツ。</p>
+  </div></div>
+
+  <h3 class="blk2">でんちパワーUP系</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スーパーチャージャー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>消費電気</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>0.2</td><td>210</td><td>4</td><td>7</td><td>0〜65</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">電気消費と引き換えに、電池のパワーをアップ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">メガチャージャー</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>耐久度</th><th>消費電気</th><th>パワー</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>0.4</td><td>210</td><td>9</td><td>15</td><td>0〜60</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">電池のパワーが飛躍的に上昇する、最後の切り札的パーツ。</p>
+  </div></div>
+
+  <h2 class="blk" id="tire">■ タイヤ</h2>
+  <div class="note">📷 公式ガイドブックp.102-105の写真から転記(2026/07/28分)。オン/オフ/デフは○=対応、×=非対応です。特徴欄は本文そのままではなく独自の一言コメントです。</div>
+
+  <h3 class="blk2">基本タイヤ(Lv1)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ゴムタイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.0</td><td>7</td><td>135</td><td>50</td><td>○</td><td>○</td><td>×</td><td>0〜70</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">どんな路面にも対応できるオールマイティタイヤ。耐久度も高い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ゴムタイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.0</td><td>7</td><td>135</td><td>50</td><td>○</td><td>○</td><td>×</td><td>0〜70</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">高速セッティングにはこちらのLサイズが向く。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スポンジタイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.0</td><td>7</td><td>125</td><td>57</td><td>○</td><td>×</td><td>×</td><td>0〜70</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">グリップ力が高い、オンロード専用タイヤ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">スポンジタイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.0</td><td>7</td><td>125</td><td>57</td><td>○</td><td>×</td><td>×</td><td>0〜70</td><td>おもちゃのナガイ</td></tr></table>
+    <p class="part-desc">なめらかなオンロードで性能を発揮する。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ラリータイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.0</td><td>7</td><td>125</td><td>57</td><td>×</td><td>○</td><td>×</td><td>0〜70</td><td>デパート</td></tr></table>
+    <p class="part-desc">でこぼこ形状が荒れた路面をキャッチ。オフロード専用。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ラリータイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.0</td><td>7</td><td>125</td><td>57</td><td>×</td><td>○</td><td>×</td><td>0〜70</td><td>デパート</td></tr></table>
+    <p class="part-desc">グリップ力も高く、オフロードのスピードセッティング向け。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">グングンタイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.0</td><td>7</td><td>30</td><td>24</td><td>○</td><td>○</td><td>×</td><td>70〜99</td><td>デパート</td></tr></table>
+    <p class="part-desc">使い込むほどグリップ力が上がる。最高時はグリップ力80。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">グングンタイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.0</td><td>7</td><td>30</td><td>24</td><td>○</td><td>○</td><td>×</td><td>70〜99</td><td>デパート</td></tr></table>
+    <p class="part-desc">性能は高いが耐久度が極端に低い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ネオゴムタイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.5</td><td>7</td><td>155</td><td>65</td><td>○</td><td>○</td><td>×</td><td>0〜70</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">路面を選ばず、耐久性も高いゴムタイヤの改良版。</p>
+  </div></div>
+
+  <h3 class="blk2">中級タイヤ(Lv1〜4)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ネオゴムタイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.5</td><td>7</td><td>155</td><td>65</td><td>○</td><td>○</td><td>×</td><td>0〜70</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">ゴム系タイヤはピットインの必要性を減らしてくれる。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">レストンタイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.5</td><td>7</td><td>145</td><td>72</td><td>○</td><td>×</td><td>×</td><td>0〜70</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">オンロードでは強力なグリップ力で加速性を増す。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">レストンタイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.5</td><td>7</td><td>145</td><td>72</td><td>○</td><td>×</td><td>×</td><td>0〜70</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">レストンスポンジ製、グリップ力のあるタイヤ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ネオラリータイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.5</td><td>7</td><td>145</td><td>72</td><td>×</td><td>○</td><td>×</td><td>0〜70</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">荒れた路面にしっかりグリップするオフロード専用タイヤ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ネオラリータイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.5</td><td>7</td><td>145</td><td>72</td><td>×</td><td>○</td><td>×</td><td>0〜70</td><td>土屋模型店</td></tr></table>
+    <p class="part-desc">オフロードの坂道も安心。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">SPゴムタイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>6.0</td><td>6</td><td>180</td><td>80</td><td>○</td><td>○</td><td>×</td><td>0〜70</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">耐久性がグンとアップしたオールマイティタイヤ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">SPゴムタイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>6.0</td><td>6</td><td>180</td><td>80</td><td>○</td><td>○</td><td>×</td><td>0〜70</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">どんな路面でも優れたグリップ力を発揮。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">SPスポンジタイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>6.0</td><td>6</td><td>175</td><td>87</td><td>○</td><td>×</td><td>×</td><td>0〜70</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">路面になじむグリップ力の、ハイグレードなオンロード専用タイヤ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">SPスポンジタイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>6.0</td><td>6</td><td>175</td><td>87</td><td>○</td><td>×</td><td>×</td><td>0〜70</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">オンロードの直線で確実に路面をとらえる。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">SPラリータイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>6.0</td><td>6</td><td>175</td><td>87</td><td>×</td><td>○</td><td>×</td><td>0〜70</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">でこぼこの路面でも確実にグリップする。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">SPラリータイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>4</td><td>6.0</td><td>6</td><td>175</td><td>87</td><td>×</td><td>○</td><td>×</td><td>0〜70</td><td>佐上模型店</td></tr></table>
+    <p class="part-desc">耐久度もそれなりにあり、オフロードが続いても大丈夫。</p>
+  </div></div>
+
+  <h3 class="blk2">上級タイヤ(Lv7)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">QゴムタイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>6.5</td><td>6</td><td>200</td><td>95</td><td>○</td><td>○</td><td>×</td><td>0〜70</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">最高クラスのゴムタイヤ。耐久度も高く、どんな路面もガンガン走る。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">QゴムタイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>6.5</td><td>6</td><td>200</td><td>95</td><td>○</td><td>○</td><td>×</td><td>0〜70</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">オンロードかオフロードか迷ったらこのタイヤ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">QタイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>6.5</td><td>6</td><td>195</td><td>102</td><td>○</td><td>×</td><td>×</td><td>0〜70</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">オンロードでの走りを極めた、高品質なゴムタイヤ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">QタイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>6.5</td><td>6</td><td>195</td><td>102</td><td>○</td><td>×</td><td>×</td><td>0〜70</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">確かなグリップ力でオフロードコースを爆走。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">QラリータイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>6.5</td><td>6</td><td>195</td><td>102</td><td>×</td><td>○</td><td>×</td><td>0〜70</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">トップクラスのオフロード専用タイヤ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">QラリータイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>7</td><td>6.5</td><td>6</td><td>195</td><td>102</td><td>×</td><td>○</td><td>×</td><td>0〜70</td><td>学園購買部</td></tr></table>
+    <p class="part-desc">抜群のグリップ力で荒れた路面をものともしない。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">SPグングンタイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.5</td><td>6</td><td>90</td><td>33</td><td>○</td><td>○</td><td>×</td><td>70〜99</td><td>トイランド</td></tr></table>
+    <p class="part-desc">パーツ年齢70超でグリップ力112に達するゴム系タイヤ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">SPグングンタイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.5</td><td>6</td><td>90</td><td>33</td><td>○</td><td>○</td><td>×</td><td>70〜99</td><td>トイランド</td></tr></table>
+    <p class="part-desc">どんな路面にも対応する、グングンタイヤの改良版。</p>
+  </div></div>
+
+  <h3 class="blk2">特殊入手パーツ(変化パーツ／シルバー・ゴールド)</h3>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">TタイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.5</td><td>4</td><td>220</td><td>112</td><td>○</td><td>×</td><td>×</td><td>?</td><td>変化パーツ</td></tr></table>
+    <p class="part-desc">TRFが自信を持ってすすめる、超高性能オンロードタイヤ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">TタイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.5</td><td>4</td><td>220</td><td>112</td><td>○</td><td>×</td><td>×</td><td>?</td><td>変化パーツ</td></tr></table>
+    <p class="part-desc">TRFが作った最強のオンロードタイヤ。完璧なグリップ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ダークタイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.5</td><td>6</td><td>220</td><td>112</td><td>×</td><td>○</td><td>×</td><td>?</td><td>変化パーツ</td></tr></table>
+    <p class="part-desc">大神博士が開発したオフロードタイヤ。耐久度が極めて高い。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ダークタイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.5</td><td>6</td><td>220</td><td>112</td><td>×</td><td>○</td><td>×</td><td>?</td><td>変化パーツ</td></tr></table>
+    <p class="part-desc">圧倒的なグリップ力を持った、大神博士作のオフロードタイヤ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">シルバータイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.5</td><td>6</td><td>150</td><td>80</td><td>○</td><td>○</td><td>×</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">性能のバランスが取れた、オールマイティなタイヤ。→<a href="upgrade.html">パーツ強化について</a></p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">シルバータイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>1</td><td>5.5</td><td>6</td><td>150</td><td>80</td><td>○</td><td>○</td><td>×</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">耐久度、グリップ力ともに高品質な、路面を選ばないタイヤ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ゴールドタイヤS</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.5</td><td>10</td><td>210</td><td>117</td><td>○</td><td>×</td><td>×</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">オンロードでは究極のグリップ力を誇るスペシャルパーツ。</p>
+  </div></div>
+
+  <div class="part-card"><div class="part-img"><span class="ph-mark">🖼</span>画像<br>準備中</div><div class="part-info">
+    <div class="part-name">ゴールドタイヤL</div>
+    <table class="dat mini"><tr><th>Lv</th><th>WT</th><th>強化数</th><th>耐久度</th><th>グリップ力</th><th>オン</th><th>オフ</th><th>デフ</th><th>パーツ年齢</th><th>販売店</th></tr>
+    <tr><td>8</td><td>6.5</td><td>10</td><td>210</td><td>117</td><td>○</td><td>×</td><td>×</td><td>?</td><td>(店頭販売なし)</td></tr></table>
+    <p class="part-desc">無限の可能性を秘めた、超高性能オンロードタイヤ。</p>
+  </div></div>
+
+  <h2 class="blk" id="material">■ 素材</h2>
+  <div class="note">📷 公式ガイドブックp.106-109、および適用パーツ・効果数値の一覧表(p.110-111)の写真から転記(2026/07/28分)。素材は「鉄心先生のかまど」でパーツ強化に使う消費アイテムです(→<a href="upgrade.html">パーツ強化について</a>)。「適用パーツ」は強化できるパーツの種類、「効果」は強化1回あたりの数値変化です。「補充に必要なレース数」は1個補充するのに必要なレース数の目安です。</div>
+  <div class="note" style="background:#eef6f0;border-color:#8fae9a;color:#1f5c37;">適用パーツの略号：ウ=ウイング、バ=バンパー、リ=リヤー、サ=サイド、ロ=ローラー、で=でんち、モ=モーター、オ=オプション、タ=タイヤ</div>
+
+  <h3 class="blk2">基本金属(ウ/バ/リ/サ/ロ/モ/タ 共通)</h3>
+  <table class="mat">
+    <tr><th>素材名</th><th>適用パーツ</th><th>効果</th><th>入手時期</th><th>補充<br>レース数</th></tr>
+    <tr><td>スチール</td><td>ウ・バ・リ・サ・ロ・モ・タ</td><td>重量+0.1、耐久度+4、発熱度−6</td><td>鉄心先生に勝ったあと</td><td class="num">0.5</td></tr>
+    <tr><td>ステンレス</td><td>ウ・バ・リ・サ・ロ・モ・タ</td><td>重量+0.2、耐久度+8、発熱度−8</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">1.0</td></tr>
+    <tr><td>アルミ</td><td>ウ・バ・リ・サ・ロ・モ・タ</td><td>重量−0.2、耐久度−4、発熱度+4</td><td>鉄心先生に勝ったあと</td><td class="num">0.5</td></tr>
+    <tr><td>セラミック</td><td>ウ・バ・リ・サ・ロ・モ・タ</td><td>重量−0.4、耐久度−8、発熱度+6</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">1.0</td></tr>
+    <tr><td>チタン</td><td>ウ・バ・リ・サ・ロ・モ・タ</td><td>重量+0.1、耐久度+6、安定性+1、発熱度−2</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">5.0</td></tr>
+    <tr><td>ZMC</td><td>ウ・バ・リ・サ・ロ・モ・タ</td><td>重量+0.1、耐久度+10、安定性+2、発熱度+2</td><td>鍾乳洞での戦いに勝ったあと</td><td class="num">20.0</td></tr>
+  </table>
+  <p class="note">※発熱度はモーターにのみ意味を持つ項目です。他パーツに使う場合は重量・耐久度(・安定性)のみ反映されます。</p>
+
+  <h3 class="blk2">ゴム系(タイヤ専用)</h3>
+  <table class="mat">
+    <tr><th>素材名</th><th>適用パーツ</th><th>効果</th><th>入手時期</th><th>補充<br>レース数</th></tr>
+    <tr><td>ゴム</td><td>タ</td><td>重量+0.1、耐久度−4、グリップ+2</td><td>鉄心先生に勝ったあと</td><td class="num">0.5</td></tr>
+    <tr><td>きょうかゴム</td><td>タ</td><td>重量+0.2、耐久度−8、グリップ+4</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">1.0</td></tr>
+  </table>
+
+  <h3 class="blk2">ギア系(モーター専用)</h3>
+  <table class="mat">
+    <tr><th>素材名</th><th>適用パーツ</th><th>効果</th><th>入手時期</th><th>補充<br>レース数</th></tr>
+    <tr><td>スピードギア</td><td>モ</td><td>回転数+2、トルク−1</td><td>鉄心先生に勝ったあと</td><td class="num">0.5</td></tr>
+    <tr><td>トルクギア</td><td>モ</td><td>回転数−1、トルク+2</td><td>鉄心先生に勝ったあと</td><td class="num">0.5</td></tr>
+    <tr><td>デュアルギア</td><td>モ</td><td>回転数+2、トルク+2、発熱度+6</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">1.0</td></tr>
+    <tr><td>デュアルギアSP</td><td>モ</td><td>回転数+3、トルク+3、発熱度+10</td><td>鍾乳洞での戦いに勝ったあと</td><td class="num">5.0</td></tr>
+    <tr><td>ダウンギア</td><td>モ</td><td>回転数−1、トルク−1、発熱度−2</td><td>リッチマンカップに勝ったあと</td><td class="num">1.0</td></tr>
+    <tr><td>けいりょうTZギア</td><td>モ</td><td>回転数+4、トルク−2</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">1.0</td></tr>
+    <tr><td>SPトルクギア</td><td>モ</td><td>回転数−2、トルク+4</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">1.0</td></tr>
+  </table>
+
+  <h3 class="blk2">パテ系・安定性チップ系(ウ/バ/リ/サ/ロ/モ 共通)</h3>
+  <table class="mat">
+    <tr><th>素材名</th><th>適用パーツ</th><th>効果</th><th>入手時期</th><th>補充<br>レース数</th></tr>
+    <tr><td>スペーサー</td><td>ウ・バ・リ・サ・ロ・モ</td><td>重量+0.1、安定性+1</td><td>鉄心先生に勝ったあと</td><td class="num">0.5</td></tr>
+    <tr><td>ビッグスペーサー</td><td>ウ・バ・リ・サ・ロ・モ</td><td>重量+0.2、安定性+3</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">1.0</td></tr>
+    <tr><td>セーフティチップ</td><td>ウ・バ・リ・サ・ロ・モ</td><td>耐久度−6、安定性+1</td><td>鉄心先生に勝ったあと</td><td class="num">0.5</td></tr>
+    <tr><td>SPセーフティチップ</td><td>ウ・バ・リ・サ・ロ・モ</td><td>耐久度−10、安定性+2</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">1.0</td></tr>
+  </table>
+
+  <h3 class="blk2">空力・ダウンフォースチップ系(ウ/バ/リ/サ/ロ/モ 共通)</h3>
+  <table class="mat">
+    <tr><th>素材名</th><th>適用パーツ</th><th>効果</th><th>入手時期</th><th>補充<br>レース数</th></tr>
+    <tr><td>くうりきチップ</td><td>ウ・バ・リ・サ・ロ・モ</td><td>空力性能+2、DF−2</td><td>リッチマンカップに勝ったあと</td><td class="num">0.5</td></tr>
+    <tr><td>SPくうりきチップ</td><td>ウ・バ・リ・サ・ロ・モ</td><td>空力性能+3、DF−3</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">1.0</td></tr>
+    <tr><td>ダウンフォースチップ</td><td>ウ・バ・リ・サ・ロ・モ</td><td>空力性能−2、DF+3</td><td>リッチマンカップに勝ったあと</td><td class="num">0.5</td></tr>
+    <tr><td>ダウンフォースチップZ</td><td>ウ・バ・リ・サ・ロ・モ</td><td>空力性能−3、DF+4</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">1.0</td></tr>
+    <tr><td>エアロチップ</td><td>ウ・バ・リ・サ・ロ・モ</td><td>耐久度−6、安定性−1、空力性能+1、DF+2</td><td>リッチマンカップに勝ったあと</td><td class="num">1.0</td></tr>
+    <tr><td>SPエアロチップ</td><td>ウ・バ・リ・サ・ロ・モ</td><td>耐久度−10、安定性−1、空力性能+2、DF+4</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">1.0</td></tr>
+  </table>
+
+  <h3 class="blk2">でんち強化チップ系(でんち専用)</h3>
+  <table class="mat">
+    <tr><th>素材名</th><th>適用パーツ</th><th>効果</th><th>入手時期</th><th>補充<br>レース数</th></tr>
+    <tr><td>ストレージチップ</td><td>で</td><td>容量+6、パワー−1</td><td>リッチマンカップに勝ったあと</td><td class="num">0.5</td></tr>
+    <tr><td>ダブルストレージチップ</td><td>で</td><td>容量+10、パワー−3</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">1.0</td></tr>
+    <tr><td>パワーチップ</td><td>で</td><td>容量−3、パワー+2</td><td>リッチマンカップに勝ったあと</td><td class="num">0.5</td></tr>
+    <tr><td>ハイパワーチップ</td><td>で</td><td>容量−6、パワー+4</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">1.0</td></tr>
+  </table>
+
+  <h3 class="blk2">ベアリング系(ローラー専用)</h3>
+  <table class="mat">
+    <tr><th>素材名</th><th>適用パーツ</th><th>効果</th><th>入手時期</th><th>補充<br>レース数</th></tr>
+    <tr><td>ベアリング</td><td>ロ</td><td>耐久度−1、摩擦力−10</td><td>鉄心先生に勝ったあと</td><td class="num">0.5</td></tr>
+    <tr><td>ハイブリッドベアリング</td><td>ロ</td><td>耐久度−2、摩擦力−20</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">1.0</td></tr>
+  </table>
+
+  <h3 class="blk2">グリップアップ系(タイヤ専用)</h3>
+  <table class="mat">
+    <tr><th>素材名</th><th>適用パーツ</th><th>効果</th><th>入手時期</th><th>補充<br>レース数</th></tr>
+    <tr><td>グリップアップ</td><td>タ</td><td>重量+0.2、グリップ+3</td><td>鉄心先生に勝ったあと</td><td class="num">0.5</td></tr>
+    <tr><td>SPグリップアップ</td><td>タ</td><td>重量+0.4、グリップ+6</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">1.0</td></tr>
+  </table>
+
+  <h3 class="blk2">ホイール系(タイヤ専用・デフ切替)</h3>
+  <table class="mat">
+    <tr><th>素材名</th><th>適用パーツ</th><th>効果</th><th>入手時期</th><th>補充<br>レース数</th></tr>
+    <tr><td>ノーマルホイール</td><td>タ</td><td>デフを×にする</td><td>リッチマンカップに勝ったあと</td><td class="num">2.0</td></tr>
+    <tr><td>デフホイール</td><td>タ</td><td>デフを○にする</td><td>リッチマンカップに勝ったあと</td><td class="num">10.0</td></tr>
+  </table>
+
+  <h3 class="blk2">特殊素材(全パーツ対応)</h3>
+  <table class="mat">
+    <tr><th>素材名</th><th>適用パーツ</th><th>効果</th><th>入手時期</th><th>補充<br>レース数</th></tr>
+    <tr><td>リバースチップ</td><td>全パーツ</td><td>重量+0.2、全てのパラメーターを初期値に戻す</td><td>ウインターカップに勝ったあと</td><td class="num">10.0</td></tr>
+    <tr><td>エボクリスタル</td><td>全パーツ</td><td>強化の効果を少しだけ上昇(下げる場合もある)</td><td>ウインターカップに勝ったあと</td><td class="num">12.5</td></tr>
+    <tr><td>スーパーエボクリスタル</td><td>全パーツ</td><td>強化の効果を大きく上昇(下げる場合もある)</td><td>大神研究所で初めてJに勝ったあと</td><td class="num">50.0</td></tr>
+    <tr><td>メガエボクリスタル</td><td>全パーツ</td><td>強化の効果をかなり大きく上昇(下げる場合もある)</td><td>鍾乳洞での戦いに勝ったあと</td><td class="num">100.0</td></tr>
+  </table>
+
+
+
+</div>
+
+<div id="ftr">
+  © 2026 ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式) ／ 「ミニ四駆」はタミヤ株式会社の登録商標です。
+</div>
+
+</body>
+</html>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>攻略チャート(通常) - ミニ四駆GB Let's&amp;Go!! 徹底攻略</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;background:#EDEDED;color:#111;font-family:"MS PGothic","Hiragino Kaku Gothic ProN",sans-serif;font-size:13px;}
+  a{color:#0000EE;}
+  a:visited{color:#551A8B;}
+  a:hover{color:#CC0000;}
+  #siteband{background:#1B3358;color:#fff;padding:6px 14px;font-size:11px;display:flex;justify-content:space-between;}
+  #siteband a{color:#cfe0f5;margin-left:10px;}
+  #navstrip{background:#fff;border-bottom:2px solid #1B3358;padding:8px 14px;font-size:12px;font-weight:bold;}
+  #navstrip a{margin-right:10px;white-space:nowrap;}
+  #navstrip .sep{color:#999;margin-right:10px;}
+  #wrap{max-width:900px;margin:12px auto;background:#fff;border:1px solid #999;padding:14px 18px 26px;}
+  .breadcrumb{font-size:11px;color:#555;margin-bottom:10px;}
+  h1.page-title{font-size:19px;border-bottom:3px solid #1B3358;padding-bottom:6px;margin:0 0 4px;}
+  p.page-desc{font-size:12.5px;color:#444;margin:0 0 10px;}
+  .note{background:#FFF9DB;border:1px dashed #C9AF52;padding:6px 9px;font-size:11.5px;color:#665500;margin:8px 0;}
+  #toc{background:#F4F6F8;border:1px solid #ccc;padding:8px 12px;font-size:11.5px;margin-bottom:16px;}
+  #toc .hd{font-weight:bold;margin-bottom:4px;}
+  #toc ol{margin:0;padding-left:18px;columns:2;}
+  h2.part{background:#1B3358;color:#fff;font-size:15px;padding:7px 10px;margin:30px 0 8px;}
+  h3.chap{border-left:5px solid #1B3358;padding-left:7px;font-size:13px;margin:16px 0 6px;background:#F4F6F8;padding-top:3px;padding-bottom:3px;}
+  h4.spot{font-size:12.5px;margin:10px 0 4px;color:#1B3358;}
+  ul.acts{margin:2px 0 8px;padding-left:20px;font-size:12.5px;}
+  ul.acts li{margin-bottom:2px;}
+  ul.buy{margin:2px 0 8px;padding-left:20px;font-size:12px;columns:2;}
+  table.race{border-collapse:collapse;width:100%;font-size:12px;margin:6px 0 10px;}
+  table.race th,table.race td{border:1px solid #999;padding:4px 6px;text-align:left;vertical-align:top;}
+  table.race th{background:#DCE4EC;}
+  .boss{background:#FFF0E8 !important;font-weight:bold;}
+  table.setting{border-collapse:collapse;width:100%;font-size:11.5px;margin:6px 0 10px;}
+  table.setting th,table.setting td{border:1px solid #999;padding:3px 6px;text-align:left;}
+  table.setting th{background:#E8EEF3;width:16%;white-space:nowrap;}
+  table.setting td{width:34%;}
+  .settei-title{background:#2f7d4f;color:#fff;font-size:12px;padding:4px 8px;margin:10px 0 0;}
+  table.info{border-collapse:collapse;width:100%;font-size:11px;margin:6px 0;}
+  table.info th,table.info td{border:1px solid #999;padding:3px 6px;text-align:left;}
+  table.info th{background:#FFF0E0;width:15%;white-space:nowrap;}
+  #ftr{max-width:900px;margin:0 auto 30px;text-align:center;font-size:10.5px;color:#666;}
+</style>
+</head>
+<body>
+
+<div id="siteband">
+  <span>ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式)</span>
+  <span><a href="index.html">トップへ戻る</a></span>
+</div>
+
+<div id="navstrip">
+  <a href="index.html">TOP</a><span class="sep">|</span>
+  <a href="about.html">このゲームについて</a><span class="sep">|</span>
+  <a href="chart.html">攻略チャート(RTA)</a><span class="sep">|</span>
+  <a href="walkthrough.html">攻略チャート(通常)</a><span class="sep">|</span>
+  <a href="parts.html">パーツ図鑑</a><span class="sep">|</span>
+  <a href="upgrade.html">パーツ強化について</a><span class="sep">|</span>
+  <a href="shops.html">取扱店</a><span class="sep">|</span>
+  <a href="towns.html">街・マップ</a><span class="sep">|</span>
+  <a href="characters.html">キャラ図鑑</a><span class="sep">|</span>
+  <a href="courses.html">コース</a><span class="sep">|</span>
+  <a href="events.html">大会一覧</a><span class="sep">|</span>
+  <a href="comm.html">通信について</a><span class="sep">|</span>
+  <a href="system.html">システム解説</a><span class="sep">|</span>
+  <a href="tips.html">小技・裏技</a><span class="sep">|</span>
+  <a href="glossary.html">用語集</a>
+</div>
+
+<div id="wrap">
+  <div class="breadcrumb"><a href="index.html">TOP</a> &gt; 攻略チャート(通常)</div>
+
+  <h1 class="page-title">攻略チャート(通常版)</h1>
+  <p class="page-desc">最速を狙う<a href="chart.html">RTAチャート</a>とは別に、寄り道やおすすめセッティングも含めた「じっくり進める」ための攻略チャートです。2冊の攻略本(公式ガイドブック／オフィシャル常勝ガイド)のストーリー攻略パートをもとに、独自の言葉でまとめ直しています。</p>
+  <div class="note">📷 各大会の「大会情報」と対戦相手・獲得賞金は、オフィシャル常勝ガイドの「グランドスラムへの道」に記載の一覧をもとにしています(2026/07/28更新)。</div>
+
+  <div id="toc">
+    <div class="hd">章目次</div>
+    <ol>
+      <li><a href="#p1">第1部：オータムカップ編</a></li>
+      <li><a href="#p2">第2部：ウインターカップ編</a></li>
+      <li><a href="#p3">第3部：スプリングカップ編</a></li>
+      <li><a href="#p4">第4部：サマーカップ編</a></li>
+      <li><a href="#after">エンディング後のお楽しみ</a></li>
+      <li><a href="#tips">ワンランク上のレーサーになるために</a></li>
+    </ol>
+  </div>
+
+  <!-- ============ 第1部 ============ -->
+  <h2 class="part" id="p1">第1部：オータムカップ編</h2>
+
+  <h3 class="chap">①ミニ四駆を購入しよう</h3>
+  <ul class="acts">
+    <li>自宅→おもちゃのナガイへ。ミニ四駆を1台購入する(5000G)</li>
+    <li>選べるマシン：トライダガーZMC／スピンコブラ／サイクロンマグナム／ハリケーンソニック／セイバー600(各600G)</li>
+    <li>メインで使うならサイクロンマグナムがおすすめとのこと</li>
+    <li>お金がなくなっても自宅で毎日こづかいがもらえる</li>
+  </ul>
+
+  <h3 class="chap">②はじめてのレース参戦</h3>
+  <table class="info">
+    <tr><th>大会名</th><td>学校レース</td><th>コース種類</th><td>1</td></tr>
+    <tr><th>賞金／賞品</th><td>なし／なし</td><th>トロフィー</th><td>×</td></tr>
+  </table>
+  <ul class="acts">
+    <li>学校で「まもる」「しょうた」と話し、草レース(オーバルコース2周)</li>
+    <li>フライングに注意。3回フライングで失格になる</li>
+    <li>①まもる(230G)→②しょうた(230G)。2勝すると「まこと」が登場し、おもちゃのナガイカップに誘われる</li>
+  </ul>
+  <h4 class="spot">コースガイド①：オーバルコース</h4>
+  <p>直線のスピードで勝負するクセのない周回コース。比較的長い4本の直線を意識したスピード重視のセッティングがおすすめ。ただしスピードを上げすぎるとコースアウトしやすいので注意。</p>
+
+  <h3 class="chap">③ナガイカップに挑戦</h3>
+  <table class="info">
+    <tr><th>大会名</th><td>おもちゃのナガイカップ</td><th>コース種類</th><td>1</td></tr>
+    <tr><th>賞金／賞品</th><td>750G／コーナリングコース1</td><th>トロフィー</th><td>○</td></tr>
+  </table>
+  <ul class="acts">
+    <li>街のレース場で開催。2周走って速さを競う、パーツの耐久度が重要になるので消耗品は多めに買っておこう</li>
+    <li>①たくや(230G)→②ケンタ(300G)→③まこと。まこと戦は軽量セッティングが走りやすい</li>
+    <li>優勝するとコーナリングコース①がもらえ、以降自宅でテスト走行できるようになる</li>
+  </ul>
+  <h4 class="spot">コースガイド②：コーナリングコース①</h4>
+  <p>ローラーの摩擦力がカギ。コーナーでのスピードが重要になる。摩擦力が強すぎるとスピードが落ち、弱すぎるとコースアウトしてしまうので、前後のローラーの大きさなどを変えてベストなセッティングを探そう。</p>
+
+  <div class="settei-title">ナガイカップ おすすめセッティング</div>
+  <table class="setting">
+    <tr><th>ウイング</th><td>エアロウイング</td><th>バンパー</th><td>エアロバンパー</td></tr>
+    <tr><th>リヤー</th><td>リヤーステー</td><th>フロントローラー右/左</th><td>ローラーL</td></tr>
+    <tr><th>リヤーローラー右/左</th><td>ローラーS</td><th>フロントタイヤ</th><td>スポンジタイヤL</td></tr>
+    <tr><th>モーター</th><td>ミニモーター</td><th>サイド</th><td>―</td></tr>
+    <tr><th>電池</th><td>マンガンでんち</td><th>リヤータイヤ</th><td>スポンジタイヤL</td></tr>
+  </table>
+  <p class="page-desc">すべて新品パーツのままで、パーツ交換もピットインも一切なしで優勝できるとのこと。</p>
+
+  <h3 class="chap">④JET模型店オープン、黒沢登場</h3>
+  <table class="info">
+    <tr><th>大会名</th><td>公園レース</td><th>コース種類</th><td>1</td></tr>
+    <tr><th>賞金／賞品</th><td>1020G／なし</td><th>トロフィー</th><td>×</td></tr>
+  </table>
+  <ul class="acts">
+    <li>公園レースの相手は①ケンタ(260G)→②たくや(260G)</li>
+    <li>公園で草レースをしていると、黒沢太に「なわばりを荒らした」といいがかりをつけられる(ブラックセイバー軍団のリーダー)</li>
+    <li>黒沢に2勝すると、JETカップで勝負するようけしかけられる</li>
+    <li>JET模型店で対戦・草レースに備えてパーツを購入(スポンジタイヤL、レブチューンモーター、トルクチューンモーター、ハードバンパー、スピードバンパー、ダンパーサイドなど)</li>
+  </ul>
+
+  <h3 class="chap">⑤JETカップ開幕(黒沢戦)</h3>
+  <table class="info">
+    <tr><th>大会名</th><td>JETカップ</td><th>コース種類</th><td>1・2</td></tr>
+    <tr><th>賞金／賞品</th><td>1020G／オフロードコース1</td><th>トロフィー</th><td>○</td></tr>
+  </table>
+  <ul class="acts">
+    <li>出場者はブラックセイバー軍団ばかり。ほかの参加者を脅して出場させなくしたらしい</li>
+    <li>①ロクカワ(260G)→②ティモタ(340G)→③マサ(430G)→④黒沢(ブラックセイバー)</li>
+    <li>黒沢戦は3周勝負になるので、ピットインをうまく活用しよう</li>
+    <li>オーバルコースで初めてコースセレクトが登場する。黒沢軍団は直線が得意なので、あらかじめオーバルコースで走り込んでおくと対策になる</li>
+  </ul>
+  <h4 class="spot">コースガイド③：オフロードコース①</h4>
+  <p>下り直後のコーナーが危険なコース。オンロードに比べてトルクが重要になり、安定性が悪いとそのままコースアウトしてしまう。</p>
+
+  <div class="settei-title">JETカップ おすすめセッティング</div>
+  <table class="setting">
+    <tr><th>ウイング</th><td>エアロウイングベータ</td><th>バンパー</th><td>エアロバンパー</td></tr>
+    <tr><th>リヤー</th><td>リヤースキッド</td><th>フロントローラー右/左</th><td>スタビライザーポールS</td></tr>
+    <tr><th>リヤーローラー右/左</th><td>スムースローラーS</td><th>フロントタイヤ</th><td>スポンジタイヤL</td></tr>
+    <tr><th>モーター</th><td>レブチューンモーター</td><th>サイド</th><td>―</td></tr>
+    <tr><th>電池</th><td>アルカリでんち</td><th>リヤータイヤ</th><td>スポンジタイヤL</td></tr>
+  </table>
+
+  <h3 class="chap">⑥土屋博士との出会い</h3>
+  <p>ここまでの活躍が認められ、土屋博士から声をかけられる。オータムカップへの出場を誘われる。</p>
+
+  <h3 class="chap">⑦東京進出</h3>
+  <ul class="acts">
+    <li>東京MAPには東京タワー・都庁ビル・九十九屋・トイランド・デパート・バス停・ミニ四駆タワー・スピード模型店などがある</li>
+    <li>デパートとミニ四駆タワーの2か所は特に重要。デパートでパーツ購入、ミニ四駆タワーでパーツ購入とセッティング研究、草レースで実戦性能を確認しておこう</li>
+    <li>ストーリーが進むと開店したりレースが開催されたりする場所も出てくる。今は何もない場所も後で意味を持つことがある</li>
+  </ul>
+
+  <h3 class="chap">⑧オータムカップ本戦</h3>
+  <table class="info">
+    <tr><th>大会名</th><td>オータムカップ</td><th>コース種類</th><td>1・2・3</td></tr>
+    <tr><th>賞金／賞品</th><td>1400G／コーナリングコース+横2段ボックス+シルバーパーツ</td><th>トロフィー</th><td>○</td></tr>
+  </table>
+  <ul class="acts">
+    <li>公式レース最初の関門はタイムアタック予選：コーナリングコース①を27秒以内で走る</li>
+    <li>予選を通過したら、自宅に戻ってセーブしておこう</li>
+    <li>初の連戦にそなえ、あえてピットインせずパーツを多めに持つのも作戦のうち</li>
+  </ul>
+  <table class="race">
+    <tr><th>#</th><th>対戦相手</th><th>賞金</th><th>メモ</th></tr>
+    <tr><td>①</td><td>ティモタ</td><td>300G</td><td>ブラックセイバー</td></tr>
+    <tr><td>②</td><td>マサ</td><td>400G</td><td>ブラックセイバー</td></tr>
+    <tr><td>③</td><td>まこと</td><td>500G</td><td>セイバー600</td></tr>
+    <tr class="boss"><td>④</td><td>黒沢</td><td>600G</td><td>ブラックセイバー。直線でのスピード差で勝負が決まる。オーバルコースがおすすめ</td></tr>
+    <tr class="boss"><td>⑤</td><td>藤吉</td><td>―</td><td>スピンコブラ。コーナリングコース①での走りが速く、直線でも分が悪い。オーバルコースを選んで直線で勝負しよう</td></tr>
+  </table>
+  <p>新ライバルとして三国藤吉も参戦。スピンコブラのサドンドリフト走行に注意。</p>
+
+  <div class="settei-title">オータムカップ おすすめセッティング</div>
+  <table class="setting">
+    <tr><th>ウイング</th><td>スピードウイング</td><th>バンパー</th><td>かへんエアロバンパー</td></tr>
+    <tr><th>リヤー</th><td>リヤーエアロステー</td><th>フロントローラー右/左</th><td>ショートスタビローラーS</td></tr>
+    <tr><th>リヤーローラー右/左</th><td>ハイスムースローラーS</td><th>フロントタイヤ</th><td>スポンジタイヤL</td></tr>
+    <tr><th>モーター</th><td>Sダッシュモーター</td><th>サイド</th><td>―</td></tr>
+    <tr><th>電池</th><td>ライトパワー</td><th>リヤータイヤ</th><td>スポンジタイヤL</td></tr>
+  </table>
+  <p class="page-desc">ややオフロードに不安があるが、バランスの取れたセッティング。モーターのパーツ年齢は10前後にしておくとよい。</p>
+
+  <h4 class="spot">コースガイド④：コーナリングコース②</h4>
+  <p>S字やアップダウンが加わったコーナリングコースの発展型。マシンの安定性と、登り坂でもスピードの落ちないトルクが必要になる。ローラーやモーターだけでなく、マシン全体で安定性とトルクを引き出そう。</p>
+
+  <!-- ============ 第2部 ============ -->
+  <h2 class="part" id="p2">第2部：ウインターカップ編</h2>
+
+  <h3 class="chap">①鉄心と対決</h3>
+  <table class="info">
+    <tr><th>大会名</th><td>鉄心レース</td><th>コース種類</th><td>1・2・3・4</td></tr>
+    <tr><th>賞金／賞品</th><td>なし／なし</td><th>トロフィー</th><td>×</td></tr>
+  </table>
+  <ul class="acts">
+    <li>土屋研究所の裏手にある「かまど」で鉄心先生と対面</li>
+    <li>鉄心先生はトライダガーZMCを使用。勝たないとパーツを強化してもらえない</li>
+    <li>勝利すると、真のミニ四レーサーへの第一歩を踏み出したことになる</li>
+  </ul>
+  <div class="note">この時点から、土屋博士の許しが出たレベルのパーツしか使えなくなる。今後もストーリーを進めるたびに使用可能なレベルの上限が上がっていく。</div>
+
+  <h3 class="chap">②強化を試そう</h3>
+  <p>鉄心先生に勝つとパーツ強化が可能になる。強化素材は種類・数ともに豊富にあるが、ひとつのパーツに集中的に強化するほうが効果的。詳しくは<a href="upgrade.html">パーツ強化について</a>を参照。</p>
+
+  <h3 class="chap">③風輪町へゴー</h3>
+  <ul class="acts">
+    <li>風輪町MAPには佐上模型店(まだ準備中)、鷹羽レース場、公園、学校、ゴールド模型店、藤吉の屋敷などがある</li>
+    <li>藤吉が風輪町の模型店のパーツを買い占めてしまったらしい。自宅に届いた招待状で、リッチマンカップへ</li>
+  </ul>
+
+  <h3 class="chap">④苦戦!? リッチマンカップ</h3>
+  <table class="info">
+    <tr><th>大会名</th><td>リッチマンカップ</td><th>コース種類</th><td>1・2・3・4</td></tr>
+    <tr><th>賞金／賞品</th><td>1760G／高速コース</td><th>パーツレベル上限</th><td>2</td></tr>
+    <tr><th>トロフィー</th><td>○</td><th></th><td></td></tr>
+  </table>
+  <table class="race">
+    <tr><th>#</th><th>対戦相手</th><th>賞金</th><th>メモ</th></tr>
+    <tr><td>①</td><td>しょうた</td><td>440G</td><td>セイバー600</td></tr>
+    <tr><td>②</td><td>まもる</td><td>550G</td><td>セイバー600</td></tr>
+    <tr><td>③</td><td>たくや</td><td>660G</td><td>セイバー600</td></tr>
+    <tr><td>④</td><td>ケンタ</td><td>770G</td><td>セイバー600</td></tr>
+    <tr class="boss"><td>⑤</td><td>藤吉</td><td>―</td><td>スピンコブラ。屋敷ではオータムカップの屈辱をはらすべく待っている。コーナーを重視したセッティングで勝負しよう</td></tr>
+  </table>
+  <p>コースセレクトでは必ずコーナリングコースを選ぶのがコツ。リッチマンカップ後、藤吉の屋敷では「チイコ」(ハリケーンソニック)との特別レースにも挑める(賞金1080G)。</p>
+
+  <div class="settei-title">リッチマンカップ おすすめセッティング</div>
+  <table class="setting">
+    <tr><th>ウイング</th><td>ハイスピードウイング</td><th>バンパー</th><td>ダウンフォースバンパー</td></tr>
+    <tr><th>リヤー</th><td>リヤーハイパーステー</td><th>フロントローラー右/左</th><td>セーフローラーS</td></tr>
+    <tr><th>リヤーローラー右/左</th><td>GTローラーS</td><th>フロントタイヤ</th><td>レストンタイヤL</td></tr>
+    <tr><th>モーター</th><td>スペシャルモーター</td><th>サイド</th><td>―</td></tr>
+    <tr><th>電池</th><td>ダッシュアルカリでんち</td><th>リヤータイヤ</th><td>レストンタイヤL</td></tr>
+  </table>
+  <p class="page-desc">オフロードコースが混ざっていればピットインの必要もなくなる。そうならなければゴム系タイヤに履き替えよう。</p>
+
+  <h3 class="chap">⑤鷹羽兄弟と対決</h3>
+  <table class="info">
+    <tr><th>大会名</th><td>鷹羽レース</td><th>コース種類</th><td>1〜5</td></tr>
+    <tr><th>賞金／賞品</th><td>1400G／オフロードコース2</td><th>パーツレベル上限</th><td>2</td></tr>
+    <tr><th>トロフィー</th><td>×</td><th></th><td></td></tr>
+  </table>
+  <table class="race">
+    <tr><th>#</th><th>対戦相手</th><th>賞金</th><th>メモ</th></tr>
+    <tr><td>①</td><td>まもる</td><td>360G</td><td>セイバー600</td></tr>
+    <tr><td>②</td><td>たくや</td><td>480G</td><td>セイバー600</td></tr>
+    <tr><td>③</td><td>ケンタ</td><td>600G</td><td>セイバー600</td></tr>
+    <tr><td>④</td><td>あや</td><td>720G</td><td>セイバー600</td></tr>
+    <tr><td>⑤</td><td>二郎丸</td><td>―</td><td>トライダガーZMC。弟に負けているようではリョウには会えない</td></tr>
+    <tr class="boss"><td>⑥</td><td>リョウ</td><td>―</td><td>トライダガーZMC。有名レーサーだけあってけた違いの強さ</td></tr>
+  </table>
+  <ul class="acts">
+    <li>鷹羽リョウはネオトライダガーZMCを使い、風を味方に戦うレーサー</li>
+    <li>リョウに挑む前に、風輪町の草レース場にも参加しておこう</li>
+  </ul>
+
+  <h3 class="chap">⑥スピード模型店・つくも屋オープン</h3>
+  <ul class="acts">
+    <li>東京マップ右下のスピード模型店。レベル3までのパーツが購入できる</li>
+    <li>つくも屋ではシルバーパーツとの交換ができる(パーツ年齢を99にしたパーツを持ち込む)</li>
+  </ul>
+  <div class="note">パーツ年齢を早く上げるには、いらないパーツを装備したマシンでテスト走行を繰り返すのが一番。</div>
+  <h4 class="spot">コースガイド⑤：高速コース</h4>
+  <p>コースアウトしやすいコース。直線でのスピードが勝敗を左右するが、本当に注意すべきはストレートの先で待ち構えるヘアピンや立体交差。ここでコースアウトしないセッティングが一番のポイント。</p>
+  <h4 class="spot">コースガイド⑥：オフロードコース②</h4>
+  <p>細かいアップダウンとコーナーが連続する超テクニカルコース。モーターのトルクを最大限に引き出すセッティングで攻略したい。登りの頂点でコースアウトするなら、ショックアブソーバの装備も検討しよう。</p>
+
+  <h3 class="chap">⑦ウインターカップ本戦</h3>
+  <table class="info">
+    <tr><th>大会名</th><td>ウインターカップ</td><th>コース種類</th><td>1〜6</td></tr>
+    <tr><th>賞金／賞品</th><td>2080G／横4段ボックス+シルバーパーツ</td><th>パーツレベル上限</th><td>3</td></tr>
+    <tr><th>トロフィー</th><td>○</td><th></th><td></td></tr>
+  </table>
+  <ul class="acts">
+    <li>予選はミニ四駆タワーで開催。オフロードコース①を26秒以内で走るタイムアタック</li>
+    <li>予選会場でリョウ・二郎丸・藤吉のほか、星馬兄弟のレツとゴーも出場することが判明。大会前にマシンを十分パワーアップさせておかないと歯が立たない</li>
+  </ul>
+  <table class="race">
+    <tr><th>#</th><th>対戦相手</th><th>賞金</th><th>メモ</th></tr>
+    <tr><td>①</td><td>二郎丸</td><td>390G</td><td>トライダガーZMC</td></tr>
+    <tr><td>②</td><td>まこと</td><td>520G</td><td>セイバー600</td></tr>
+    <tr class="boss"><td>③</td><td>ゴー</td><td>650G</td><td>サイクロンマグナム。直線に強い豪の初対決</td></tr>
+    <tr><td>④</td><td>藤吉</td><td>780G</td><td>スピンコブラ</td></tr>
+    <tr><td>⑤</td><td>リョウ</td><td>910G</td><td>トライダガーZMC</td></tr>
+    <tr class="boss"><td>⑥</td><td>レツ</td><td>―</td><td>ハリケーンソニックでコーナーを攻める理論派。本戦ラストの相手</td></tr>
+  </table>
+
+  <div class="settei-title">ウインターカップ おすすめセッティング</div>
+  <table class="setting">
+    <tr><th>ウイング</th><td>カナードウイング</td><th>バンパー</th><td>スプラッシュバンパー</td></tr>
+    <tr><th>リヤー</th><td>リヤースピードステー</td><th>フロントローラー右/左</th><td>ロングスタビローラーS</td></tr>
+    <tr><th>リヤーローラー右/左</th><td>GTローラーMK2S</td><th>フロントタイヤ</th><td>レストンタイヤL</td></tr>
+    <tr><th>モーター</th><td>Jダッシュモーター</td><th>サイド</th><td>―</td></tr>
+    <tr><th>電池</th><td>リチウムでんち</td><th>リヤータイヤ</th><td>レストンタイヤL</td></tr>
+    <tr><th>オプション後</th><td>リニアブースター</td><th></th><td></td></tr>
+  </table>
+  <p class="page-desc">オフロードコースが選ばれても、2コースあればゴム系のタイヤに履き替えれば問題ない。</p>
+
+  <div class="note">優勝後、ゴーから「もう一度勝負しよう」と再挑戦の誘いを受ける。ウインターカップ前に「つくも屋」(東京)にも寄っておこう。壊れそうなパーツを強化素材やシルバーパーツと交換してくれる便利な店だ。</div>
+
+  <!-- ============ 第3部 ============ -->
+  <h2 class="part" id="p3">第3部：スプリングカップ編</h2>
+
+  <h3 class="chap">①佐上模型店オープン</h3>
+  <ul class="acts">
+    <li>星馬兄弟と再戦するため、佐上模型店に足を運ぶことになる</li>
+    <li>強力なパーツが大量に入荷している。ベストなセッティングを探そう</li>
+  </ul>
+
+  <h3 class="chap">②クリスタルを入手</h3>
+  <p>鉄心先生のかまどに立ち寄ると、特殊な強化素材「クリスタル」について教えてもらえる。クリスタルはかなり貴重な強化素材なので、無駄使いに注意。強化素材とクリスタルを同時に使うことで、パーツの能力が大きくアップする(→<a href="upgrade.html">パーツ強化について</a>のパターンB参照)。</p>
+
+  <h3 class="chap">③佐上模型店杯</h3>
+  <table class="info">
+    <tr><th>大会名</th><td>佐上模型杯</td><th>コース種類</th><td>1〜6</td></tr>
+    <tr><th>賞金／賞品</th><td>1960G／なし</td><th>パーツレベル上限</th><td>3</td></tr>
+    <tr><th>トロフィー</th><td>○</td><th></th><td></td></tr>
+  </table>
+  <ul class="acts">
+    <li>レツたちを追って佐上模型店に行くと、リョウと二郎丸もレースに参加するために待っていた</li>
+    <li>この大会からレッツ・ゴーボタンが使えるようになる(→<a href="#tips">ワンランク上の解説</a>参照)</li>
+  </ul>
+  <table class="race">
+    <tr><th>#</th><th>対戦相手</th><th>賞金</th><th>メモ</th></tr>
+    <tr><td>①</td><td>二郎丸</td><td>420G</td><td>トライダガーZMC</td></tr>
+    <tr><td>②</td><td>ジュン</td><td>560G</td><td>サイクロンマグナム。佐上タモツ店長の娘</td></tr>
+    <tr class="boss"><td>③</td><td>ゴー</td><td>700G</td><td>サイクロンマグナム</td></tr>
+    <tr><td>④</td><td>リョウ</td><td>840G</td><td>トライダガーZMC</td></tr>
+    <tr class="boss"><td>⑤</td><td>レツ</td><td>―</td><td>ハリケーンソニック。佐上模型杯ラスト</td></tr>
+  </table>
+
+  <div class="settei-title">佐上模型店杯 おすすめセッティング</div>
+  <table class="setting">
+    <tr><th>ウイング</th><td>ロングアローウイング</td><th>バンパー</th><td>アローバンパー</td></tr>
+    <tr><th>リヤー</th><td>リヤーグランドステー</td><th>フロントローラー右/左</th><td>MAXスタビポールS</td></tr>
+    <tr><th>リヤーローラー右/左</th><td>リニアローラーS</td><th>フロントタイヤ</th><td>SPスポンジタイヤL</td></tr>
+    <tr><th>モーター</th><td>Vダッシュモーター</td><th>サイド</th><td>―</td></tr>
+    <tr><th>電池</th><td>スパークアルカリでんち</td><th>リヤータイヤ</th><td>SPスポンジタイヤL</td></tr>
+    <tr><th>オプション後</th><td>スーパーチャージャー</td><th></th><td></td></tr>
+  </table>
+  <p class="page-desc">ここから先は、レッツ・ゴーボタンを使うことを前提とした組み合わせを積極的に狙っていこう。</p>
+
+  <h3 class="chap">④スプリングカップ本戦</h3>
+  <table class="info">
+    <tr><th>大会名</th><td>スプリングカップ</td><th>コース種類</th><td>1〜6</td></tr>
+    <tr><th>賞金／賞品</th><td>3200G／大型4段ボックス+シルバーパーツ</td><th>パーツレベル上限</th><td>6</td></tr>
+    <tr><th>トロフィー</th><td>○</td><th></th><td></td></tr>
+  </table>
+  <ul class="acts">
+    <li>予選はコーナリングコース②を21秒以内で走るタイムアタック</li>
+    <li>おなじみのリョウや藤吉はもちろん、大神研究所で戦ったJもスプリングカップに出場してくる。4大カップも後半、優勝がますます大変になってくる</li>
+  </ul>
+  <table class="race">
+    <tr><th>#</th><th>対戦相手</th><th>賞金</th><th>メモ</th></tr>
+    <tr><td>①</td><td>二郎丸</td><td>480G</td><td>トライダガーZMC</td></tr>
+    <tr><td>②</td><td>まこと</td><td>640G</td><td>セイバー600</td></tr>
+    <tr><td>③</td><td>藤吉</td><td>800G</td><td>スピンコブラ</td></tr>
+    <tr><td>④</td><td>リョウ</td><td>960G</td><td>トライダガーZMC</td></tr>
+    <tr><td>⑤</td><td>J</td><td>1120G</td><td>プロトセイバーJB</td></tr>
+    <tr class="boss"><td>⑥</td><td>ゴー</td><td>1280G</td><td>サイクロンマグナム</td></tr>
+    <tr class="boss"><td>⑦</td><td>レツ</td><td>1440G</td><td>ハリケーンソニック</td></tr>
+    <tr class="boss"><td>⑧</td><td>カイ</td><td>―</td><td>ビークスパイダー。コーナー特性に優れる。8連戦最後のため手持ちパーツの消耗にも注意。ムダのないパーツ交換を心がけよう</td></tr>
+  </table>
+
+  <div class="settei-title">スプリングカップ おすすめセッティング</div>
+  <table class="setting">
+    <tr><th>ウイング</th><td>フォーミュラウイング</td><th>バンパー</th><td>グレートアローバンパー</td></tr>
+    <tr><th>リヤー</th><td>リヤーフレームステー</td><th>フロントローラー右/左</th><td>セーフローラーベータS</td></tr>
+    <tr><th>リヤーローラー右/左</th><td>ちょうでんじローラーS</td><th>フロントタイヤ</th><td>SPスポンジタイヤL</td></tr>
+    <tr><th>モーター</th><td>メテオモーター</td><th>サイド</th><td>―</td></tr>
+    <tr><th>電池</th><td>アトミックパワー</td><th>リヤータイヤ</th><td>SPスポンジタイヤL</td></tr>
+    <tr><th>オプション後</th><td>メガリニアブースター</td><th></th><td></td></tr>
+  </table>
+  <p class="page-desc">長期戦なので、パーツ年齢が10前後のモーターを予備として持っておこう。タイヤもゴム系に交換しておくと安心。</p>
+
+  <!-- ============ 第4部 ============ -->
+  <h2 class="part" id="p4">第4部：サマーカップ編</h2>
+
+  <h3 class="chap">①大神博士からの招待状、PS戦隊現わる</h3>
+  <table class="info">
+    <tr><th>大会名</th><td>大神研究所レース</td><th>コース種類</th><td>1〜6</td></tr>
+    <tr><th>賞金／賞品</th><td>2400G／なし</td><th>パーツレベル上限</th><td>5</td></tr>
+    <tr><th>トロフィー</th><td>○</td><th></th><td></td></tr>
+  </table>
+  <ul class="acts">
+    <li>自宅に大神博士からの招待状。研究所へ行くと、大神博士の弟子「PS戦隊」との対戦になる</li>
+  </ul>
+  <table class="race">
+    <tr><th>#</th><th>対戦相手</th><th>賞金</th><th>メモ</th></tr>
+    <tr><td>①</td><td>ピンク</td><td>450G</td><td>プロトセイバーJB</td></tr>
+    <tr><td>②</td><td>イエロー</td><td>600G</td><td>プロトセイバーJB</td></tr>
+    <tr><td>③</td><td>レッド</td><td>750G</td><td>プロトセイバーJB</td></tr>
+    <tr><td>④</td><td>ホワイト</td><td>900G</td><td>プロトセイバーJB</td></tr>
+    <tr><td>⑤</td><td>グリーン</td><td>―</td><td>プロトセイバーJB</td></tr>
+    <tr class="boss"><td>⑥</td><td>J</td><td>―</td><td>プロトセイバーJB。相手のマシンは全員プロトセイバーJBだ</td></tr>
+  </table>
+  <p>PS戦隊に勝っても、あとには強力なライバルJが待っている。Jとのレースの前に、パーツの買い足しやセーブをしておこう。</p>
+
+  <h3 class="chap">②大神学園に潜入、PS戦隊再び</h3>
+  <table class="info">
+    <tr><th>大会名</th><td>大神学園レース</td><th>コース種類</th><td>1〜7(全コース)</td></tr>
+    <tr><th>賞金／賞品</th><td>なし／なし</td><th>パーツレベル上限</th><td>7</td></tr>
+    <tr><th>トロフィー</th><td>×</td><th></th><td></td></tr>
+  </table>
+  <ul class="acts">
+    <li>校舎に行くとカイが待っているが、対決の場はレース場。大神学園の生徒を相手に勝ち進まないとカイとは対決できない</li>
+    <li>レース場にいたのは大神研究所にいたPS戦隊。彼らは大神学園の生徒だった</li>
+  </ul>
+  <table class="race">
+    <tr><th>#</th><th>対戦相手</th><th>賞金</th><th>メモ</th></tr>
+    <tr><td>①</td><td>ピンク</td><td>510G</td><td>プロトセイバーJB</td></tr>
+    <tr><td>②</td><td>イエロー</td><td>680G</td><td>プロトセイバーJB</td></tr>
+    <tr><td>③</td><td>ホワイト</td><td>850G</td><td>プロトセイバーJB</td></tr>
+    <tr><td>④</td><td>レッド</td><td>―</td><td>プロトセイバーJB。勝つとカイへの挑戦権を手に入れる</td></tr>
+  </table>
+
+  <h3 class="chap">③マシンに風の刃がせまる(カイとのタイマン)</h3>
+  <table class="info">
+    <tr><th>大会名</th><td>タイマンレース</td><th>コース種類</th><td>1〜7(全コース)</td></tr>
+    <tr><th>賞金／賞品</th><td>なし／なし</td><th>パーツレベル上限</th><td>7</td></tr>
+    <tr><th>トロフィー</th><td>×</td><th></th><td></td></tr>
+  </table>
+  <table class="race">
+    <tr><th>#</th><th>対戦相手</th><th>賞金</th><th>メモ</th></tr>
+    <tr class="boss"><td>①</td><td>カイ</td><td>―</td><td>ビークスパイダー。学園滑走路は彼の得意なコース。本気で挑んできた証拠だ</td></tr>
+  </table>
+  <p>サマーカップ終了後には学園滑走路で草レースも開催される(あや・テツ、540G)。スピード重視の思いきった軽量化で勝負を挑むのもよい。</p>
+
+  <h3 class="chap">④大神博士からの挑戦、鍾乳洞バトル</h3>
+  <table class="info">
+    <tr><th>大会名</th><td>鍾乳洞レース</td><th>コース種類</th><td>1〜6</td></tr>
+    <tr><th>賞金／賞品</th><td>2740G／なし</td><th>パーツレベル上限</th><td>7</td></tr>
+    <tr><th>トロフィー</th><td>×</td><th></th><td></td></tr>
+  </table>
+  <ul class="acts">
+    <li>カイに勝つと研究所に呼ばれ、今度は鍾乳洞に行くよう言われる。事前にパーツを補充してから向かおう</li>
+    <li>鍾乳洞で待っていたのはPS戦隊の3人と、大神博士の作ったマシンを持つゲンとレイ。そして突然の乱入者、黒沢だ。自分のマシンを彼らから守るのだ</li>
+  </ul>
+  <table class="race">
+    <tr><th>#</th><th>対戦相手</th><th>賞金</th><th>メモ</th></tr>
+    <tr><td>①</td><td>ピンク</td><td>520G</td><td>プロトセイバーJB</td></tr>
+    <tr><td>②</td><td>イエロー</td><td>690G</td><td>プロトセイバーJB</td></tr>
+    <tr><td>③</td><td>レッド</td><td>―</td><td>プロトセイバーJB</td></tr>
+    <tr class="boss"><td>④</td><td>黒沢</td><td>―</td><td>ブラックセイバー。突然の乱入。なぜここにいるのかは謎</td></tr>
+    <tr class="boss"><td>⑤</td><td>ゲン</td><td>―</td><td>ブロッケンギガント</td></tr>
+    <tr class="boss"><td>⑥</td><td>レイ</td><td>―</td><td>レイスティンガー</td></tr>
+  </table>
+  <div class="note">黒沢・ゲン・レイに負けると、パーツを1つ壊されてしまう。鍾乳洞でのレースは1戦ごとにセーブ・買い物ができるので、こまめにセーブしておこう。</div>
+
+  <h3 class="chap">⑤サマーカップ前に準備を</h3>
+  <ul class="acts">
+    <li>3つのメジャーカップに優勝して家に帰ると、土屋博士から手紙と贈り物(TRFスーパーゼロヨンコース)が届いている。目標タイムは00:03:70。学園滑走路でのカイとのレース後、土屋博士がいったん持ち帰ってしまうので、それまでにクリアしておこう</li>
+    <li>トイランドに新しいパーツが入荷(ロングパワーボンバー、アトミックパワー、XパワーMK2、ロングパワーギガント、バッテリーオブサンダー、グングンパワーハイパーなど)</li>
+    <li>新しい強化素材も追加(チタン、ZMC、スピードギア、トルクギア、デュアルギア、デュアルギアSPなど)</li>
+    <li>成績確認、パーツ強化やパーツ年齢の調整もサマーカップ前に済ませておこう。セーブも忘れずに</li>
+  </ul>
+
+  <h3 class="chap">⑥サマーカップ本戦・前半戦</h3>
+  <table class="info">
+    <tr><th>大会名</th><td>サマーカップ</td><th>コース種類</th><td>1〜6</td></tr>
+    <tr><th>賞金／賞品</th><td>5360G／なし</td><th>パーツレベル上限</th><td>8</td></tr>
+    <tr><th>トロフィー</th><td>○</td><th></th><td></td></tr>
+  </table>
+  <ul class="acts">
+    <li>予選は高速コース。18秒50以内で通過する必要がある。コースアウトの危険性が高いので注意</li>
+    <li>いままで出会ったライバルたちが、優勝を阻止するため一丸となって挑んでくる</li>
+  </ul>
+  <table class="race">
+    <tr><th>#</th><th>対戦相手</th><th>賞金</th><th>メモ</th></tr>
+    <tr><td>①</td><td>二郎丸</td><td>540G</td><td>トライダガーZMC</td></tr>
+    <tr><td>②</td><td>ピンク</td><td>720G</td><td>プロトセイバーJB</td></tr>
+    <tr><td>③</td><td>まこと</td><td>900G</td><td>セイバー600</td></tr>
+    <tr><td>④</td><td>イエロー</td><td>1080G</td><td>プロトセイバーJB</td></tr>
+    <tr><td>⑤</td><td>レッド</td><td>1260G</td><td>プロトセイバーJB</td></tr>
+    <tr><td>⑥</td><td>藤吉</td><td>1420G</td><td>スピンコブラ</td></tr>
+    <tr><td>⑦</td><td>リョウ</td><td>―</td><td>トライダガーZMC。前半戦ラスト</td></tr>
+  </table>
+  <p>前半戦をクリアすると、パーツの補充やセーブができる休憩に入る。消耗パーツの補充を忘れずに、勝てる試合も勝てなくなってしまうぞ。</p>
+
+  <h3 class="chap">⑦サマーカップ本戦・後半戦</h3>
+  <p>グランドスラムまであと少し。しかし後半戦の対戦相手は全員オリジナルマシンを持つレーサーばかり。いままでの経験を活かして挑もう。簡単には勝てないぞ。</p>
+  <table class="race">
+    <tr><th>#</th><th>対戦相手</th><th>賞金</th><th>メモ</th></tr>
+    <tr class="boss"><td>⑧</td><td>カイ</td><td>1780G</td><td>ビークスパイダー</td></tr>
+    <tr class="boss"><td>⑨</td><td>J</td><td>1960G</td><td>プロトセイバーEVO。ここで初登場する謎の高性能マシン</td></tr>
+    <tr class="boss"><td>⑩</td><td>ゲン</td><td>2140G</td><td>ブロッケンギガント</td></tr>
+    <tr class="boss"><td>⑪</td><td>レツ</td><td>2320G</td><td>ハリケーンソニック</td></tr>
+    <tr class="boss"><td>⑫</td><td>レイ</td><td>2500G</td><td>レイスティンガー</td></tr>
+    <tr class="boss"><td>⑬</td><td>ゴー</td><td>―</td><td>サイクロンマグナム。夢のグランドスラムをかけた最後のレース。「いくぜ！マグナム！」</td></tr>
+  </table>
+
+  <div class="settei-title">サマーカップ おすすめセッティング</div>
+  <table class="setting">
+    <tr><th>ウイング</th><td>トライアングルウイング</td><th>バンパー</th><td>フォーミュラーバンパー</td></tr>
+    <tr><th>リヤー</th><td>リヤースポイラー2</td><th>フロントローラー右/左</th><td>セーフスタビローラーS</td></tr>
+    <tr><th>リヤーローラー右/左</th><td>セーフスタビローラーS</td><th>フロントタイヤ</th><td>QタイヤL</td></tr>
+    <tr><th>モーター</th><td>サンダーモーター</td><th>サイド</th><td>―</td></tr>
+    <tr><th>電池</th><td>ロングパワーギガント</td><th>リヤータイヤ</th><td>QタイヤL</td></tr>
+    <tr><th>オプション前</th><td>メガチャージャー</td><th>オプション後</th><td>メガリニアブースター</td></tr>
+  </table>
+  <p class="page-desc">ローラー・タイヤ・モーターも予備を充分に用意しよう。オフロードに用いるゴム系タイヤに履き替えるのを忘れずに。</p>
+
+  <div class="note">🏆 サマーカップ優勝＝グランドスラム達成。4大レース(オータム・ウインター・スプリング・サマー)をすべて制覇したことになる！</div>
+
+  <!-- ============ エンディング後 ============ -->
+  <h2 class="part" id="after">エンディング後のお楽しみ</h2>
+  <p>グランドスラムを達成しても、まだまだ遊べる要素が残っている。</p>
+
+  <h3 class="chap">ミニ四駆タワーにライバルが集結</h3>
+  <p>サマーカップの余韻が残るミニ四駆タワーに、これまでのライバルレーサーたちが集結している。ランダムに選ばれたライバルを相手に、単発のレースが楽しめる。集まるライバル：ジュン・二郎丸・藤吉・カイ・ゲン・レイ・チイコ・まこと・リョウ・J・烈・豪。グランドチャンピオンとして負けられない戦いだが、単発レースや草レースは資金調達にもってこい。</p>
+  <p>大神学園の滑走路では、あやとテツが対戦相手の草レースも行われるようになる。暇つぶしに参加してみよう。</p>
+
+  <h3 class="chap">土屋模型店にプロトセイバーJBが入荷</h3>
+  <p>J&amp;PS戦隊が使っていたマシンが商品として加わる。自分の考えたセッティングで、プロトセイバーJBの未知の能力を引き出してみよう。</p>
+
+  <h3 class="chap">改良されたゼロヨンコースをゲット</h3>
+  <p>サマーカップ後、自宅に戻ると土屋博士からゼロヨンコース(TRFスーパーゼロヨンレース)を返してもらえる。改良が済んでおり、0.01秒の世界で最速タイムを塗り替えられる。</p>
+  <h4 class="spot">コースガイド⑦：TRFスーパーゼロヨンレース</h4>
+  <p>ひたすらまっすぐ走るだけの直線コース。コースアウトの危険性がないので、とにかくスピードを重視したセッティングでチャレンジしよう。レッツ・ゴーボタンもスタート直後から押しっぱなしでよい。</p>
+
+  <h3 class="chap">究極のレース(アダルトカップ)</h3>
+  <ul class="acts">
+    <li>エンディング後、都庁ビルでこれまで入ることができなかった超意外・激強力なメンバーによる「究極のレース」、正式名称<b>アダルトカップ</b>が開催されている(→<a href="events.html#e18">大会一覧</a>)</li>
+    <li>究極のレースに勝つと、土屋模型店に「プロトセイバーEVO」が入荷する。ローラーS・ゴムタイヤS・ノーマルウイング・ミニモーターなどを搭載した、マシンそのものの性能が高い1台。セッティング次第では最強マシンになるかもしれない</li>
+  </ul>
+  <div class="note">究極のレース攻略のヒント：相手の苦手なコースを選ぶ(オフロードが平均的に苦手なライバルが多いらしい)。強化したパーツ・クリスタルで合成したパーツを積極的に使う。通信でしか手に入らない変化パーツも有利に働く。</div>
+
+  <!-- ============ ワンランク上 ============ -->
+  <h2 class="part" id="tips">ワンランク上のレーサーになるために</h2>
+
+  <h3 class="chap">マシンレベルについて</h3>
+  <p>マシンには「マシンレベル(コンプリート度)」があり、スピード・安定度・ダウンフォースの3項目で構成される。レースに5勝するたびに10%上昇し、一定の完成度に達するとマシンごとに異なる能力アップが発生する。ただし、イベントごとに完成度の上限が決まっているため、ストーリーを進めないと100%にはできない。</p>
+
+  <h3 class="chap">シルバー&amp;ゴールドパーツについて</h3>
+  <p>通常プレイでは絶対に入手できないレアパーツ。集める方法は2つ。</p>
+  <ul class="acts">
+    <li><b>通信で友達と交換する</b>：友達との交換で入手できるパーツの種類が決まる。人によって持っているシルバーの種類が違うので、いろいろな友達とデータ交換で集めよう</li>
+    <li><b>つくも屋で交換する</b>：パーツ年齢を99にしたパーツを持っていくと、シルバーパーツと交換してくれる。ただしIDナンバーによって決まった3種類のシルバーパーツしか入手できない</li>
+  </ul>
+  <p>シルバーパーツを全10種類集めると、土屋博士がゴールドパーツと交換してくれる(ゴールドはIDによって決まる3種類のうちどれか)。</p>
+
+  <h3 class="chap">変化パーツについて</h3>
+  <p>変化パーツとは、ある特定のパーツ同士を通信交換したときに、特殊なパーツへと生まれ変わる幻のパーツ。普通に遊んでいるだけではまず入手不可能で、友達と通信交換をしないと入手のチャンスすら訪れない。入手が難しいだけあって性能はトップクラス、どんなレースにも楽勝できるほど強力とされる。くわしい入手方法(組み合わせ)はデータ通信編で説明されている。</p>
+  <div class="note">お店では買えないパーツを入手しよう：勝てないレースには、変化パーツで挑むのも手。もちろん友達との対戦に使ってもよい。</div>
+
+  <h3 class="chap">レッツ・ゴーボタンについて</h3>
+  <p>「レッツ・ゴーマーク」が表示されている1コースに一度だけ使えるボタン。Aボタンを押している間だけマシンが加速する。ただし、そのコースでは2度と使えなくなり、コースによっては一発逆転も可能な強力な仕組みだ。</p>
+  <div class="note">⚠️ 注意：加速は一瞬、減速には時間が必要。レッツ・ゴーボタンを離してもマシンはすぐには減速せず、徐々に元のスピードへ戻っていく。充分な減速時間をとらないままコーナーに突入すると、コースアウトしてしまうことも。目安は「最終コーナーの立ち上がりぐらいから押す」こと。</div>
+
+</div>
+
+<div id="ftr">
+  © 2026 ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式) ／ 「ミニ四駆」はタミヤ株式会社の登録商標です。
+</div>
+
+</body>
+</html>

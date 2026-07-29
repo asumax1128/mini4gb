@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ゲームシステム解説 - ミニ四駆GB Let's&amp;Go!! 徹底攻略</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;background:#EDEDED;color:#111;font-family:"MS PGothic","Hiragino Kaku Gothic ProN",sans-serif;font-size:13px;}
+  a{color:#0000EE;}
+  a:visited{color:#551A8B;}
+  a:hover{color:#CC0000;}
+  #siteband{background:#1B3358;color:#fff;padding:6px 14px;font-size:11px;display:flex;justify-content:space-between;}
+  #siteband a{color:#cfe0f5;margin-left:10px;}
+  #navstrip{background:#fff;border-bottom:2px solid #1B3358;padding:8px 14px;font-size:12px;font-weight:bold;}
+  #navstrip a{margin-right:10px;white-space:nowrap;}
+  #navstrip .sep{color:#999;margin-right:10px;}
+  #wrap{max-width:900px;margin:12px auto;background:#fff;border:1px solid #999;padding:14px 18px 26px;}
+  .breadcrumb{font-size:11px;color:#555;margin-bottom:10px;}
+  h1.page-title{font-size:19px;border-bottom:3px solid #1B3358;padding-bottom:6px;margin:0 0 4px;}
+  p.page-desc{font-size:12.5px;color:#444;margin:0 0 10px;}
+  h2.blk{background:#1B3358;color:#fff;font-size:13px;padding:5px 9px;margin:22px 0 8px;}
+  h3.blk2{border-left:5px solid #1B3358;padding-left:7px;font-size:13px;margin:16px 0 6px;}
+  table.dat{border-collapse:collapse;width:100%;font-size:12px;margin-bottom:12px;}
+  table.dat th,table.dat td{border:1px solid #999;padding:4px 6px;text-align:left;}
+  table.dat th{background:#DCE4EC;}
+  table.dat tr:nth-child(even) td{background:#F7F9FB;}
+  .note{background:#FFF9DB;border:1px dashed #C9AF52;padding:6px 9px;font-size:11.5px;color:#665500;margin:8px 0;}
+  #toc{background:#F4F6F8;border:1px solid #ccc;padding:8px 12px;font-size:12px;margin-bottom:16px;}
+  #toc .hd{font-weight:bold;margin-bottom:4px;}
+  #toc ul{margin:0;padding-left:18px;columns:2;}
+  #ftr{max-width:900px;margin:0 auto 30px;text-align:center;font-size:10.5px;color:#666;}
+</style>
+</head>
+<body>
+
+<div id="siteband">
+  <span>ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式)</span>
+  <span><a href="index.html">トップへ戻る</a></span>
+</div>
+
+<div id="navstrip">
+  <a href="index.html">TOP</a><span class="sep">|</span>
+  <a href="about.html">このゲームについて</a><span class="sep">|</span>
+  <a href="chart.html">攻略チャート(RTA)</a><span class="sep">|</span>
+  <a href="walkthrough.html">攻略チャート(通常)</a><span class="sep">|</span>
+  <a href="parts.html">パーツ図鑑</a><span class="sep">|</span>
+  <a href="upgrade.html">パーツ強化について</a><span class="sep">|</span>
+  <a href="shops.html">取扱店</a><span class="sep">|</span>
+  <a href="towns.html">街・マップ</a><span class="sep">|</span>
+  <a href="characters.html">キャラ図鑑</a><span class="sep">|</span>
+  <a href="courses.html">コース</a><span class="sep">|</span>
+  <a href="events.html">大会一覧</a><span class="sep">|</span>
+  <a href="comm.html">通信について</a><span class="sep">|</span>
+  <a href="system.html">システム解説</a><span class="sep">|</span>
+  <a href="tips.html">小技・裏技</a><span class="sep">|</span>
+  <a href="glossary.html">用語集</a>
+</div>
+
+<div id="wrap">
+  <div class="breadcrumb"><a href="index.html">TOP</a> &gt; システム解説</div>
+
+  <h1 class="page-title">ゲームシステム解説</h1>
+  <p class="page-desc">セッティング画面・パーツ性能・レース画面の見方に加え、レース形態やコースセレクトの仕組みもまとめています。取扱説明書と攻略本の内容をもとに、独自の表現でまとめ直しています。</p>
+
+  <div id="toc">
+    <div class="hd">目次</div>
+    <ul>
+      <li><a href="#setting">セッティング画面の見方</a></li>
+      <li><a href="#machinedata">マシンデータの項目</a></li>
+      <li><a href="#partsstat">パーツ性能の見方</a></li>
+      <li><a href="#tire">タイヤの特性</a></li>
+      <li><a href="#race">レース画面の見方</a></li>
+      <li><a href="#letsgo">レッツ・ゴーボタン</a></li>
+      <li><a href="#partsdata">パーツデータについて</a></li>
+      <li><a href="#racetype">レース形態</a></li>
+      <li><a href="#courseselect">コースセレクトの仕組み</a></li>
+      <li><a href="#pitin">ピットインの判断基準</a></li>
+    </ul>
+  </div>
+
+  <h2 class="blk" id="setting">■ セッティング画面の見方</h2>
+  <table class="dat">
+    <tr><th>項目</th><th>内容</th></tr>
+    <tr><td>コンプリートレベル</td><td>マシンの性能をどれだけ引き出せているかを表す数値。100%が最大。</td></tr>
+    <tr><td>総重量</td><td>マシン全体の重さ。</td></tr>
+    <tr><td>いれかえ</td><td>ボックスやそうこにあるパーツを装備する。装備前にセレクトボタンで変更後のデータを確認できる。</td></tr>
+    <tr><td>はずす</td><td>今装備しているパーツを外す。</td></tr>
+    <tr><td>データ</td><td>パーツの詳しい説明を見る。</td></tr>
+  </table>
+  <p>ローラーは片側3個・合計6個まで装備できます。セッティング画面でセレクトボタンを押すと、マシンデータ画面(直線/コーナー/坂のMAXスピードなど)が確認できます。R=右側、L=左側の意味です。</p>
+
+  <h2 class="blk" id="machinedata">■ マシンデータの項目</h2>
+  <table class="dat">
+    <tr><th>項目</th><th>内容</th></tr>
+    <tr><td>MAXスピード</td><td>マシンの最高速度(直線・コーナー・坂の3種)。</td></tr>
+    <tr><td>あんていど(安定度)</td><td>MAXスピードの数字が高いと、コースアウトしやすくなる。</td></tr>
+    <tr><td>そうダウンフォース</td><td>MAXスピード(坂)の数字がこれを超えると、坂でジャンプしやすくなる。</td></tr>
+    <tr><td>そうくうりき(空力)</td><td>マシンが持つ空力性能パーツの合計値。</td></tr>
+    <tr><td>まさつりょく</td><td>フェンスに接触したときのスピード減少量。</td></tr>
+    <tr><td>モーターはつねつど</td><td>モーターの発熱度。</td></tr>
+    <tr><td>でんちしょうひ</td><td>マシンの電池消費量。</td></tr>
+  </table>
+  <div class="note">マシンは「タイヤ」「モーター」「でんち」の3つが装備されていないと走行できません。</div>
+
+  <h2 class="blk" id="partsstat">■ パーツ性能の見方(全パーツ共通)</h2>
+  <table class="dat">
+    <tr><th>項目</th><th>内容</th></tr>
+    <tr><td>パーツタイプ</td><td>パーツの種類。</td></tr>
+    <tr><td>おもさ</td><td>パーツの重さ。</td></tr>
+    <tr><td>パーツねんれい</td><td>パーツがどれだけ使われたかの目安。99を超えると壊れる。</td></tr>
+    <tr><td>きょうかすう</td><td>「強化した回数／強化できる限界数」の形で表示。</td></tr>
+    <tr><td>たいきゅうど(耐久度)</td><td>数字が高いほど、パーツねんれいが上がりにくい。</td></tr>
+  </table>
+  <p><b>Lv(レベル)について</b>：各パーツにはレベルがあります。性能の良いパーツほどレベルが高く、プレイヤーレベルと同じレベルまでのパーツしか使用できません。</p>
+
+  <div class="note">でんち・モーターにはこのページの「たいきゅうど」に代わる項目があります。でんちは容量が、モーターは発熱度が大きいパーツほど、パーツ年齢の上昇が早くなる関係にあるようです。モーターは発熱度の高いものほどオプションパーツ(クーラー系)を装備して発熱を抑えると、パーツ年齢の上昇を遅らせられます。詳しくは<a href="parts.html#motor">パーツ図鑑のモーター</a>を参照。</div>
+
+  <h2 class="blk" id="tire">■ タイヤの特性</h2>
+  <table class="dat">
+    <tr><th>項目</th><th>内容</th></tr>
+    <tr><td>グリップ力</td><td>タイヤと路面の接地力。数字が高いほど、モーターの力をより多く路面に伝えられる。</td></tr>
+    <tr><td>オンロード</td><td>舗装されている路面への適性。</td></tr>
+    <tr><td>オフロード</td><td>舗装されていない路面への適性。</td></tr>
+    <tr><td>デフ</td><td>この属性を持っていると、コーナーでのスピードが速くなる。</td></tr>
+  </table>
+  <p>タイヤにはS(スモール／径が小さい)とL(ラージ／径が大きい)の2種類があります。</p>
+
+  <h2 class="blk" id="race">■ レース画面の見方</h2>
+  <table class="dat">
+    <tr><th>項目</th><th>内容</th></tr>
+    <tr><td>コース選択</td><td>草レース・予選レース以外では、走行コースを自分で選べる。</td></tr>
+    <tr><td>ピットイン</td><td>コースとコースの間でセッティングを変更できる。ピットイン中も時間は経過する。通信対戦時のみ、レース前に「あり/なし」を選べる(ストーリーモードでは常にあり)。</td></tr>
+    <tr><td>TOTAL</td><td>レース全体のタイム。</td></tr>
+    <tr><td>LAP</td><td>今走っているコースのタイム。</td></tr>
+    <tr><td>LEAD</td><td>対戦相手との距離差。だいたい「100」で1秒ほどのタイム差になる(「−」表示のときは負けている)。</td></tr>
+    <tr><td>IS</td><td>コースアウトしそうなときに表示されるバー。</td></tr>
+  </table>
+  <p>スタート画面が「READY」から「GO!!」に変わるタイミングでAボタンを押すとスタートダッシュになります。ただし3回フライングすると失格です。レース中にBボタンを押すと画面サイズを切り替えられます。レース中に壊れたパーツは、レッツ・ゴーマークの色の変化で分かります。</p>
+
+  <h2 class="blk" id="letsgo">■ レッツ・ゴーボタン</h2>
+  <p>「レッツ・ゴーマーク」が表示されている間にAボタンを押すと、押している間だけマシンが加速します。離すと元の速さに戻ります。ただし加速中はコースアウトしやすくなり、パーツの傷みも早くなるので注意が必要です。<b>使用できる回数は1コースにつき1回限り</b>で、佐上模型杯でレツからやりかたを教えてもらうと使えるようになります。通信対戦ではレッツ・ゴーボタンが使えないので注意してください(→<a href="tips.html#hisshoho">小技・裏技のレース必勝法</a>)。</p>
+
+  <h2 class="blk" id="partsdata">■ パーツデータについて</h2>
+  <p>作中に登場するパーツは全部で276種類。すべてのパーツデータを暗記する必要はありませんが、能力の見方を覚えておかないとセッティングが組みにくくなります。セッティング画面でセレクトボタンを押すと、マシンの総合能力(直線/コーナー/坂のMAXスピードなど)を確認できます。</p>
+
+  <h2 class="blk" id="racetype">■ レース形態</h2>
+  <table class="dat">
+    <tr><th>種類</th><th>内容</th></tr>
+    <tr><td>公式レース</td><td>グランドスラム(4大カップ)を目指す本筋のレース。まずタイムアタック方式の予選を突破し、本戦で複数のライバルに連続で勝ち抜く必要がある。負けるとパーツが1つ壊れ、再挑戦は次の大会の最初から。</td></tr>
+    <tr><td>草レース</td><td>学校や公園で行われる、1コースを2周して勝敗を決める対決。ピット作業はない。手軽に資金を稼げるほか、パーツ年齢の調整や、実戦に近いセッティングのテストに活用できる。</td></tr>
+    <tr><td>特別レース</td><td>模型店などが主催する、公式レースの前哨戦的なレース。3連結コースで2〜3人のライバルに連勝する必要がある形式が多く、優勝しないとストーリーが進まない。</td></tr>
+  </table>
+  <div class="note">公式レースに負けると、そのレースに出場できなくなる(一部のレースを除く)ほか、負けた相手には二度と挑めなくなります。走りの荒いライバル(黒沢太や大神軍団など)に負けるとパーツを壊されてしまうこともあるため注意してください。</div>
+
+  <h2 class="blk" id="courseselect">■ コースセレクトの仕組み</h2>
+  <p>特別レース・公式レースでは、複数のコースが自動的につなぎ合わされた連結コースが選ばれます。1戦ごとにどのコースを走るかを決められますが、選んだコースを実際に走る順番はランダムで決定されます。ストーリーが進むと選べるコースの数も増えていきます。</p>
+  <h3 class="blk2">コンピュータ(ライバル)のコース選択基準</h3>
+  <ul>
+    <li>ライバル自身が得意なコースを選んでくる場合</li>
+    <li>ランダムで選ばれる場合(ライバルに有利なコースを選んでいるように感じられることも)</li>
+  </ul>
+  <h3 class="blk2">コース選びのコツ</h3>
+  <ul>
+    <li>オフロードが続けば、オフロードに強いセッティングがかなり有利になる。</li>
+    <li>セッティングが簡単なオーバルコースは初心者にもおすすめ。</li>
+    <li>自信のあるコースやライバルが苦手そうなコースを選べば、有利にレースを進めやすい。</li>
+  </ul>
+
+  <h2 class="blk" id="pitin">■ ピットインの判断基準</h2>
+  <p>ピットインしない方がタイムでは有利ですが、次のような場合はピットインしてセッティングを変えるのがおすすめです。</p>
+  <ul>
+    <li>次のコースがオフロードに変わる(またはその逆)とき</li>
+    <li>モーターや電池のパーツ年齢がもたなくなりそうなとき</li>
+    <li>コースが大幅に変化するとき(すなおにピットインした方がよい)</li>
+  </ul>
+  <p>ピットイン中も時間は経過するため、事前に頭の中で次のセッティングを考えてから入るのがコツです。</p>
+
+</div>
+
+<div id="ftr">
+  © 2026 ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式) ／ 「ミニ四駆」はタミヤ株式会社の登録商標です。
+</div>
+
+</body>
+</html>

@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>攻略チャート - ミニ四駆GB Let's&amp;Go!! 徹底攻略</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;background:#EDEDED;color:#111;font-family:"MS PGothic","Hiragino Kaku Gothic ProN",sans-serif;font-size:13px;}
+  a{color:#0000EE;}
+  a:visited{color:#551A8B;}
+  a:hover{color:#CC0000;}
+  #siteband{background:#1B3358;color:#fff;padding:6px 14px;font-size:11px;display:flex;justify-content:space-between;}
+  #siteband a{color:#cfe0f5;margin-left:10px;}
+  #navstrip{background:#fff;border-bottom:2px solid #1B3358;padding:8px 14px;font-size:12px;font-weight:bold;}
+  #navstrip a{margin-right:10px;white-space:nowrap;}
+  #navstrip .sep{color:#999;margin-right:10px;}
+  #wrap{max-width:900px;margin:12px auto;background:#fff;border:1px solid #999;padding:14px 18px 26px;}
+  .breadcrumb{font-size:11px;color:#555;margin-bottom:10px;}
+  h1.page-title{font-size:19px;border-bottom:3px solid #1B3358;padding-bottom:6px;margin:0 0 4px;}
+  p.page-desc{font-size:12.5px;color:#444;margin:0 0 10px;}
+  .note{background:#FFF9DB;border:1px dashed #C9AF52;padding:6px 9px;font-size:11.5px;color:#665500;margin:8px 0;}
+  .toc-box{background:#F4F6F8;border:1px solid #ccc;padding:8px 12px;font-size:11.5px;margin-bottom:16px;}
+  .toc-box .hd{font-weight:bold;margin-bottom:4px;}
+  .toc-box ol{margin:0;padding-left:18px;columns:2;}
+  h2.chap{background:#1B3358;color:#fff;font-size:13px;padding:6px 9px;margin:26px 0 8px;}
+  h2.chap .tgt{float:right;background:#E8482F;padding:1px 8px;border-radius:3px;font-size:11px;}
+  h3.spot{border-left:5px solid #1B3358;padding-left:7px;font-size:12.5px;margin:14px 0 5px;background:#F4F6F8;padding-top:2px;padding-bottom:2px;}
+  ul.acts{margin:2px 0 8px;padding-left:20px;font-size:12.5px;}
+  ul.acts li{margin-bottom:2px;}
+  ul.buy{margin:2px 0 8px;padding-left:20px;font-size:12px;columns:2;}
+  ul.buy li{margin-bottom:1px;}
+  .sell{font-size:12px;color:#8a5a00;margin:2px 0 6px;}
+  table.race{border-collapse:collapse;width:100%;font-size:12px;margin:6px 0 10px;}
+  table.race th,table.race td{border:1px solid #999;padding:4px 6px;text-align:left;vertical-align:top;}
+  table.race th{background:#DCE4EC;}
+  table.race tr:nth-child(even) td{background:#F7F9FB;}
+  .boss{background:#FFF0E8 !important;font-weight:bold;}
+  #ftr{max-width:900px;margin:0 auto 30px;text-align:center;font-size:10.5px;color:#666;}
+  #route-nav{display:flex;gap:10px;margin-bottom:18px;}
+  #route-nav a{flex:1;text-align:center;background:#F4F6F8;border:1px solid #999;padding:8px;font-weight:bold;text-decoration:none;}
+  #route-nav a:hover{background:#DCE4EC;}
+  h2.route-hd{background:#3B6FB0;color:#fff;font-size:16px;padding:9px 12px;margin:30px 0 10px;border-left:8px solid #1B3358;}
+</style>
+</head>
+<body>
+
+<div id="siteband">
+  <span>ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式)</span>
+  <span><a href="index.html">トップへ戻る</a></span>
+</div>
+
+<div id="navstrip">
+  <a href="index.html">TOP</a><span class="sep">|</span>
+  <a href="about.html">このゲームについて</a><span class="sep">|</span>
+  <a href="chart.html">攻略チャート(RTA)</a><span class="sep">|</span>
+  <a href="walkthrough.html">攻略チャート(通常)</a><span class="sep">|</span>
+  <a href="parts.html">パーツ図鑑</a><span class="sep">|</span>
+  <a href="upgrade.html">パーツ強化について</a><span class="sep">|</span>
+  <a href="shops.html">取扱店</a><span class="sep">|</span>
+  <a href="towns.html">街・マップ</a><span class="sep">|</span>
+  <a href="characters.html">キャラ図鑑</a><span class="sep">|</span>
+  <a href="courses.html">コース</a><span class="sep">|</span>
+  <a href="events.html">大会一覧</a><span class="sep">|</span>
+  <a href="comm.html">通信について</a><span class="sep">|</span>
+  <a href="system.html">システム解説</a><span class="sep">|</span>
+  <a href="tips.html">小技・裏技</a><span class="sep">|</span>
+  <a href="glossary.html">用語集</a>
+</div>
+
+<div id="wrap">
+  <div class="breadcrumb"><a href="index.html">TOP</a> &gt; 攻略チャート</div>
+
+  <h1 class="page-title">攻略チャート(RTAチャート Ver.5.00)</h1>
+  <p class="page-desc">オープニングからエンディングまでを最短ルートで進めるチャートです。初期マシンの選択によってサイクロンマグナム編・ハリケーンソニック編の2ルートを掲載しています。管理人が過去に作成した個人チャートを元にしており、現在も見直し・修正中です。</p>
+  <div class="note">🚧 執筆中のチャートです。誤りが見つかり次第、随時修正していきます。目標タイムは無補正のプレイでの目安です(ハリケーンソニック編は現時点でタイム未計測です)。</div>
+
+  <div id="route-nav">
+    <a href="#cyclone">🔵 サイクロンマグナム編</a>
+    <a href="#hurricane">🟠 ハリケーンソニック編</a>
+  </div>
+
+  <h2 class="route-hd" id="cyclone">🔵 サイクロンマグナム編</h2>
+
+  <div id="toc-cyclone" class="toc-box">
+    <div class="hd">章目次(サイクロンマグナム編)</div>
+    <ol>
+      <li><a href="#c1">オープニング〜まこと撃破</a></li>
+      <li><a href="#c2">JET模型店〜黒沢撃破</a></li>
+      <li><a href="#c3">東京へ〜藤吉撃破(タワー)</a></li>
+      <li><a href="#c4">土屋研究所〜鉄心撃破</a></li>
+      <li><a href="#c5">土屋模型店〜藤吉撃破(屋敷)</a></li>
+      <li><a href="#c6">ゴールド模型店〜リョウ撃破</a></li>
+      <li><a href="#c7">スピード模型店〜烈撃破(タワー)</a></li>
+      <li><a href="#c8">佐上模型店〜烈撃破(2戦目)</a></li>
+      <li><a href="#c9">大神研究所〜Ｊ撃破</a></li>
+      <li><a href="#c10">トイランド〜カイ撃破(タワー)</a></li>
+      <li><a href="#c11">大神学園〜学園滑走路(カイ)</a></li>
+      <li><a href="#c12">鍾乳洞〜レイ撃破</a></li>
+      <li><a href="#c13">最終決戦〜エンディング(豪)</a></li>
+    </ol>
+  </div>
+
+  <!-- 第1章 -->
+  <h2 class="chap" id="c1">第1章：オープニング〜まこと撃破<span class="tgt">目標 7:10</span></h2>
+  <h3 class="spot">学校</h3>
+  <ul class="acts">
+    <li>みんなの話をBボタンで飛ばす</li>
+    <li>家を経由しておもちゃのナガイへ(オート移動)</li>
+  </ul>
+  <h3 class="spot">おもちゃのナガイ</h3>
+  <ul class="acts">
+    <li>店員の話はBボタンでカット</li>
+    <li><b>サイクロンマグナム</b>を購入</li>
+    <li>学校へ移動</li>
+  </ul>
+  <h3 class="spot">学校</h3>
+  <ul class="acts">
+    <li>草レース前に左ローラーをフロント・サイドどちらも外す</li>
+    <li>まことに誘われるのでJET模型店を登録してレース場へ</li>
+  </ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>しょうた</td><td>変更なし</td></tr>
+    <tr><td>まもる</td><td>変更なし</td></tr>
+  </table>
+  <h3 class="spot">レース場</h3>
+  <ul class="acts"><li>全員と話してレース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>たくや</td><td>変更なし</td></tr>
+    <tr><td>ケンタ</td><td>変更なし</td></tr>
+    <tr class="boss"><td>まこと(目標 7:10)</td><td>変更なし</td></tr>
+  </table>
+  <ul class="acts"><li>公園までダッシュして、公園からJET模型店へ移動</li></ul>
+
+  <!-- 第2章 -->
+  <h2 class="chap" id="c2">第2章：JET模型店〜黒沢撃破<span class="tgt">目標 19:00</span></h2>
+  <h3 class="spot">JET模型店(購入)</h3>
+  <ul class="buy">
+    <li>アルカリでんち</li><li>スポンジタイヤL×2</li><li>レブチューンモーター</li>
+    <li>スピードバンパー</li><li>エアロサイド</li><li>エアロウイングベータ</li>
+    <li>スムースローラーS×2</li><li>スタビライザーL×2</li>
+  </ul>
+  <h3 class="spot">自宅</h3>
+  <ul class="acts"><li>分解してセッティング。ローラーはフロントをLに</li><li>公園へ移動</li></ul>
+  <h3 class="spot">公園</h3>
+  <ul class="acts"><li>キャンセル技を使ってたくや→ケンタの順で草レース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>たくや</td><td>変更なし</td></tr>
+    <tr><td>ケンタ</td><td>変更なし</td></tr>
+  </table>
+  <ul class="acts"><li>黒沢に誘われるのでレース場へ移動</li></ul>
+  <h3 class="spot">レース場</h3>
+  <ul class="acts"><li>全員と話してレース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>ロクカワ</td><td>変更なし</td></tr>
+    <tr><td>ティモタ</td><td>変更なし</td></tr>
+    <tr><td>マサ</td><td>変更なし</td></tr>
+    <tr class="boss"><td>黒沢(目標 19:00)</td><td>変更なし</td></tr>
+  </table>
+  <ul class="acts"><li>バス停までダッシュ</li></ul>
+
+  <!-- 第3章 -->
+  <h2 class="chap" id="c3">第3章：東京へ〜藤吉撃破(ミニ四駆タワー)<span class="tgt">目標 33:00</span></h2>
+  <ul class="acts">
+    <li>バス停：バスに乗って東京へ</li>
+    <li>バス停(東京)：トイランド・スピード模型店・ミニ四駆タワーを登録してデパートへダッシュ</li>
+  </ul>
+  <h3 class="spot">デパート(購入)</h3>
+  <ul class="buy">
+    <li>マンガンでんちハイパー</li><li>ゴムタイヤS×2</li><li>スポンジタイヤS</li>
+    <li>Sダッシュモーター</li><li>かへんエアロバンパー</li><li>スピードサイド</li>
+    <li>スピードウイング</li><li>ハイスムースローラーS×2</li><li>ハイスムースローラーL×2</li>
+    <li>ほうねつフィン</li>
+  </ul>
+  <h3 class="spot">自宅</h3>
+  <ul class="acts"><li>分解してセッティング。ローラーはフロントL、ほうねつフィンはつけない</li><li>ミニ四駆タワーへ移動</li></ul>
+  <h3 class="spot">ミニ四駆タワー</h3>
+  <ul class="acts"><li>受付に話して予選突破</li><li>全員と話してレース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>ティモタ</td><td>変更なし</td></tr>
+    <tr><td>マサ</td><td>変更なし</td></tr>
+    <tr><td>まこと</td><td>変更なし</td></tr>
+    <tr><td>黒沢</td><td>変更なし</td></tr>
+    <tr class="boss"><td>藤吉(目標 33:00)</td><td>オフロードコースあり：変更なし／オフロードコースなし：フロントのゴムタイヤSをスポンジタイヤSに変更</td></tr>
+  </table>
+  <ul class="acts"><li>土屋博士に連れられて土屋研究所へ(オート移動)</li></ul>
+
+  <!-- 第4章 -->
+  <h2 class="chap" id="c4">第4章：土屋研究所〜鉄心撃破<span class="tgt">目標 35:30</span></h2>
+  <h3 class="spot">土屋研究所</h3>
+  <ul class="acts"><li>土屋博士の話をBボタンで飛ばす</li><li>鉄心のかまどへ(オート移動)</li></ul>
+  <h3 class="spot">鉄心のかまど</h3>
+  <ul class="acts"><li>鉄心の話をBボタンで飛ばす</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr class="boss"><td>鉄心(目標 35:30)</td><td>フロントのゴムタイヤSをスポンジタイヤSに変更(藤吉戦で既に変えていれば変更なし)</td></tr>
+  </table>
+  <ul class="acts"><li>土屋模型店へダッシュ</li></ul>
+
+  <!-- 第5章 -->
+  <h2 class="chap" id="c5">第5章：土屋模型店〜藤吉撃破(藤吉の屋敷)<span class="tgt">目標 49:00</span></h2>
+  <h3 class="spot">土屋模型店</h3>
+  <p class="sell">売却：ローラーS×2、シルバーパーツ、ゴムタイヤS</p>
+  <ul class="buy">
+    <li>ダッシュアルカリでんち</li><li>ネオゴムタイヤS×2</li><li>スペシャルモーター</li>
+    <li>ダウンフォースバンパー</li><li>エアロサイドマキシマム</li><li>ハイスピードウイング</li>
+    <li>セーフローラーS×2</li><li>セーフローラーL×2</li>
+  </ul>
+  <h3 class="spot">自宅</h3>
+  <ul class="acts">
+    <li>藤吉からの手紙が届いているので読む</li>
+    <li>分解してセッティング。ローラーはフロントL、オプションはつけない</li>
+    <li>バス停へ移動</li>
+  </ul>
+  <ul class="acts">
+    <li>バス停：バスに乗って風輪町へ</li>
+    <li>バス停(風輪町)：ゴールド模型店を登録して藤吉の屋敷へダッシュ</li>
+  </ul>
+  <h3 class="spot">藤吉の屋敷</h3>
+  <ul class="acts"><li>全員と話してレース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>しょうた</td><td>変更なし</td></tr>
+    <tr><td>まもる</td><td>変更なし</td></tr>
+    <tr><td>たくや</td><td>変更なし</td></tr>
+    <tr><td>ケンタ</td><td>コーナーリングコース1を選択</td></tr>
+    <tr class="boss"><td>藤吉(目標 49:00)</td><td>変更なし</td></tr>
+  </table>
+  <ul class="acts"><li>鷹羽レース場を経由登録してゴールド模型店へ移動</li></ul>
+
+  <!-- 第6章 -->
+  <h2 class="chap" id="c6">第6章：ゴールド模型店〜リョウ撃破<span class="tgt">目標 1:05:00</span></h2>
+  <h3 class="spot">ゴールド模型店(購入)</h3>
+  <ul class="buy">
+    <li>ロングパワー</li><li>ニッカドでんち</li><li>ネオゴムタイヤS×2</li><li>レストンタイヤL×2</li>
+    <li>マッハダッシュモーター</li><li>エアロバンパーセカンド</li><li>ツインアローサイド</li>
+    <li>アローウイング</li><li>EXスムースローラーS×2</li><li>ミドルスタビポールL×2</li>
+  </ul>
+  <h3 class="spot">自宅</h3>
+  <ul class="acts"><li>分解してセッティング。ローラーはフロントL、ネオゴムタイヤSをつける、オプションはつけない</li><li>鷹羽レース場へ移動</li></ul>
+  <h3 class="spot">鷹羽レース場</h3>
+  <ul class="acts"><li>全員と話してレース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>まもる</td><td>変更なし</td></tr>
+    <tr><td>たくや</td><td>ほうねつフィンをつける</td></tr>
+    <tr><td>ケンタ</td><td>コーナーリングコース1を選択</td></tr>
+    <tr><td>あや</td><td>変更なし</td></tr>
+    <tr><td>二郎丸</td><td>前後のネオゴムタイヤSをレストンタイヤLに変更</td></tr>
+    <tr class="boss"><td>リョウ(目標 1:05:00)</td><td>コーナーリングコース1を選択。<br>オフロードコースあり：ロングパワー→ニッカドでんちに変更、ほうねつフィンを外す、レストンタイヤL→ネオゴムタイヤSに変更<br>オフロードコースなし：ロングパワー→ニッカドでんちに変更、ほうねつフィンを外す</td></tr>
+  </table>
+  <ul class="acts"><li>東京のスピード模型店へ移動</li></ul>
+
+  <!-- 第7章 -->
+  <h2 class="chap" id="c7">第7章：スピード模型店〜烈撃破(ミニ四駆タワー)<span class="tgt">目標 1:21:30</span></h2>
+  <h3 class="spot">スピード模型店</h3>
+  <p class="sell">売却：ロングパワー、ネオゴムタイヤ×2(レストンタイヤ×2)</p>
+  <ul class="buy">
+    <li>リチウムでんち×4</li><li>ネオゴムタイヤS×2</li><li>Jダッシュモーター</li>
+    <li>スプラッシュバンパー</li><li>マッハスピードサイド</li><li>カナードウイング</li>
+    <li>GTローラーMk2 S×2</li><li>GTローラーMk2 L×2</li>
+  </ul>
+  <h3 class="spot">自宅</h3>
+  <ul class="acts">
+    <li>分解してセッティング。ローラーはフロントL、オプションはつけない</li>
+    <li>次の予選はスタートをミスするとクリアできないので注意して記録する</li>
+    <li>ミニ四駆タワーへ移動</li>
+  </ul>
+  <h3 class="spot">ミニ四駆タワー</h3>
+  <ul class="acts"><li>受付に話して予選突破(スタート注意！)</li><li>全員と話してレース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>二郎丸</td><td>オフロードコース2を選択。変更なし。<br>(オフロードコース2が1コース目：ピットイン不要／2コース目：1コース後にほうねつフィンをつける／3コース目：2コース後にほうねつフィンをつける)</td></tr>
+    <tr><td>まこと</td><td>ほうねつフィンをつける(二郎丸戦でつけていれば変更なし)</td></tr>
+    <tr><td>豪</td><td>コーナーリングコース1を選択、電池交換</td></tr>
+    <tr><td>藤吉</td><td>変更なし</td></tr>
+    <tr><td>リョウ</td><td>コーナーリングコース1を選択、電池交換</td></tr>
+    <tr class="boss"><td>烈(目標 1:21:30)</td><td>電池交換</td></tr>
+  </table>
+  <ul class="acts"><li>風輪町のバス停へ移動</li></ul>
+
+  <!-- 第8章 -->
+  <h2 class="chap" id="c8">第8章：佐上模型店〜烈撃破(2戦目)<span class="tgt">目標 1:35:30</span></h2>
+  <ul class="acts">
+    <li>バス停(風輪町)：烈と豪の家へダッシュ</li>
+    <li>烈と豪の家：豪と話して佐上模型店へダッシュ</li>
+  </ul>
+  <h3 class="spot">佐上模型店</h3>
+  <p class="sell">売却：シルバーパーツ、リチウムでんち×3</p>
+  <ul class="buy">
+    <li>スパークアルカリでんち</li><li>SPゴムタイヤS×2</li><li>Uダッシュモーター</li>
+    <li>アローバンパー×2</li><li>ウイングサイド×2</li><li>ロングアローウイング</li>
+    <li>リニアローラーS×2</li><li>リニアローラーL×2</li><li>れいきゃくファン×2</li>
+    <li>スーパーチャージャー×3</li>
+  </ul>
+  <h3 class="spot">自宅</h3>
+  <ul class="acts">
+    <li>分解してセッティング。ローラーはフロントL、オプションの前にスーパーチャージャー</li>
+    <li>コーナーリングコース1でテスト走行を1回してモーターのパーツ年齢を上げる</li>
+    <li>佐上模型店へ移動</li>
+  </ul>
+  <h3 class="spot">佐上模型店(レース)</h3>
+  <ul class="acts"><li>全員と話してレース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>二郎丸</td><td>変更なし</td></tr>
+    <tr><td>ジュン</td><td>れいきゃくファンをつける</td></tr>
+    <tr><td>豪</td><td>コーナーリングコース1を選択</td></tr>
+    <tr><td>リョウ</td><td>コーナーリングコース1を選択</td></tr>
+    <tr class="boss"><td>烈(目標 1:35:30)</td><td>バンパー、サイドを交換</td></tr>
+  </table>
+  <ul class="acts"><li>自宅へ移動</li></ul>
+
+  <!-- 第9章 -->
+  <h2 class="chap" id="c9">第9章：大神研究所〜Ｊ撃破<span class="tgt">目標 1:51:00</span></h2>
+  <ul class="acts">
+    <li>自宅：大神博士からの手紙が届いているので読む。バス停へ</li>
+    <li>バス停：バスに乗って大神ラボラトリへ</li>
+    <li>バス停(大神ラボラトリ)：大神研究所までダッシュ</li>
+    <li>大神研究所：大神博士の話を聞いて大神模型店へダッシュ</li>
+  </ul>
+  <h3 class="spot">大神模型店(購入)</h3>
+  <ul class="buy">
+    <li>アルカリでんちMAX×2</li><li>SPゴムタイヤS×2</li><li>ちょうでんどうモーター</li>
+    <li>スプラッシュバンパー2×2</li><li>ツインアローサイド2×2</li><li>かへんウイング</li>
+    <li>ハイブリッドローラーS×2</li><li>ハイブリッドローラーL×2</li><li>メガリニヤブースター×2</li>
+  </ul>
+  <h3 class="spot">自宅</h3>
+  <ul class="acts"><li>分解してセッティング。ローラーはフロントL、スーパーチャージャーとメガリニヤブースターをつける</li><li>大神研究所へ移動</li></ul>
+  <h3 class="spot">大神研究所(レース)</h3>
+  <ul class="acts"><li>全員と話してレース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>ピンク</td><td>変更なし</td></tr>
+    <tr><td>イエロー</td><td>メガリニヤブースターをれいきゃくファンに変更</td></tr>
+    <tr><td>レッド</td><td>変更なし</td></tr>
+    <tr><td>ホワイト</td><td>変更なし</td></tr>
+    <tr><td>グリーン</td><td>変更なし</td></tr>
+    <tr class="boss"><td>Ｊ(目標 1:51:00)</td><td>バンパー、サイド、電池交換。れいきゃくファンをメガリニヤブースターに変更</td></tr>
+  </table>
+  <ul class="acts"><li>トイランドへ移動</li></ul>
+
+  <!-- 第10章 -->
+  <h2 class="chap" id="c10">第10章：トイランド〜カイ撃破(ミニ四駆タワー)<span class="tgt">目標 2:11:00</span></h2>
+  <h3 class="spot">トイランド(東京)</h3>
+  <p class="sell">売却：アローバンパー、ウイングサイド、アルカリでんちMAX、スプラッシュバンパー2、ツインアローサイド2、れいきゃくファン</p>
+  <ul class="buy">
+    <li>ロングパワーボンバー×2</li><li>SPゴムタイヤS×6</li><li>メテオモーター</li>
+    <li>グレートアローバンパー×2</li><li>ウイングサイド2×2</li><li>フォーミュラウイング×2</li>
+    <li>ちょうでんじローラーS×3</li><li>ちょうでんじローラーL×3</li><li>ペルチェクーラー</li>
+  </ul>
+  <h3 class="spot">自宅</h3>
+  <ul class="acts"><li>分解してセッティング。ローラーはフロントL、オプションの前にスーパーチャージャー</li><li>ミニ四駆タワーへ移動</li></ul>
+  <h3 class="spot">ミニ四駆タワー</h3>
+  <ul class="acts"><li>受付に話して予選突破</li><li>全員と話してレース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>二郎丸</td><td>ペルチェクーラーをつける</td></tr>
+    <tr><td>まこと</td><td>変更なし</td></tr>
+    <tr><td>藤吉</td><td>変更なし</td></tr>
+    <tr><td>リョウ</td><td>タイヤ交換、コーナーリングコース1を選択</td></tr>
+    <tr><td>Ｊ</td><td>変更なし</td></tr>
+    <tr><td>豪</td><td>コーナーリングコース1を選択。バンパー、サイド、ウイング、タイヤ、電池、右ローラーを交換</td></tr>
+    <tr><td>烈</td><td>変更なし</td></tr>
+    <tr class="boss"><td>カイ(目標 2:11:00)</td><td>ペルチェクーラーをメガリニヤブースターに変更</td></tr>
+  </table>
+  <ul class="acts"><li>バス停へ移動</li></ul>
+
+  <!-- 第11章 -->
+  <h2 class="chap" id="c11">第11章：大神学園〜学園滑走路(カイ)</h2>
+  <ul class="acts">
+    <li>バス停：バスに乗って大神学園へ</li>
+    <li>バス停(大神学園)：校舎までダッシュ</li>
+    <li>大神学園：カイと話して学園レース場へ(オート移動)</li>
+    <li>学園レース場：登録だけして学園購買部へ移動</li>
+  </ul>
+  <h3 class="spot">学園購買部</h3>
+  <p class="sell">売却：ペルチェクーラー以外すべて</p>
+  <ul class="buy">
+    <li>ダークパワー×5</li><li>QゴムタイヤS×6</li><li>ライトニングモーター</li>
+    <li>オイルスライドダンパー</li><li>ダークサイド×2</li><li>ダークウイング</li>
+    <li>セーフローラーガンマS×3</li><li>セーフローラーガンマL×3</li><li>メガチャージャー×2</li>
+  </ul>
+  <h3 class="spot">自宅</h3>
+  <ul class="acts">
+    <li>そうこからパーツを17個捨てる(ミドルスタビポールLの1個目まで捨てる)</li>
+    <li>分解してセッティング。ローラーはフロントL、オプションの前にメガチャージャー</li>
+    <li>学園レース場へ移動</li>
+  </ul>
+  <h3 class="spot">学園レース場</h3>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>ピンク</td><td>変更なし</td></tr>
+    <tr><td>イエロー</td><td>オプション後ろをペルチェクーラーに変更</td></tr>
+    <tr><td>ホワイト</td><td>変更なし</td></tr>
+    <tr><td>レッド</td><td>電池交換</td></tr>
+  </table>
+  <ul class="acts"><li>学園滑走路へ移動</li></ul>
+  <h3 class="spot">学園滑走路</h3>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>カイ</td><td>変更なし</td></tr>
+  </table>
+  <ul class="acts"><li>大神研究所へ移動</li></ul>
+
+  <!-- 第12章 -->
+  <h2 class="chap" id="c12">第12章：鍾乳洞〜レイ撃破<span class="tgt">目標 2:36:30</span></h2>
+  <ul class="acts"><li>大神研究所：大神博士の話を聞いて鍾乳洞へダッシュ</li></ul>
+  <h3 class="spot">鍾乳洞</h3>
+  <ul class="acts"><li>全員と話してレース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>ピンク</td><td>変更なし</td></tr>
+    <tr><td>イエロー</td><td>タイヤ、電池交換</td></tr>
+    <tr><td>レッド</td><td>変更なし</td></tr>
+    <tr><td>黒沢</td><td>サイド、タイヤ、電池、右ローラーを交換</td></tr>
+    <tr><td>ゲン</td><td>変更なし</td></tr>
+    <tr class="boss"><td>レイ(目標 2:36:30)</td><td>電池交換</td></tr>
+  </table>
+  <ul class="acts"><li>鍾乳洞に入りなおしてトイランドへ移動</li></ul>
+
+  <!-- 第13章 -->
+  <h2 class="chap" id="c13">第13章：最終決戦〜エンディング(豪)<span class="tgt">目標 3:06:00</span></h2>
+  <h3 class="spot">トイランド</h3>
+  <p class="sell">売却：メガチャージャー以外すべて</p>
+  <ul class="buy">
+    <li>ロングパワーギガント×3</li><li>QゴムタイヤS×10</li><li>サンダーモーター</li>
+    <li>フォーミュラーバンパー×2</li><li>Vサイド×2</li><li>Vウイング×2</li>
+    <li>セーフスタビローラーS×5</li><li>セーフスタビローラーL×5</li><li>すいれいクーラー</li>
+  </ul>
+  <h3 class="spot">自宅</h3>
+  <ul class="acts"><li>分解してセッティング。ローラーはフロントL、オプションの前にメガチャージャー</li><li>ミニ四駆タワーへ移動</li></ul>
+  <h3 class="spot">ミニ四駆タワー(最終決戦)</h3>
+  <ul class="acts"><li>受付に話して予選突破</li><li>全員と話してレース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>二郎丸</td><td>オプション後ろをすいれいクーラーに変更</td></tr>
+    <tr><td>ピンク</td><td>変更なし</td></tr>
+    <tr><td>まこと</td><td>変更なし</td></tr>
+    <tr><td>イエロー</td><td>変更なし</td></tr>
+    <tr><td>レッド</td><td>タイヤ、電池交換</td></tr>
+    <tr><td>藤吉</td><td>右ローラーを交換</td></tr>
+    <tr><td>リョウ</td><td>バンパー、サイド、ウイング、タイヤを交換</td></tr>
+    <tr><td>カイ</td><td>変更なし</td></tr>
+    <tr><td>Ｊ</td><td>変更なし</td></tr>
+    <tr><td>ゲン</td><td>タイヤ、電池交換</td></tr>
+    <tr><td>烈</td><td>コーナーリングコース1を選択、全ローラーを交換</td></tr>
+    <tr><td>レイ</td><td>タイヤ交換</td></tr>
+    <tr class="boss"><td>豪(目標 3:06:00)</td><td>コーナーリングコース1を選択</td></tr>
+  </table>
+  <p style="text-align:center;font-weight:bold;margin-top:16px;">— エンディング —</p>
+
+  <h2 class="route-hd" id="hurricane">🟠 ハリケーンソニック編</h2>
+  <p class="page-desc">初期マシンに「ハリケーンソニック」を選んだ場合のルートです。対戦相手の並び・開催地はサイクロンマグナム編と共通ですが、マシン性能の違いによりセッティングの中身が異なります。</p>
+
+  <div id="toc-hurricane" class="toc-box">
+    <div class="hd">章目次(ハリケーンソニック編)</div>
+    <ol>
+      <li><a href="#hc1">オープニング〜まこと撃破</a></li>
+      <li><a href="#hc2">JET模型店〜黒沢撃破</a></li>
+      <li><a href="#hc3">東京へ〜藤吉撃破(タワー)</a></li>
+      <li><a href="#hc4">土屋研究所〜鉄心撃破</a></li>
+      <li><a href="#hc5">土屋模型店〜藤吉撃破(屋敷)</a></li>
+      <li><a href="#hc6">ゴールド模型店〜リョウ撃破</a></li>
+      <li><a href="#hc7">スピード模型店〜烈撃破(タワー)</a></li>
+      <li><a href="#hc8">佐上模型店〜烈撃破(2戦目)</a></li>
+      <li><a href="#hc9">大神研究所〜Ｊ撃破</a></li>
+      <li><a href="#hc10">トイランド〜カイ撃破(タワー)</a></li>
+      <li><a href="#hc11">大神学園〜学園滑走路(カイ)</a></li>
+      <li><a href="#hc12">鍾乳洞〜レイ撃破</a></li>
+      <li><a href="#hc13">最終決戦〜エンディング(豪)</a></li>
+    </ol>
+  </div>
+
+  <!-- ハリケーンソニック編 第1章 -->
+  <h2 class="chap" id="hc1">第1章：オープニング〜まこと撃破</h2>
+  <h3 class="spot">学校</h3>
+  <ul class="acts">
+    <li>みんなの話をBボタンで飛ばす</li>
+    <li>家を経由しておもちゃのナガイへ(オート移動)</li>
+  </ul>
+  <h3 class="spot">おもちゃのナガイ</h3>
+  <ul class="acts">
+    <li>店員の話はBボタンでカット</li>
+    <li><b>ハリケーンソニック</b>、スポンジタイヤS、スポンジタイヤLを購入</li>
+    <li>学校へ移動</li>
+  </ul>
+  <h3 class="spot">学校</h3>
+  <ul class="acts">
+    <li>スポンジタイヤSをフロント、Lをリヤーにセッティングして草レース</li>
+  </ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>まもる</td><td>変更なし</td></tr>
+    <tr><td>しょうた</td><td>変更なし</td></tr>
+  </table>
+  <div class="note">サイクロンマグナム編と違い、まもるからでも勝てるルートです。</div>
+  <ul class="acts"><li>まことに誘われるのでJET模型店を登録してレース場へ</li></ul>
+  <h3 class="spot">レース場</h3>
+  <ul class="acts"><li>全員と話してレース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>たくや</td><td>変更なし</td></tr>
+    <tr><td>ケンタ</td><td>変更なし</td></tr>
+    <tr class="boss"><td>まこと</td><td>変更なし</td></tr>
+  </table>
+  <ul class="acts"><li>公園を経由登録してJET模型店へ移動</li></ul>
+
+  <!-- ハリケーンソニック編 第2章 -->
+  <h2 class="chap" id="hc2">第2章：JET模型店〜黒沢撃破</h2>
+  <h3 class="spot">JET模型店(購入)</h3>
+  <ul class="buy">
+    <li>アルカリでんち</li><li>レブチューンモーター</li><li>スピードバンパー</li>
+    <li>エアロサイド</li><li>エアロウイングベータ</li><li>スタビライザーS×2</li>
+    <li>スタビライザーL×2</li>
+  </ul>
+  <h3 class="spot">公園</h3>
+  <ul class="acts">
+    <li>分解してセッティング。購入したパーツに全部交換。ローラーはバンパー側にS、サイドにL(直線スピードが伸びるため)</li>
+    <li>キャンセル技を使ってたくや→ケンタの順で草レース(1番目にケンタと対戦になった場合は、キャンセルしてたくやを先に持ってくる)</li>
+  </ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>たくや</td><td>変更なし</td></tr>
+    <tr><td>ケンタ</td><td>変更なし</td></tr>
+  </table>
+  <ul class="acts"><li>黒沢に誘われるのでレース場へ移動(今後、基本的にはオーバルコースを選ぶ)</li></ul>
+  <h3 class="spot">レース場</h3>
+  <ul class="acts"><li>全員と話してレース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>ロクカワ</td><td>変更なし</td></tr>
+    <tr><td>ティモタ</td><td>変更なし</td></tr>
+    <tr><td>マサ</td><td>変更なし</td></tr>
+    <tr class="boss"><td>黒沢</td><td>変更なし</td></tr>
+  </table>
+  <ul class="acts"><li>バス停までダッシュ</li></ul>
+
+  <!-- ハリケーンソニック編 第3章 -->
+  <h2 class="chap" id="hc3">第3章：東京へ〜藤吉撃破(ミニ四駆タワー)</h2>
+  <ul class="acts">
+    <li>バス停：バスに乗って東京へ</li>
+    <li>バス停(東京)：トイランド・スピード模型店・ミニ四駆タワーを登録してデパートへダッシュ</li>
+  </ul>
+  <h3 class="spot">デパート(購入)</h3>
+  <p class="sell">売却：ツールボックス内のパーツを全て</p>
+  <ul class="buy">
+    <li>マンガンでんちハイパー</li><li>Sダッシュモーター</li><li>かへんエアロバンパー</li>
+    <li>スピードサイド</li><li>スピードウイング</li><li>ほうねつフィン</li>
+  </ul>
+  <ul class="acts"><li>ほうねつフィン以外のパーツを交換(ローラー・タイヤは変更なしでOK)</li><li>ミニ四駆タワーへ移動</li></ul>
+  <h3 class="spot">ミニ四駆タワー</h3>
+  <ul class="acts"><li>受付に話して予選突破(27秒を切る)</li><li>全員と話してレース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>ティモタ</td><td>変更なし</td></tr>
+    <tr><td>マサ</td><td>変更なし</td></tr>
+    <tr><td>まこと</td><td>変更なし</td></tr>
+    <tr><td>黒沢</td><td>変更なし</td></tr>
+    <tr class="boss"><td>藤吉</td><td>2コース目がコーナリングコースに固定</td></tr>
+  </table>
+  <ul class="acts"><li>土屋博士に連れられて土屋研究所へ(オート移動)</li></ul>
+
+  <!-- ハリケーンソニック編 第4章 -->
+  <h2 class="chap" id="hc4">第4章：土屋研究所〜鉄心撃破</h2>
+  <h3 class="spot">土屋研究所</h3>
+  <ul class="acts"><li>土屋博士の話をBボタンで飛ばす</li><li>鉄心のかまどへ(オート移動)</li></ul>
+  <h3 class="spot">鉄心のかまど</h3>
+  <ul class="acts"><li>鉄心の話をBボタンで飛ばす</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr class="boss"><td>鉄心</td><td>変更なし</td></tr>
+  </table>
+  <ul class="acts"><li>土屋模型店へダッシュ</li></ul>
+
+  <!-- ハリケーンソニック編 第5章 -->
+  <h2 class="chap" id="hc5">第5章：土屋模型店〜藤吉撃破(藤吉の屋敷)</h2>
+  <h3 class="spot">土屋模型店</h3>
+  <p class="sell">売却：ほうねつフィン以外すべて</p>
+  <ul class="buy">
+    <li>ダッシュアルカリでんち</li><li>ネオゴムタイヤS</li><li>ネオゴムタイヤL</li>
+    <li>スペシャルモーター</li><li>ダウンフォースバンパー</li><li>エアロサイドマキシマム</li>
+    <li>ハイスピードウイング</li>
+  </ul>
+  <h3 class="spot">自宅</h3>
+  <ul class="acts">
+    <li>分解してセッティング。ほうねつフィンはまだつけない</li>
+    <li>バス停へ移動</li>
+  </ul>
+  <ul class="acts">
+    <li>バス停：バスに乗って風輪町へ</li>
+    <li>バス停(風輪町)：藤吉の屋敷へダッシュ</li>
+  </ul>
+  <h3 class="spot">藤吉の屋敷</h3>
+  <ul class="acts"><li>全員と話してセッティング(ほうねつフィン以外を入れ替え)、レース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>しょうた</td><td>変更なし</td></tr>
+    <tr><td>まもる</td><td>変更なし</td></tr>
+    <tr><td>たくや</td><td>変更なし</td></tr>
+    <tr><td>ケンタ</td><td>変更なし</td></tr>
+    <tr class="boss"><td>藤吉</td><td>変更なし</td></tr>
+  </table>
+  <ul class="acts"><li>ゴールド模型店へ移動</li></ul>
+
+  <!-- ハリケーンソニック編 第6章 -->
+  <h2 class="chap" id="hc6">第6章：ゴールド模型店〜リョウ撃破</h2>
+  <h3 class="spot">ゴールド模型店(購入)</h3>
+  <ul class="buy">
+    <li>ロングパワー</li><li>ニッカドでんち</li><li>レストンタイヤL×2</li>
+    <li>マッハダッシュモーター</li><li>エアロバンパーセカンド</li><li>ツインアローサイド</li>
+    <li>アローウイング</li><li>ミドルスタビポールS×2</li><li>ミドルスタビポールL×2</li>
+  </ul>
+  <h3 class="spot">鷹羽レース場</h3>
+  <ul class="acts"><li>全員と話してセッティング(ニッカドでんち・レストンタイヤ・ほうねつフィン以外を交換)、レース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>まもる</td><td>勝利後、ほうねつフィンをつける</td></tr>
+    <tr><td>たくや</td><td>変更なし</td></tr>
+    <tr><td>ケンタ</td><td>スタートに失敗したら、ピットインでレストンタイヤに付け替えれば勝てる</td></tr>
+    <tr><td>あや</td><td>勝利後、フロント・リヤーのレストンタイヤLとニッカドでんちに交換</td></tr>
+    <tr><td>二郎丸</td><td>変更なし</td></tr>
+    <tr class="boss"><td>リョウ</td><td>変更なし</td></tr>
+  </table>
+  <ul class="acts"><li>東京のスピード模型店へ移動</li></ul>
+
+  <!-- ハリケーンソニック編 第7章 -->
+  <h2 class="chap" id="hc7">第7章：スピード模型店〜烈撃破(ミニ四駆タワー)</h2>
+  <h3 class="spot">スピード模型店</h3>
+  <p class="sell">売却：全て</p>
+  <ul class="buy">
+    <li>リチウムでんち×3</li><li>ネオゴムタイヤS</li><li>ネオゴムタイヤL</li>
+    <li>Jダッシュモーター</li><li>スプラッシュバンパー</li><li>マッハスピードサイド</li>
+    <li>カナードウイング</li><li>エレクトリックターボ</li>
+  </ul>
+  <h3 class="spot">ミニ四駆タワー</h3>
+  <ul class="acts">
+    <li>セッティング変更。エレクトリックターボをオプション前に装着し、ほうねつフィンは外す</li>
+    <li>受付に話して予選突破</li><li>全員と話してレース</li>
+  </ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>二郎丸</td><td>コース6を選択。変更なし</td></tr>
+    <tr><td>まこと</td><td>勝利後、リチウムでんちを交換</td></tr>
+    <tr><td>豪</td><td>変更なし</td></tr>
+    <tr><td>藤吉</td><td>勝利後、リチウムでんちを交換</td></tr>
+    <tr><td>リョウ</td><td>変更なし</td></tr>
+    <tr class="boss"><td>烈</td><td>変更なし</td></tr>
+  </table>
+  <ul class="acts"><li>風輪町のバス停へ移動</li></ul>
+
+  <!-- ハリケーンソニック編 第8章 -->
+  <h2 class="chap" id="hc8">第8章：佐上模型店〜烈撃破(2戦目)</h2>
+  <ul class="acts">
+    <li>バス停(風輪町)：烈と豪の家へダッシュ</li>
+    <li>烈と豪の家：話を聞いて佐上模型店へダッシュ</li>
+  </ul>
+  <h3 class="spot">佐上模型店</h3>
+  <ul class="acts"><li>全員と話すとレッツ・ゴーボタンが使えるようになる</li></ul>
+  <p class="sell">売却：全て</p>
+  <ul class="buy">
+    <li>スパークアルカリでんち</li><li>SPゴムタイヤS</li><li>SPゴムタイヤL</li>
+    <li>Uダッシュモーター</li><li>アローバンパー</li><li>ウイングサイド</li>
+    <li>ロングアローウイング</li><li>MAXスタビポールS×3</li><li>MAXスタビポールL×3</li>
+    <li>れいきゃくファン</li><li>スーパーチャージャー</li>
+  </ul>
+  <h3 class="spot">佐上模型店(レース)</h3>
+  <ul class="acts"><li>セッティング。スーパーチャージャーをオプション後ろにつける、オプション前はそのまま</li><li>全員と話してレース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>二郎丸</td><td>コース5を選択。勝利後、オプション後ろをれいきゃくファンに変更</td></tr>
+    <tr><td>ジュン</td><td>変更なし</td></tr>
+    <tr><td>豪</td><td>変更なし</td></tr>
+    <tr><td>リョウ</td><td>変更なし</td></tr>
+    <tr class="boss"><td>烈</td><td>変更なし</td></tr>
+  </table>
+  <ul class="acts"><li>自宅へ移動</li></ul>
+
+  <!-- ハリケーンソニック編 第9章 -->
+  <h2 class="chap" id="hc9">第9章：大神研究所〜Ｊ撃破</h2>
+  <ul class="acts">
+    <li>バス停：バスに乗って大神ラボラトリへ</li>
+    <li>大神研究所：大神博士の話を聞いて大神模型店へダッシュ</li>
+  </ul>
+  <h3 class="spot">大神模型店(購入)</h3>
+  <p class="sell">売却：未使用のローラー以外</p>
+  <ul class="buy">
+    <li>アルカリでんちMAX</li><li>オメガパワー</li><li>SPゴムタイヤS</li>
+    <li>SPゴムタイヤL</li><li>ちょうでんどうモーター</li><li>スポイラー</li>
+    <li>トライアングルサイド</li><li>かへんウイング</li><li>アンチウェイト</li>
+  </ul>
+  <h3 class="spot">大神研究所(レース)</h3>
+  <ul class="acts">
+    <li>セッティング。基本的に購入したものに交換。右側のローラーのみ未使用のものに変更、オプション後ろにアンチウェイト</li>
+    <li>全員と話してレース</li>
+  </ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>ピンク</td><td>スピードコース1を選択。勝利後、アンチウェイトをれいきゃくファンに変更</td></tr>
+    <tr><td>イエロー</td><td>変更なし</td></tr>
+    <tr><td>レッド</td><td>変更なし</td></tr>
+    <tr><td>ホワイト</td><td>変更なし</td></tr>
+    <tr><td>グリーン</td><td>坂系・コーナー系のコースが多ければ、2コース目終了時点でオメガパワー・アンチウェイトに変更。勝利後、まだピットインしていなければ同様に変更</td></tr>
+    <tr class="boss"><td>Ｊ</td><td>変更なし</td></tr>
+  </table>
+  <ul class="acts"><li>トイランドへ移動</li></ul>
+
+  <!-- ハリケーンソニック編 第10章 -->
+  <h2 class="chap" id="hc10">第10章：トイランド〜カイ撃破(ミニ四駆タワー)</h2>
+  <h3 class="spot">トイランド(東京)</h3>
+  <p class="sell">売却：全て</p>
+  <ul class="buy">
+    <li>ロングパワーボンバー</li><li>SPゴムタイヤS×2</li><li>SPゴムタイヤL×2</li>
+    <li>メテオモーター</li><li>グレートアローバンパー×2</li><li>ウイングサイド2×2</li>
+    <li>フォーミュラーウイング×2</li><li>セーフローラーベータS×3</li><li>セーフローラーベータL×3</li>
+    <li>ペルチェクーラー</li>
+  </ul>
+  <h3 class="spot">ミニ四駆タワー</h3>
+  <ul class="acts">
+    <li>セッティング。オプションパーツはいじらずに、それ以外を交換</li>
+    <li>受付に話して予選突破</li>
+    <li>全員と話してレース。オプション後ろをペルチェクーラーに変更</li>
+  </ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>二郎丸</td><td>変更なし</td></tr>
+    <tr><td>まこと</td><td>変更なし</td></tr>
+    <tr><td>藤吉</td><td>変更なし</td></tr>
+    <tr><td>リョウ</td><td>レッツ・ゴーボタン使用。負けそうなら2コース終了後にペルチェクーラーをアンチウェイトに変更。勝利後、前後タイヤ・バンパー・サイド・ウイング・前後右ローラーを交換し、ペルチェクーラーに戻す</td></tr>
+    <tr><td>Ｊ</td><td>変更なし</td></tr>
+    <tr><td>豪</td><td>変更なし</td></tr>
+    <tr><td>烈</td><td>変更なし。勝利後、ペルチェクーラーをアンチウェイトに変更</td></tr>
+    <tr class="boss"><td>カイ</td><td>レッツ・ゴーボタン使用</td></tr>
+  </table>
+  <ul class="acts"><li>バス停へ移動</li></ul>
+
+  <!-- ハリケーンソニック編 第11章 -->
+  <h2 class="chap" id="hc11">第11章：大神学園〜学園滑走路(カイ)</h2>
+  <ul class="acts">
+    <li>バス停：バスに乗って大神学園へ</li>
+    <li>校舎・学園レース場を経由して学園購買部へ移動</li>
+  </ul>
+  <h3 class="spot">学園購買部</h3>
+  <p class="sell">売却：ペルチェクーラー以外すべて</p>
+  <ul class="buy">
+    <li>ダークパワー×6</li><li>QゴムタイヤS×2</li><li>QゴムタイヤL×2</li>
+    <li>ライトニングモーター</li><li>オイルスライドバンパー</li><li>ダークサイド×2</li>
+    <li>ダークウイング</li><li>セーフローラーガンマS×3</li><li>セーフローラーガンマL×3</li>
+    <li>メガチャージャー</li>
+  </ul>
+  <h3 class="spot">学園レース場</h3>
+  <ul class="acts">
+    <li>セッティング。コース7(ゼロヨンコース)を選択。オプション前にメガチャージャー、後ろはアンチウェイトのまま</li>
+    <li>全員と話してレース</li>
+  </ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>ピンク</td><td>2コース終了後、アンチウェイトをペルチェクーラーに変更</td></tr>
+    <tr><td>イエロー</td><td>変更なし</td></tr>
+    <tr><td>ホワイト</td><td>変更なし</td></tr>
+    <tr><td>レッド</td><td>勝利後、ダークパワーを新しいものに交換</td></tr>
+  </table>
+  <ul class="acts"><li>学園滑走路へ移動</li></ul>
+  <h3 class="spot">学園滑走路</h3>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>カイ</td><td>変更なし</td></tr>
+  </table>
+  <ul class="acts"><li>大神研究所へ移動</li></ul>
+
+  <!-- ハリケーンソニック編 第12章 -->
+  <h2 class="chap" id="hc12">第12章：鍾乳洞〜レイ撃破</h2>
+  <ul class="acts"><li>大神研究所：大神博士の話を聞いて鍾乳洞へダッシュ</li></ul>
+  <h3 class="spot">鍾乳洞</h3>
+  <ul class="acts"><li>全員と話してレース</li></ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>ピンク</td><td>勝利後、ダークパワーを新しいものに交換</td></tr>
+    <tr><td>イエロー</td><td>変更なし</td></tr>
+    <tr><td>レッド</td><td>坂系・コーナー系が多ければ、前後タイヤ・サイド・前後右ローラー・電池を途中でピットインして交換。勝利後まだ交換していなければ同様に交換</td></tr>
+    <tr><td>黒沢</td><td>変更なし</td></tr>
+    <tr><td>ゲン</td><td>3コース目が坂系ならレース前に新しいダークパワーに交換。勝利後、ダークパワーを新しいものに交換(すでに交換していても)</td></tr>
+    <tr class="boss"><td>レイ</td><td>変更なし</td></tr>
+  </table>
+  <ul class="acts"><li>鍾乳洞に入りなおしてトイランドへ移動</li></ul>
+
+  <!-- ハリケーンソニック編 第13章 -->
+  <h2 class="chap" id="hc13">第13章：最終決戦〜エンディング(豪)</h2>
+  <h3 class="spot">トイランド</h3>
+  <p class="sell">売却：全て</p>
+  <ul class="buy">
+    <li>ロングパワーギガント×3</li><li>QゴムタイヤS×4</li><li>QゴムタイヤL×4</li>
+    <li>サンダーモーター</li><li>フォーミュラーバンパー×2</li><li>Vサイド×2</li>
+    <li>Vウイング×2</li><li>セーフスタビローラーS×4</li><li>セーフスタビローラーL×4</li>
+    <li>すいれいクーラー</li>
+  </ul>
+  <h3 class="spot">ミニ四駆タワー(最終決戦)</h3>
+  <ul class="acts">
+    <li>セッティング。予選前はオプション後ろに何もつけない</li>
+    <li>受付に話して予選突破</li>
+    <li>全員と話してレース。オプション後ろをすいれいクーラーに変更</li>
+  </ul>
+  <table class="race">
+    <tr><th>対戦相手</th><th>セッティング変更</th></tr>
+    <tr><td>二郎丸</td><td>まれにレッツ・ゴーボタンでコースアウトしてくれる。変更なし</td></tr>
+    <tr><td>ピンク</td><td>変更なし</td></tr>
+    <tr><td>まこと</td><td>変更なし</td></tr>
+    <tr><td>イエロー</td><td>変更なし</td></tr>
+    <tr><td>レッド</td><td>勝利後、前後タイヤ・前後右ローラー・電池を交換</td></tr>
+    <tr><td>藤吉</td><td>変更なし</td></tr>
+    <tr><td>リョウ</td><td>一旦休憩できるが、そのまま進めてよい</td></tr>
+    <tr><td>カイ</td><td>勝利後、バンパー・サイド・ウイング・前後右ローラー・電池を交換</td></tr>
+    <tr><td>Ｊ</td><td>変更なし</td></tr>
+    <tr><td>ゲン</td><td>変更なし</td></tr>
+    <tr><td>烈</td><td>1コース終了後、前後タイヤを交換</td></tr>
+    <tr><td>レイ</td><td>変更なし</td></tr>
+    <tr class="boss"><td>豪</td><td>苦戦するようならタイヤを交換</td></tr>
+  </table>
+  <p style="text-align:center;font-weight:bold;margin-top:16px;">— エンディング —</p>
+
+</div>
+
+<div id="ftr">
+  © 2026 ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式) ／ 「ミニ四駆」はタミヤ株式会社の登録商標です。
+</div>
+
+</body>
+</html>

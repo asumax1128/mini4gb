@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>取扱店一覧 - ミニ四駆GB Let's&amp;Go!! 徹底攻略</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;background:#EDEDED;color:#111;font-family:"MS PGothic","Hiragino Kaku Gothic ProN",sans-serif;font-size:13px;}
+  a{color:#0000EE;}
+  a:visited{color:#551A8B;}
+  a:hover{color:#CC0000;}
+  #siteband{background:#1B3358;color:#fff;padding:6px 14px;font-size:11px;display:flex;justify-content:space-between;}
+  #siteband a{color:#cfe0f5;margin-left:10px;}
+  #navstrip{background:#fff;border-bottom:2px solid #1B3358;padding:8px 14px;font-size:12px;font-weight:bold;}
+  #navstrip a{margin-right:10px;white-space:nowrap;}
+  #navstrip .sep{color:#999;margin-right:10px;}
+  #wrap{max-width:900px;margin:12px auto;background:#fff;border:1px solid #999;padding:14px 18px 26px;}
+  .breadcrumb{font-size:11px;color:#555;margin-bottom:10px;}
+  h1.page-title{font-size:19px;border-bottom:3px solid #1B3358;padding-bottom:6px;margin:0 0 4px;}
+  p.page-desc{font-size:12.5px;color:#444;margin:0 0 10px;}
+  h2.blk{background:#1B3358;color:#fff;font-size:13px;padding:5px 9px;margin:22px 0 8px;}
+  h3.blk2{border-left:5px solid #1B3358;padding-left:7px;font-size:13px;margin:16px 0 6px;}
+  table.dat{border-collapse:collapse;width:100%;font-size:12px;margin-bottom:12px;}
+  table.dat th,table.dat td{border:1px solid #999;padding:4px 6px;text-align:left;}
+  table.dat th{background:#DCE4EC;}
+  table.dat tr:nth-child(even) td{background:#F7F9FB;}
+  .note{background:#FFF9DB;border:1px dashed #C9AF52;padding:6px 9px;font-size:11.5px;color:#665500;margin:8px 0;}
+  #toc{background:#F4F6F8;border:1px solid #ccc;padding:8px 12px;font-size:12px;margin-bottom:16px;}
+  #toc .hd{font-weight:bold;margin-bottom:4px;}
+  #toc ul{margin:0;padding-left:18px;columns:2;}
+  #ftr{max-width:900px;margin:0 auto 30px;text-align:center;font-size:10.5px;color:#666;}
+
+  /* 店舗カード */
+  .shop-card{border:1px solid #999;background:#fff;margin-bottom:14px;}
+  .shop-head{background:#1B3358;color:#fff;padding:6px 10px;font-size:13px;font-weight:bold;display:flex;justify-content:space-between;align-items:baseline;}
+  .shop-head .town{font-weight:normal;font-size:11px;color:#cfe0f5;}
+  .shop-body{padding:8px 12px 10px;}
+  .shop-sub{font-weight:bold;font-size:11.5px;background:#DCE4EC;padding:3px 7px;margin:8px 0 4px;}
+  ul.shop-list{list-style:none;margin:0;padding:0;columns:2;column-gap:18px;font-size:11.5px;}
+  ul.shop-list li{display:flex;justify-content:space-between;gap:8px;padding:2px 0;border-bottom:1px dotted #ddd;break-inside:avoid;}
+  ul.shop-list li .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  ul.shop-list li .price{color:#B03B5F;font-weight:bold;white-space:nowrap;flex-shrink:0;}
+  ul.shop-list.mini li .price{color:#1B3358;}
+  @media (max-width:520px){ ul.shop-list{columns:1;} }
+
+  /* つくも屋 交換表 */
+  table.tsukumo{border-collapse:collapse;width:100%;font-size:11.5px;margin-bottom:10px;}
+  table.tsukumo th,table.tsukumo td{border:1px solid #999;padding:4px 6px;text-align:left;}
+  table.tsukumo th{background:#DCE4EC;}
+  table.tsukumo td.idno{width:36px;text-align:center;font-weight:bold;background:#F4E9B8;}
+  table.tsukumo tr:nth-child(even) td:not(.idno){background:#F7F9FB;}
+</style>
+</head>
+<body>
+
+<div id="siteband">
+  <span>ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式)</span>
+  <span><a href="index.html">トップへ戻る</a></span>
+</div>
+
+<div id="navstrip">
+  <a href="index.html">TOP</a><span class="sep">|</span>
+  <a href="about.html">このゲームについて</a><span class="sep">|</span>
+  <a href="chart.html">攻略チャート(RTA)</a><span class="sep">|</span>
+  <a href="walkthrough.html">攻略チャート(通常)</a><span class="sep">|</span>
+  <a href="parts.html">パーツ図鑑</a><span class="sep">|</span>
+  <a href="upgrade.html">パーツ強化について</a><span class="sep">|</span>
+  <a href="shops.html">取扱店</a><span class="sep">|</span>
+  <a href="towns.html">街・マップ</a><span class="sep">|</span>
+  <a href="characters.html">キャラ図鑑</a><span class="sep">|</span>
+  <a href="courses.html">コース</a><span class="sep">|</span>
+  <a href="events.html">大会一覧</a><span class="sep">|</span>
+  <a href="comm.html">通信について</a><span class="sep">|</span>
+  <a href="system.html">システム解説</a><span class="sep">|</span>
+  <a href="tips.html">小技・裏技</a><span class="sep">|</span>
+  <a href="glossary.html">用語集</a>
+</div>
+
+<div id="wrap">
+  <div class="breadcrumb"><a href="index.html">TOP</a> &gt; 取扱店一覧</div>
+
+  <h1 class="page-title">取扱店一覧</h1>
+  <p class="page-desc">ミニ四駆やパーツを売っている全10店舗の品揃えと、つくも屋でのシルバーパーツ交換の仕組みをまとめています。店の場所は<a href="towns.html">街・マップ一覧</a>で確認できます。価格は取扱説明書・攻略本の記載どおりですが、紹介文は独自の言葉でまとめ直しています。</p>
+
+  <div id="toc">
+    <div class="hd">目次</div>
+    <ul>
+      <li><a href="#shopping-tips">買い物のコツ</a></li>
+      <li><a href="#nomoney">お金がないときの対処法</a></li>
+      <li><a href="#shop01">1. おもちゃのナガイ</a></li>
+      <li><a href="#shop02">2. JET模型店</a></li>
+      <li><a href="#shop03">3. デパート</a></li>
+      <li><a href="#shop04">4. スピード模型店</a></li>
+      <li><a href="#shop05">5. トイランド</a></li>
+      <li><a href="#shop06">6. 佐上模型店</a></li>
+      <li><a href="#shop07">7. ゴールド模型</a></li>
+      <li><a href="#shop08">8. 土屋模型店</a></li>
+      <li><a href="#shop09">9. 大神模型店</a></li>
+      <li><a href="#shop10">10. 学園購買部</a></li>
+      <li><a href="#tsukumoya">つくも屋の秘密</a></li>
+    </ul>
+  </div>
+
+  <div class="note">📷 公式ガイドブックp.16-23の写真から、店名・パーツ名・価格などの事実情報を転記(2026/07/29分)。紹介文・コメントは独自の言葉でまとめ直しています。「トライダガーZMC/スピンコブラ/サイクロンマグナム/ハリケーンソニック/セイバー600」の5機体はほとんどの模型店で共通して600Gで販売されているため、以下では「ミニ四駆」欄にまとめて記載しています。</div>
+
+  <h2 class="blk" id="shopping-tips">■ 買い物のコツ</h2>
+  <ul>
+    <li>レースに出るにはミニ四駆の所持が必須。ミニ四駆やパーツは模型店・デパートなどで購入できる。</li>
+    <li>ミニ四駆やパーツを買うときは、かならず「データ」画面で性能を確認してから購入するのが基本(見た目や名前だけで選ぶと失敗しやすい)。</li>
+    <li>所持できるミニ四駆は最大4台まで。すでに4台持っていると、それ以上は購入・入手できない。</li>
+    <li>お店でパーツを買うと、持ち運びできる「ツールボックス」に入る。ツールボックスがいっぱいになると、消耗品以外のパーツは自動的に自宅の倉庫に送られる仕組みになっている(→買いすぎて持ちきれなくなる心配はない)。</li>
+    <li>ツールボックス自体はお店では売っていない非売品。大会で優勝すると「横2段ボックス」がもらえる。</li>
+  </ul>
+
+  <h2 class="blk" id="nomoney">■ お金がないときの対処法</h2>
+  <p>パーツの買いすぎで所持金が心もとなくなったときは、以下の方法で立て直せる。</p>
+  <ul>
+    <li><b>草レースで稼ぐ</b>:学校や公園で開催される草レースに出場すると賞金がもらえる。</li>
+    <li><b>不要なパーツ・ミニ四駆を売る</b>:いらなくなったパーツはお店で売却できる。ミニ四駆本体を売りたい場合は、先に分解してパーツとボディに分けてからでないと売却できない(分解してから売った方が高く売れる傾向にある)。ただし、今使っている大事なマシンを売ろうとすると止められることがあるので注意。</li>
+    <li><b>お父さんに頼る</b>:所持金が900G以下の状態で自宅に帰ると、お父さんが2000Gのおこづかいをくれる。</li>
+  </ul>
+  <div class="note">ボックス(ツールボックス)と倉庫は別物。ツールボックスは携帯できるが容量に限りがあり、あふれた消耗品以外のパーツは自宅の倉庫に自動で送られて、家に帰るまで使えなくなる。</div>
+
+  <h2 class="blk">■ 店舗一覧</h2>
+  <div class="shop-card" id="shop01">
+    <div class="shop-head"><span>1. おもちゃのナガイ</span><span class="town">プレーヤーの町</span></div>
+    <div class="shop-body">
+      <div class="shop-sub">パーツ</div>
+      <ul class="shop-list">
+      <li><span class="nm">マンガンでんち</span><span class="price">100G</span></li>
+      <li><span class="nm">ロケットでんち</span><span class="price">150G</span></li>
+      <li><span class="nm">ゴムタイヤS</span><span class="price">120G</span></li>
+      <li><span class="nm">ゴムタイヤL</span><span class="price">120G</span></li>
+      <li><span class="nm">スポンジタイヤS</span><span class="price">150G</span></li>
+      <li><span class="nm">スポンジタイヤL</span><span class="price">150G</span></li>
+      <li><span class="nm">ミニモーター</span><span class="price">100G</span></li>
+      <li><span class="nm">ハイパーミニモーター</span><span class="price">150G</span></li>
+      <li><span class="nm">バンパー</span><span class="price">120G</span></li>
+      <li><span class="nm">エアロバンパー</span><span class="price">120G</span></li>
+      <li><span class="nm">ノーマルサイド</span><span class="price">100G</span></li>
+      <li><span class="nm">ノーマルウイング</span><span class="price">100G</span></li>
+      <li><span class="nm">エアロウイング</span><span class="price">100G</span></li>
+      <li><span class="nm">リヤーステー</span><span class="price">150G</span></li>
+      <li><span class="nm">ローラーS</span><span class="price">20G</span></li>
+      <li><span class="nm">ローラーL</span><span class="price">30G</span></li>
+      <li><span class="nm">コーンローラーS</span><span class="price">20G</span></li>
+      <li><span class="nm">コーンローラーL</span><span class="price">30G</span></li>
+      <li><span class="nm">ウェイト</span><span class="price">100G</span></li>
+      </ul>
+      <div class="shop-sub">ミニ四駆</div>
+      <ul class="shop-list mini">
+      <li><span class="nm">トライダガーZMC</span><span class="price">600G</span></li>
+      <li><span class="nm">スピンコブラ</span><span class="price">600G</span></li>
+      <li><span class="nm">サイクロンマグナム</span><span class="price">600G</span></li>
+      <li><span class="nm">ハリケーンソニック</span><span class="price">600G</span></li>
+      <li><span class="nm">セイバー600</span><span class="price">600G</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shop-card" id="shop02">
+    <div class="shop-head"><span>2. JET模型店</span><span class="town">プレーヤーの町</span></div>
+    <div class="shop-body">
+      <div class="shop-sub">パーツ</div>
+      <ul class="shop-list">
+      <li><span class="nm">アルカリでんち</span><span class="price">120G</span></li>
+      <li><span class="nm">PROバッテリー</span><span class="price">170G</span></li>
+      <li><span class="nm">ゴムタイヤS</span><span class="price">120G</span></li>
+      <li><span class="nm">ゴムタイヤL</span><span class="price">120G</span></li>
+      <li><span class="nm">スポンジタイヤS</span><span class="price">150G</span></li>
+      <li><span class="nm">スポンジタイヤL</span><span class="price">150G</span></li>
+      <li><span class="nm">レプチューンモーター</span><span class="price">170G</span></li>
+      <li><span class="nm">トルクチューンモーター</span><span class="price">170G</span></li>
+      <li><span class="nm">ハードバンパー</span><span class="price">140G</span></li>
+      <li><span class="nm">スピードバンパー</span><span class="price">140G</span></li>
+      <li><span class="nm">ダンパーサイド</span><span class="price">120G</span></li>
+      <li><span class="nm">エアロサイド</span><span class="price">120G</span></li>
+      <li><span class="nm">ハイマウント</span><span class="price">120G</span></li>
+      <li><span class="nm">エアロウイングベータ</span><span class="price">120G</span></li>
+      <li><span class="nm">リヤースキッド</span><span class="price">170G</span></li>
+      <li><span class="nm">スムーズローラーS</span><span class="price">30G</span></li>
+      <li><span class="nm">スムーズローラーL</span><span class="price">40G</span></li>
+      <li><span class="nm">スタビライザーポールS</span><span class="price">40G</span></li>
+      <li><span class="nm">スタビライザーポールL</span><span class="price">50G</span></li>
+      </ul>
+      <div class="shop-sub">ミニ四駆</div>
+      <ul class="shop-list mini">
+      <li><span class="nm">トライダガーZMC</span><span class="price">600G</span></li>
+      <li><span class="nm">スピンコブラ</span><span class="price">600G</span></li>
+      <li><span class="nm">サイクロンマグナム</span><span class="price">600G</span></li>
+      <li><span class="nm">ハリケーンソニック</span><span class="price">600G</span></li>
+      <li><span class="nm">セイバー600</span><span class="price">600G</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shop-card" id="shop03">
+    <div class="shop-head"><span>3. デパート</span><span class="town">東京</span></div>
+    <div class="shop-body">
+      <div class="shop-sub">パーツ</div>
+      <ul class="shop-list">
+      <li><span class="nm">マンガンでんちハイパー</span><span class="price">140G</span></li>
+      <li><span class="nm">ライトパワー</span><span class="price">200G</span></li>
+      <li><span class="nm">Xパワー</span><span class="price">300G</span></li>
+      <li><span class="nm">ゴムタイヤS</span><span class="price">120G</span></li>
+      <li><span class="nm">ゴムタイヤL</span><span class="price">120G</span></li>
+      <li><span class="nm">スポンジタイヤS</span><span class="price">150G</span></li>
+      <li><span class="nm">スポンジタイヤL</span><span class="price">150G</span></li>
+      <li><span class="nm">ラリータイヤS</span><span class="price">150G</span></li>
+      <li><span class="nm">ラリータイヤL</span><span class="price">150G</span></li>
+      <li><span class="nm">グングンタイヤS</span><span class="price">250G</span></li>
+      <li><span class="nm">グングンタイヤL</span><span class="price">250G</span></li>
+      <li><span class="nm">Sダッシュモーター</span><span class="price">200G</span></li>
+      <li><span class="nm">ネオトルクモーター</span><span class="price">200G</span></li>
+      <li><span class="nm">Xモーター</span><span class="price">300G</span></li>
+      <li><span class="nm">かへんバンパー</span><span class="price">160G</span></li>
+      <li><span class="nm">かへんエアロバンパー</span><span class="price">160G</span></li>
+      <li><span class="nm">ヘビーサイド</span><span class="price">140G</span></li>
+      <li><span class="nm">スピードサイド</span><span class="price">140G</span></li>
+      <li><span class="nm">スピードウイング</span><span class="price">140G</span></li>
+      <li><span class="nm">ダウンフォースウイング</span><span class="price">140G</span></li>
+      <li><span class="nm">リヤーダンパー</span><span class="price">200G</span></li>
+      <li><span class="nm">リヤーブレーキ</span><span class="price">200G</span></li>
+      <li><span class="nm">リヤーエアロステー</span><span class="price">200G</span></li>
+      <li><span class="nm">ハイスムースローラーS</span><span class="price">40G</span></li>
+      <li><span class="nm">ハイスムースローラーL</span><span class="price">50G</span></li>
+      <li><span class="nm">ショートスタビローラS</span><span class="price">40G</span></li>
+      <li><span class="nm">ショートスタビローラL</span><span class="price">50G</span></li>
+      <li><span class="nm">ヘビーウェイト</span><span class="price">150G</span></li>
+      <li><span class="nm">ほうねつフィン</span><span class="price">500G</span></li>
+      <li><span class="nm">ショックアブソーバ</span><span class="price">300G</span></li>
+      </ul>
+      <div class="shop-sub">ミニ四駆</div>
+      <ul class="shop-list mini">
+      <li><span class="nm">トライダガーZMC</span><span class="price">600G</span></li>
+      <li><span class="nm">スピンコブラ</span><span class="price">600G</span></li>
+      <li><span class="nm">サイクロンマグナム</span><span class="price">600G</span></li>
+      <li><span class="nm">ハリケーンソニック</span><span class="price">600G</span></li>
+      <li><span class="nm">セイバー600</span><span class="price">600G</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shop-card" id="shop04">
+    <div class="shop-head"><span>4. スピード模型店</span><span class="town">東京</span></div>
+    <div class="shop-body">
+      <div class="shop-sub">パーツ</div>
+      <ul class="shop-list">
+      <li><span class="nm">リチウムでんち</span><span class="price">200G</span></li>
+      <li><span class="nm">グングンパワー</span><span class="price">350G</span></li>
+      <li><span class="nm">ネオゴムタイヤS</span><span class="price">150G</span></li>
+      <li><span class="nm">ネオゴムタイヤL</span><span class="price">150G</span></li>
+      <li><span class="nm">レストンタイヤS</span><span class="price">170G</span></li>
+      <li><span class="nm">レストンタイヤL</span><span class="price">170G</span></li>
+      <li><span class="nm">ネオラリータイヤS</span><span class="price">170G</span></li>
+      <li><span class="nm">ネオラリータイヤL</span><span class="price">170G</span></li>
+      <li><span class="nm">Jダッシュモーター</span><span class="price">260G</span></li>
+      <li><span class="nm">メガトルクモーター</span><span class="price">260G</span></li>
+      <li><span class="nm">グングンモーター</span><span class="price">360G</span></li>
+      <li><span class="nm">ハードバンパーMK2</span><span class="price">220G</span></li>
+      <li><span class="nm">スプラッシュバンパー</span><span class="price">220G</span></li>
+      <li><span class="nm">ヘビーサイドMK2</span><span class="price">200G</span></li>
+      <li><span class="nm">マッハスピードサイド</span><span class="price">200G</span></li>
+      <li><span class="nm">カナードウイング</span><span class="price">180G</span></li>
+      <li><span class="nm">オイルスライドバンパー</span><span class="price">180G</span></li>
+      <li><span class="nm">リヤーダンパーダッシュ</span><span class="price">260G</span></li>
+      <li><span class="nm">リヤーミドルブレーキ</span><span class="price">260G</span></li>
+      <li><span class="nm">GTローラーMK2S</span><span class="price">70G</span></li>
+      <li><span class="nm">GTローラーMK2L</span><span class="price">80G</span></li>
+      <li><span class="nm">ロングスタビローラーS</span><span class="price">70G</span></li>
+      <li><span class="nm">ロングスタビローラーL</span><span class="price">80G</span></li>
+      <li><span class="nm">リニヤブースター</span><span class="price">600G</span></li>
+      <li><span class="nm">エレクトリックターボ</span><span class="price">600G</span></li>
+      <li><span class="nm">メガショックアブソーバ</span><span class="price">500G</span></li>
+      </ul>
+      <div class="shop-sub">ミニ四駆</div>
+      <ul class="shop-list mini">
+      <li><span class="nm">トライダガーZMC</span><span class="price">600G</span></li>
+      <li><span class="nm">スピンコブラ</span><span class="price">600G</span></li>
+      <li><span class="nm">サイクロンマグナム</span><span class="price">600G</span></li>
+      <li><span class="nm">ハリケーンソニック</span><span class="price">600G</span></li>
+      <li><span class="nm">セイバー600</span><span class="price">600G</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shop-card" id="shop05">
+    <div class="shop-head"><span>5. トイランド</span><span class="town">東京</span></div>
+    <div class="shop-body">
+      <div class="shop-sub">パーツ</div>
+      <ul class="shop-list">
+      <li><span class="nm">ロングパワーボンバー</span><span class="price">260G</span></li>
+      <li><span class="nm">アトミックパワー</span><span class="price">310G</span></li>
+      <li><span class="nm">XパワーMK2</span><span class="price">400G</span></li>
+      <li><span class="nm">ロングパワーギガント</span><span class="price">300G</span></li>
+      <li><span class="nm">バッテリーオブサンダー</span><span class="price">350G</span></li>
+      <li><span class="nm">グングンパワーハイパー</span><span class="price">500G</span></li>
+      <li><span class="nm">QゴムタイヤS</span><span class="price">250G</span></li>
+      <li><span class="nm">QゴムタイヤL</span><span class="price">250G</span></li>
+      <li><span class="nm">QタイヤS</span><span class="price">270G</span></li>
+      <li><span class="nm">QタイヤL</span><span class="price">270G</span></li>
+      <li><span class="nm">ラリータイヤS</span><span class="price">270G</span></li>
+      <li><span class="nm">ラリータイヤL</span><span class="price">270G</span></li>
+      <li><span class="nm">SPグングンタイヤS</span><span class="price">400G</span></li>
+      <li><span class="nm">SPグングンタイヤL</span><span class="price">400G</span></li>
+      <li><span class="nm">メテオモーター</span><span class="price">320G</span></li>
+      <li><span class="nm">ストロングモーター</span><span class="price">320G</span></li>
+      <li><span class="nm">XモーターMK2</span><span class="price">400G</span></li>
+      <li><span class="nm">サンダーモーター</span><span class="price">360G</span></li>
+      <li><span class="nm">ファイヤーモーター</span><span class="price">360G</span></li>
+      <li><span class="nm">SPグングンモーター</span><span class="price">500G</span></li>
+      <li><span class="nm">スライドバンパーゴッド</span><span class="price">280G</span></li>
+      <li><span class="nm">グレートアローバンパー</span><span class="price">280G</span></li>
+      <li><span class="nm">スポイラーMK2</span><span class="price">320G</span></li>
+      <li><span class="nm">フォーミュラーバンパー</span><span class="price">320G</span></li>
+      <li><span class="nm">SPグングンバンパー</span><span class="price">450G</span></li>
+      <li><span class="nm">グランドサイドベータ</span><span class="price">260G</span></li>
+      <li><span class="nm">ウイングサイド2</span><span class="price">260G</span></li>
+      <li><span class="nm">オイルダンパーサイド</span><span class="price">300G</span></li>
+      <li><span class="nm">Vサイド</span><span class="price">300G</span></li>
+      <li><span class="nm">グングンサイドドリーム</span><span class="price">400G</span></li>
+      <li><span class="nm">デルタウイング</span><span class="price">240G</span></li>
+      <li><span class="nm">Vウイング</span><span class="price">280G</span></li>
+      <li><span class="nm">トライアングルウイング</span><span class="price">280G</span></li>
+      <li><span class="nm">SPグングンウイング</span><span class="price">400G</span></li>
+      <li><span class="nm">リヤーかへんスキッド</span><span class="price">320G</span></li>
+      <li><span class="nm">リヤーフレームステー</span><span class="price">320G</span></li>
+      <li><span class="nm">リヤーオイルダンパー</span><span class="price">360G</span></li>
+      <li><span class="nm">リヤースポイラー2</span><span class="price">360G</span></li>
+      <li><span class="nm">グングンリヤーマックス</span><span class="price">450G</span></li>
+      <li><span class="nm">セーフローラーベータS</span><span class="price">100G</span></li>
+      <li><span class="nm">セーフローラーベータL</span><span class="price">110G</span></li>
+      <li><span class="nm">ちょうでんじローラーS</span><span class="price">100G</span></li>
+      <li><span class="nm">ちょうでんじローラーL</span><span class="price">110G</span></li>
+      <li><span class="nm">セーフスタビローラーS</span><span class="price">120G</span></li>
+      <li><span class="nm">セーフスタビローラーL</span><span class="price">130G</span></li>
+      <li><span class="nm">グングンローラーS</span><span class="price">200G</span></li>
+      <li><span class="nm">グングンローラーL</span><span class="price">220G</span></li>
+      <li><span class="nm">ペルチェクーラー</span><span class="price">900G</span></li>
+      <li><span class="nm">すいれいクーラー</span><span class="price">1000G</span></li>
+      </ul>
+      <div class="shop-sub">ミニ四駆</div>
+      <ul class="shop-list mini">
+      <li><span class="nm">トライダガーZMC</span><span class="price">600G</span></li>
+      <li><span class="nm">スピンコブラ</span><span class="price">600G</span></li>
+      <li><span class="nm">サイクロンマグナム</span><span class="price">600G</span></li>
+      <li><span class="nm">ハリケーンソニック</span><span class="price">600G</span></li>
+      <li><span class="nm">セイバー600</span><span class="price">600G</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shop-card" id="shop06">
+    <div class="shop-head"><span>6. 佐上模型店</span><span class="town">風輪町</span></div>
+    <div class="shop-body">
+      <div class="shop-sub">パーツ</div>
+      <ul class="shop-list">
+      <li><span class="nm">スパークアルカリでんち</span><span class="price">220G</span></li>
+      <li><span class="nm">SPPROバッテリー</span><span class="price">270G</span></li>
+      <li><span class="nm">SPゴムタイヤS</span><span class="price">200G</span></li>
+      <li><span class="nm">SPゴムタイヤL</span><span class="price">200G</span></li>
+      <li><span class="nm">SPスポンジタイヤS</span><span class="price">220G</span></li>
+      <li><span class="nm">SPスポンジタイヤL</span><span class="price">220G</span></li>
+      <li><span class="nm">SPラリータイヤS</span><span class="price">220G</span></li>
+      <li><span class="nm">SPラリータイヤL</span><span class="price">220G</span></li>
+      <li><span class="nm">Uダッシュモーター</span><span class="price">280G</span></li>
+      <li><span class="nm">ギガトルクモーター</span><span class="price">280G</span></li>
+      <li><span class="nm">ネオスライドバンパー</span><span class="price">240G</span></li>
+      <li><span class="nm">アローバンパー</span><span class="price">240G</span></li>
+      <li><span class="nm">かへんサイド</span><span class="price">220G</span></li>
+      <li><span class="nm">ウイングサイド</span><span class="price">220G</span></li>
+      <li><span class="nm">ロングアローウイング</span><span class="price">200G</span></li>
+      <li><span class="nm">ダブルウイング</span><span class="price">200G</span></li>
+      <li><span class="nm">リヤーグランドステー</span><span class="price">280G</span></li>
+      <li><span class="nm">リヤースポイラー</span><span class="price">280G</span></li>
+      <li><span class="nm">リニアローラーS</span><span class="price">80G</span></li>
+      <li><span class="nm">リニアローラーL</span><span class="price">90G</span></li>
+      <li><span class="nm">MAXスタビポールS</span><span class="price">80G</span></li>
+      <li><span class="nm">MAXスタビポールL</span><span class="price">90G</span></li>
+      <li><span class="nm">れいきゃくファン</span><span class="price">700G</span></li>
+      <li><span class="nm">スーパーチャージャー</span><span class="price">600G</span></li>
+      <li><span class="nm">エレクトロコンデンサ</span><span class="price">600G</span></li>
+      </ul>
+      <div class="shop-sub">ミニ四駆</div>
+      <ul class="shop-list mini">
+      <li><span class="nm">トライダガーZMC</span><span class="price">600G</span></li>
+      <li><span class="nm">スピンコブラ</span><span class="price">600G</span></li>
+      <li><span class="nm">サイクロンマグナム</span><span class="price">600G</span></li>
+      <li><span class="nm">ハリケーンソニック</span><span class="price">600G</span></li>
+      <li><span class="nm">セイバー600</span><span class="price">600G</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shop-card" id="shop07">
+    <div class="shop-head"><span>7. ゴールド模型</span><span class="town">風輪町</span></div>
+    <div class="shop-body">
+      <div class="shop-sub">パーツ</div>
+      <ul class="shop-list">
+      <li><span class="nm">ロングパワー</span><span class="price">180G</span></li>
+      <li><span class="nm">ニッカドでんち</span><span class="price">240G</span></li>
+      <li><span class="nm">ネオゴムタイヤS</span><span class="price">150G</span></li>
+      <li><span class="nm">ネオゴムタイヤL</span><span class="price">150G</span></li>
+      <li><span class="nm">レストンタイヤS</span><span class="price">170G</span></li>
+      <li><span class="nm">レストンタイヤL</span><span class="price">170G</span></li>
+      <li><span class="nm">ネオラリータイヤS</span><span class="price">170G</span></li>
+      <li><span class="nm">ネオラリータイヤL</span><span class="price">170G</span></li>
+      <li><span class="nm">マッハダッシュモーター</span><span class="price">240G</span></li>
+      <li><span class="nm">ビッグトルクモーター</span><span class="price">240G</span></li>
+      <li><span class="nm">かへんスライドバンパー</span><span class="price">200G</span></li>
+      <li><span class="nm">エアロバンパーセカンド</span><span class="price">200G</span></li>
+      <li><span class="nm">グングンバンパー</span><span class="price">300G</span></li>
+      <li><span class="nm">グランドサイド</span><span class="price">180G</span></li>
+      <li><span class="nm">ツインアローサイド</span><span class="price">180G</span></li>
+      <li><span class="nm">アローウイング</span><span class="price">170G</span></li>
+      <li><span class="nm">スプラッシュウイング</span><span class="price">170G</span></li>
+      <li><span class="nm">リヤーワイドスキッド</span><span class="price">240G</span></li>
+      <li><span class="nm">リヤースピードステー</span><span class="price">240G</span></li>
+      <li><span class="nm">グングンリヤー</span><span class="price">300G</span></li>
+      <li><span class="nm">EXスムースローラーS</span><span class="price">60G</span></li>
+      <li><span class="nm">EXスムースローラーL</span><span class="price">70G</span></li>
+      <li><span class="nm">ミドルスタビポールS</span><span class="price">60G</span></li>
+      <li><span class="nm">ミドルスタビポールL</span><span class="price">70G</span></li>
+      </ul>
+      <div class="shop-sub">ミニ四駆</div>
+      <ul class="shop-list mini">
+      <li><span class="nm">トライダガーZMC</span><span class="price">600G</span></li>
+      <li><span class="nm">スピンコブラ</span><span class="price">600G</span></li>
+      <li><span class="nm">サイクロンマグナム</span><span class="price">600G</span></li>
+      <li><span class="nm">ハリケーンソニック</span><span class="price">600G</span></li>
+      <li><span class="nm">セイバー600</span><span class="price">600G</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shop-card" id="shop08">
+    <div class="shop-head"><span>8. 土屋模型店</span><span class="town">土屋ラボラトリ</span></div>
+    <div class="shop-body">
+      <div class="shop-sub">パーツ</div>
+      <ul class="shop-list">
+      <li><span class="nm">ダッシュアルカリでんち</span><span class="price">160G</span></li>
+      <li><span class="nm">カスタムバッテリー</span><span class="price">220G</span></li>
+      <li><span class="nm">ネオゴムタイヤS</span><span class="price">150G</span></li>
+      <li><span class="nm">ネオゴムタイヤL</span><span class="price">150G</span></li>
+      <li><span class="nm">レストンタイヤS</span><span class="price">170G</span></li>
+      <li><span class="nm">レストンタイヤL</span><span class="price">170G</span></li>
+      <li><span class="nm">ネオラリータイヤS</span><span class="price">170G</span></li>
+      <li><span class="nm">ネオラリータイヤL</span><span class="price">170G</span></li>
+      <li><span class="nm">スペシャルモーター</span><span class="price">220G</span></li>
+      <li><span class="nm">ハイトルクモーター</span><span class="price">220G</span></li>
+      <li><span class="nm">ネオハードバンパー</span><span class="price">180G</span></li>
+      <li><span class="nm">ダウンフォースバンパー</span><span class="price">180G</span></li>
+      <li><span class="nm">ヘビーダンパーサイド</span><span class="price">160G</span></li>
+      <li><span class="nm">エアロサイドマキシマム</span><span class="price">160G</span></li>
+      <li><span class="nm">グングンサイド</span><span class="price">250G</span></li>
+      <li><span class="nm">ハイスピードウイング</span><span class="price">150G</span></li>
+      <li><span class="nm">スライドダンパー</span><span class="price">150G</span></li>
+      <li><span class="nm">グングンウイング</span><span class="price">250G</span></li>
+      <li><span class="nm">リヤーハイパーステー</span><span class="price">220G</span></li>
+      <li><span class="nm">リヤーブレーキ2</span><span class="price">220G</span></li>
+      <li><span class="nm">GTローラーS</span><span class="price">50G</span></li>
+      <li><span class="nm">GTローラーL</span><span class="price">60G</span></li>
+      <li><span class="nm">セーフローラーS</span><span class="price">50G</span></li>
+      <li><span class="nm">セーフローラーL</span><span class="price">60G</span></li>
+      </ul>
+      <div class="shop-sub">ミニ四駆</div>
+      <ul class="shop-list mini">
+      <li><span class="nm">トライダガーZMC</span><span class="price">600G</span></li>
+      <li><span class="nm">スピンコブラ</span><span class="price">600G</span></li>
+      <li><span class="nm">サイクロンマグナム</span><span class="price">600G</span></li>
+      <li><span class="nm">ハリケーンソニック</span><span class="price">600G</span></li>
+      <li><span class="nm">セイバー600</span><span class="price">600G</span></li>
+      <li><span class="nm">ブラックセイバー</span><span class="price">600G</span></li>
+      <li><span class="nm">プロトセイバーJB</span><span class="price">600G</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shop-card" id="shop09">
+    <div class="shop-head"><span>9. 大神模型店</span><span class="town">大神ラボラトリ</span></div>
+    <div class="shop-body">
+      <div class="shop-sub">パーツ</div>
+      <ul class="shop-list">
+      <li><span class="nm">アルカリでんちMAX</span><span class="price">240G</span></li>
+      <li><span class="nm">オメガパワー</span><span class="price">290G</span></li>
+      <li><span class="nm">ワンダーパワー</span><span class="price">350G</span></li>
+      <li><span class="nm">SPゴムタイヤS</span><span class="price">200G</span></li>
+      <li><span class="nm">SPゴムタイヤL</span><span class="price">200G</span></li>
+      <li><span class="nm">SPスポンジタイヤS</span><span class="price">220G</span></li>
+      <li><span class="nm">SPスポンジタイヤL</span><span class="price">220G</span></li>
+      <li><span class="nm">SPラリータイヤS</span><span class="price">220G</span></li>
+      <li><span class="nm">SPラリータイヤL</span><span class="price">220G</span></li>
+      <li><span class="nm">ちょうでんどうモーター</span><span class="price">300G</span></li>
+      <li><span class="nm">エレファントモーター</span><span class="price">300G</span></li>
+      <li><span class="nm">スポイラー</span><span class="price">260G</span></li>
+      <li><span class="nm">スプラッシュバンパー2</span><span class="price">260G</span></li>
+      <li><span class="nm">トライアングルサイド</span><span class="price">240G</span></li>
+      <li><span class="nm">ツインアローサイド2</span><span class="price">240G</span></li>
+      <li><span class="nm">かへんウイング</span><span class="price">220G</span></li>
+      <li><span class="nm">かへんマウント</span><span class="price">220G</span></li>
+      <li><span class="nm">リヤーダブルステー</span><span class="price">300G</span></li>
+      <li><span class="nm">リヤーハードブレーキ</span><span class="price">300G</span></li>
+      <li><span class="nm">ハイブリッドローラーS</span><span class="price">90G</span></li>
+      <li><span class="nm">ハイブリッドローラーL</span><span class="price">100G</span></li>
+      <li><span class="nm">NVスタビローラーS</span><span class="price">90G</span></li>
+      <li><span class="nm">NVスタビローラーL</span><span class="price">100G</span></li>
+      <li><span class="nm">アンチウェイト</span><span class="price">400G</span></li>
+      <li><span class="nm">メガリニヤブースター</span><span class="price">1000G</span></li>
+      </ul>
+      <div class="shop-sub">ミニ四駆</div>
+      <ul class="shop-list mini">
+      <li><span class="nm">ビークスパイダー</span><span class="price">600G</span></li>
+      <li><span class="nm">ブロッケンギガント</span><span class="price">600G</span></li>
+      <li><span class="nm">レイスティンガー</span><span class="price">600G</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shop-card" id="shop10">
+    <div class="shop-head"><span>10. 学園購買部</span><span class="town">大神学園</span></div>
+    <div class="shop-body">
+      <div class="shop-sub">パーツ</div>
+      <ul class="shop-list">
+      <li><span class="nm">ダークパワー</span><span class="price">280G</span></li>
+      <li><span class="nm">ワンダーパワーGMX</span><span class="price">450G</span></li>
+      <li><span class="nm">QゴムタイヤS</span><span class="price">250G</span></li>
+      <li><span class="nm">QゴムタイヤL</span><span class="price">250G</span></li>
+      <li><span class="nm">QタイヤS</span><span class="price">270G</span></li>
+      <li><span class="nm">QタイヤL</span><span class="price">270G</span></li>
+      <li><span class="nm">QラリータイヤS</span><span class="price">270G</span></li>
+      <li><span class="nm">QラリータイヤL</span><span class="price">270G</span></li>
+      <li><span class="nm">ライトニングモーター</span><span class="price">340G</span></li>
+      <li><span class="nm">ダークモーター</span><span class="price">340G</span></li>
+      <li><span class="nm">ワンダーモーター</span><span class="price">450G</span></li>
+      <li><span class="nm">オイルスライドバンパー</span><span class="price">300G</span></li>
+      <li><span class="nm">ダークバンパー</span><span class="price">300G</span></li>
+      <li><span class="nm">ワンダーバンパー</span><span class="price">400G</span></li>
+      <li><span class="nm">トライアングルサイド2</span><span class="price">280G</span></li>
+      <li><span class="nm">ダークサイド</span><span class="price">280G</span></li>
+      <li><span class="nm">ワンダーサイド</span><span class="price">350G</span></li>
+      <li><span class="nm">ダークウイング</span><span class="price">260G</span></li>
+      <li><span class="nm">Vマウント</span><span class="price">260G</span></li>
+      <li><span class="nm">ワンダーマウント</span><span class="price">350G</span></li>
+      <li><span class="nm">リヤーダークステー</span><span class="price">340G</span></li>
+      <li><span class="nm">リヤーブレーキ3</span><span class="price">340G</span></li>
+      <li><span class="nm">ワンダーリヤー</span><span class="price">400G</span></li>
+      <li><span class="nm">ダークローラーS</span><span class="price">110G</span></li>
+      <li><span class="nm">ダークローラーL</span><span class="price">120G</span></li>
+      <li><span class="nm">セーフローラーガンマS</span><span class="price">110G</span></li>
+      <li><span class="nm">セーフローラーガンマL</span><span class="price">120G</span></li>
+      <li><span class="nm">メガエレクトロターボ</span><span class="price">1000G</span></li>
+      <li><span class="nm">メガチャージャー</span><span class="price">1000G</span></li>
+      <li><span class="nm">メガコンデンサ</span><span class="price">1000G</span></li>
+      </ul>
+      <div class="shop-sub">ミニ四駆</div>
+      <ul class="shop-list mini">
+      <li><span class="nm">ビークスパイダー</span><span class="price">600G</span></li>
+      <li><span class="nm">ブロッケンギガント</span><span class="price">600G</span></li>
+      <li><span class="nm">レイスティンガー</span><span class="price">600G</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="blk" id="tsukumoya">■ つくも屋の秘密</h2>
+  <p><a href="towns.html#tokyo">東京</a>にしかない特殊なお店「つくも屋」では、パーツねんれいが99になった古いパーツを、シルバーパーツか強化素材と交換してもらえる。パーツねんれいを99まで育てるのは簡単ではないが、その分もらえるシルバーパーツはつくも屋以外では手に入らない貴重なアイテムになっている。</p>
+  <p>もらえるシルバーパーツは、成績画面で確認できる「IDNo.」の下一桁によって決まる。自分のID番号を把握しておくと、狙ったシルバーパーツを計画的に手に入れやすい。</p>
+  <table class="tsukumo">
+    <tr><th>IDNo.下一桁</th><th colspan="3">交換候補のシルバーパーツ</th></tr>
+    <tr><td class="idno">0</td><td>シルバーバンパー</td><td>シルバータイヤS</td><td>シルバーサイド</td></tr>
+    <tr><td class="idno">1</td><td>シルバーモーター</td><td>シルバーローラーS</td><td>シルバーでんち</td></tr>
+    <tr><td class="idno">2</td><td>シルバーウイング</td><td>シルバータイヤL</td><td>シルバーステー</td></tr>
+    <tr><td class="idno">3</td><td>シルバーバンパー</td><td>シルバーローラーL</td><td>シルバータイヤS</td></tr>
+    <tr><td class="idno">4</td><td>シルバーサイド</td><td>シルバーモーター</td><td>シルバーローラーS</td></tr>
+    <tr><td class="idno">5</td><td>シルバーでんち</td><td>シルバーウイング</td><td>シルバータイヤL</td></tr>
+    <tr><td class="idno">6</td><td>シルバーステー</td><td>シルバーローラーL</td><td>シルバーバンパー</td></tr>
+    <tr><td class="idno">7</td><td>シルバータイヤS</td><td>シルバーサイド</td><td>シルバーモーター</td></tr>
+    <tr><td class="idno">8</td><td>シルバーウイング</td><td>シルバーでんち</td><td>シルバーローラーS</td></tr>
+    <tr><td class="idno">9</td><td>シルバータイヤL</td><td>シルバーステー</td><td>シルバーローラーL</td></tr>
+  </table>
+  <p>シルバーパーツの代わりに、以下の強化素材と交換することもできる。</p>
+  <table class="dat">
+    <tr><th>強化素材</th></tr>
+    <tr><td>リバースチップ</td></tr>
+    <tr><td>エボクリスタル</td></tr>
+    <tr><td>スーパーエボクリスタル</td></tr>
+  </table>
+  <div class="note">📷 公式ガイドブックp.23「つくも屋の秘密」より(2026/07/29分)。強化素材の使いみちは<a href="upgrade.html">パーツ強化について</a>を参照。</div>
+
+</div>
+
+<div id="ftr">
+  © 2026 ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式) ／ 「ミニ四駆」はタミヤ株式会社の登録商標です。
+</div>
+
+</body>
+</html>

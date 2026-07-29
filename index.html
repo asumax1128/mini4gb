@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ミニ四駆GB Let's&amp;Go!! 徹底攻略</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root{
+    --bg:#F6F4EF;
+    --ink:#1C2333;
+    --muted:#8B93A6;
+    --red:#E8482F;
+    --navy:#1B3358;
+    --navy-2:#132646;
+    --yellow:#F4B400;
+    --card:#FFFFFF;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    line-height:1.6;
+  }
+  a{color:inherit;text-decoration:none;}
+
+  /* ===== ヘッダー ===== */
+  header.site-head{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 24px;
+    max-width:1140px;
+    margin:0 auto;
+  }
+  .brand{display:flex;align-items:center;gap:10px;}
+  .brand .mark{
+    width:34px;height:34px;border-radius:8px;
+    background:linear-gradient(135deg,var(--red),var(--yellow));
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-weight:900;font-size:15px;
+    transform:skewX(-6deg);
+  }
+  .brand .name{font-weight:900;font-size:16px;letter-spacing:.5px;}
+  .brand .name small{display:block;font-weight:500;font-size:10px;color:var(--muted);letter-spacing:1px;}
+  header.site-head nav{display:flex;gap:18px;font-size:12.5px;font-weight:700;color:var(--navy);}
+  header.site-head nav a:hover{color:var(--red);}
+
+  /* ===== ヒーロー ===== */
+  .hero{
+    position:relative;
+    overflow:hidden;
+    background:
+      repeating-linear-gradient(115deg, rgba(244,180,0,.10) 0 26px, transparent 26px 52px),
+      linear-gradient(120deg,var(--navy) 0%,var(--navy-2) 55%,#0d1a30 100%);
+    color:#fff;
+    padding:64px 24px 46px;
+  }
+  .hero-inner{max-width:1140px;margin:0 auto;position:relative;z-index:2;}
+  .hero .eyebrow{
+    display:inline-block;font-size:11px;font-weight:800;letter-spacing:2px;
+    background:rgba(255,255,255,.12);padding:5px 10px;border-radius:20px;margin-bottom:14px;
+  }
+  .hero h1{
+    font-size:clamp(28px,4.6vw,46px);
+    font-weight:900;
+    letter-spacing:.5px;
+    margin:0 0 10px;
+    text-shadow:0 2px 0 rgba(0,0,0,.25);
+  }
+  .hero h1 .accent{color:var(--yellow);}
+  .hero p.lead{font-size:14.5px;color:#d9e0ee;max-width:520px;margin:0 0 26px;}
+
+  .search-bar{
+    display:flex;max-width:520px;background:#fff;border-radius:10px;overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+  }
+  .search-bar input{
+    flex:1;border:none;padding:13px 16px;font-size:14px;color:var(--ink);outline:none;
+  }
+  .search-bar button{
+    border:none;background:var(--red);color:#fff;font-weight:800;padding:0 20px;font-size:13px;cursor:pointer;
+  }
+  .search-bar button:hover{background:#cf3b23;}
+
+  /* checkered flag strip */
+  .checker{
+    height:14px;
+    background-image:
+      linear-gradient(45deg,#fff 25%,transparent 25%),
+      linear-gradient(-45deg,#fff 25%,transparent 25%),
+      linear-gradient(45deg,transparent 75%,#fff 75%),
+      linear-gradient(-45deg,transparent 75%,#fff 75%);
+    background-size:14px 14px;
+    background-position:0 0,0 7px,7px -7px,-7px 0px;
+    background-color:#111;
+  }
+
+  /* ===== カテゴリカード ===== */
+  .section-wrap{max-width:1140px;margin:0 auto;padding:34px 24px 10px;}
+  .cards-row{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+    gap:12px;
+    margin-top:-40px;
+    position:relative;
+    z-index:3;
+  }
+  .cat-card{
+    background:var(--card);
+    border-radius:12px;
+    padding:16px 14px;
+    box-shadow:0 8px 22px rgba(28,35,51,.08);
+    display:flex;flex-direction:column;gap:8px;
+    transition:transform .15s ease, box-shadow .15s ease;
+    border:1px solid #ECE8DF;
+  }
+  .cat-card:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(28,35,51,.14);}
+  .cat-card .icon{
+    width:38px;height:38px;border-radius:9px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:17px;color:#fff;font-weight:800;
+  }
+  .cat-card .label{font-size:13px;font-weight:800;}
+  .cat-card .desc{font-size:11px;color:var(--muted);}
+
+  /* ===== 2カラム：お知らせ / サイト情報 ===== */
+  .layout{
+    max-width:1140px;margin:40px auto 0;padding:0 24px 50px;
+    display:grid;grid-template-columns:1fr 300px;gap:20px;
+  }
+  @media (max-width:760px){ .layout{grid-template-columns:1fr;} }
+
+  .panel{background:var(--card);border-radius:14px;border:1px solid #ECE8DF;overflow:hidden;}
+  .panel-head{
+    padding:14px 18px;border-bottom:1px solid #F0EDE4;
+    font-weight:900;font-size:14px;display:flex;align-items:center;gap:8px;
+  }
+  .panel-head .tag{
+    width:22px;height:22px;border-radius:6px;background:var(--red);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;
+  }
+  .panel-body{padding:6px 18px 16px;}
+
+  ul.news{list-style:none;margin:0;padding:0;}
+  ul.news li{padding:12px 0;border-bottom:1px dashed #ECE8DF;font-size:13px;}
+  ul.news li:last-child{border-bottom:none;}
+  ul.news .date{display:block;font-size:11px;color:var(--muted);margin-bottom:3px;font-weight:700;}
+  ul.news a{font-weight:700;}
+  ul.news a:hover{color:var(--red);}
+
+  .mini-panel{padding:16px 18px;font-size:12.5px;}
+  .counter{
+    font-family:"Courier New",monospace;text-align:center;background:#12203a;color:#7CFC9A;
+    border-radius:8px;padding:10px;margin-bottom:14px;font-size:20px;letter-spacing:3px;
+  }
+  .counter span{display:block;font-size:10px;color:#9db3d6;letter-spacing:1px;margin-top:4px;}
+  .side-note{font-size:11px;color:var(--muted);text-align:center;margin-top:-8px;margin-bottom:14px;}
+  ol.rank{margin:0;padding-left:18px;font-size:12.5px;}
+  ol.rank li{margin-bottom:7px;}
+
+  footer{
+    text-align:center;padding:22px;font-size:11px;color:var(--muted);
+    border-top:1px solid #ECE8DF;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="brand">
+    <div class="mark">GB</div>
+    <div class="name">ミニ四駆GB 徹底攻略<small>LET'S &amp; GO!! FAN ARCHIVE</small></div>
+  </div>
+  <nav>
+    <a href="walkthrough.html">攻略チャート</a>
+    <a href="parts.html">パーツ図鑑</a>
+    <a href="characters.html">キャラ図鑑</a>
+    <a href="system.html">システム解説</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">UNOFFICIAL FAN SITE ・ 1997 ASCII</span>
+    <h1>ミニ四駆GB<br><span class="accent">Let's&amp;Go!!</span> 徹底攻略</h1>
+    <p class="lead">個人のプレイ記録と検証データで、全パーツ・全カップ戦を隅々まで解説する非公式攻略サイトです。</p>
+    <form class="search-bar" onsubmit="return false;">
+      <input type="text" placeholder="マシン名・パーツ名・キャラ名で検索">
+      <button type="submit">検索</button>
+    </form>
+  </div>
+</section>
+<div class="checker"></div>
+
+<div class="section-wrap">
+  <div class="cards-row">
+    <a class="cat-card" href="about.html">
+      <div class="icon" style="background:#3A4A63;">🎮</div>
+      <div class="label">このゲームについて</div>
+      <div class="desc">概要・基本情報</div>
+    </a>
+    <a class="cat-card" href="walkthrough.html">
+      <div class="icon" style="background:#E8482F;">🏁</div>
+      <div class="label">攻略チャート(通常)</div>
+      <div class="desc">セッティング付き解説</div>
+    </a>
+    <a class="cat-card" href="chart.html">
+      <div class="icon" style="background:#C2632B;">⏱️</div>
+      <div class="label">攻略チャート(RTA)</div>
+      <div class="desc">最速クリアルート</div>
+    </a>
+    <a class="cat-card" href="parts.html">
+      <div class="icon" style="background:#1B3358;">⚙️</div>
+      <div class="label">パーツ図鑑</div>
+      <div class="desc">全データ一覧</div>
+    </a>
+    <a class="cat-card" href="upgrade.html">
+      <div class="icon" style="background:#D1495B;">🔧</div>
+      <div class="label">パーツ強化について</div>
+      <div class="desc">耐久度・交換強化</div>
+    </a>
+    <a class="cat-card" href="shops.html">
+      <div class="icon" style="background:#C2632B;">🏪</div>
+      <div class="label">取扱店一覧</div>
+      <div class="desc">店ごとの品揃え</div>
+    </a>
+    <a class="cat-card" href="towns.html">
+      <div class="icon" style="background:#4C7A3D;">🗺️</div>
+      <div class="label">街・マップ一覧</div>
+      <div class="desc">町ごとの地図と施設</div>
+    </a>
+    <a class="cat-card" href="characters.html">
+      <div class="icon" style="background:#7A4FAE;">🧑‍🤝‍🧑</div>
+      <div class="label">キャラ図鑑</div>
+      <div class="desc">ライバルと戦法</div>
+    </a>
+    <a class="cat-card" href="courses.html">
+      <div class="icon" style="background:#B03B5F;">🛣️</div>
+      <div class="label">コース一覧</div>
+      <div class="desc">形状と攻略点</div>
+    </a>
+    <a class="cat-card" href="events.html">
+      <div class="icon" style="background:#2F8A8A;">🏆</div>
+      <div class="label">大会一覧</div>
+      <div class="desc">対戦相手と報酬</div>
+    </a>
+    <a class="cat-card" href="comm.html">
+      <div class="icon" style="background:#3B6FB0;">📡</div>
+      <div class="label">通信について</div>
+      <div class="desc">対戦・交換の仕方</div>
+    </a>
+    <a class="cat-card" href="system.html">
+      <div class="icon" style="background:#A08A1E;">📊</div>
+      <div class="label">システム解説</div>
+      <div class="desc">数値・仕様考察</div>
+    </a>
+    <a class="cat-card" href="tips.html">
+      <div class="icon" style="background:#5C6B7A;">💡</div>
+      <div class="label">小技・裏技</div>
+      <div class="desc">やり込み要素</div>
+    </a>
+    <a class="cat-card" href="glossary.html">
+      <div class="icon" style="background:#3B8F5E;">📖</div>
+      <div class="label">用語集</div>
+      <div class="desc">用語を五十音順</div>
+    </a>
+  </div>
+</div>
+
+<div class="layout">
+  <div class="panel">
+    <div class="panel-head"><span class="tag">#</span>お知らせ</div>
+    <div class="panel-body">
+      <ul class="news">
+        <li><span class="date">2026.07.29</span><a href="characters.html">「キャラクター図鑑」に草レースのライバル6人(しょうた/まもる/たくや/ケンタ/あや/テツ)を追加。たくやは修亮さん自作の画像つきです。</a></li>
+        <li><span class="date">2026.07.29</span><a href="events.html">「大会一覧」におもちゃのナガイカップのトロフィー画像を追加しました。</a></li>
+        <li><span class="date">2026.07.29</span><a href="parts.html#body">パーツ図鑑「マシン本体」に修亮さん自作のドット絵画像を反映しました(ネオトライダガーZMC/スピンコブラ/サイクロンマグナム/ハリケーンソニック/セイバー600の5種)。サイトで初めての実画像掲載です。</a></li>
+        <li><span class="date">2026.07.29</span><a href="chart.html#hurricane">「攻略チャート(RTA)」にハリケーンソニック編を追加。全13章、サイクロンマグナム編と同じ対戦相手構成でセッティングの違いをまとめました。目標タイムは今後計測して追記予定です。</a></li>
+        <li><span class="date">2026.07.29</span><a href="about.html">「このゲームについて」に評判・小ネタのセクションを追加。用語集にパーツ年齢・パーツレベル・空力性能などを追加し、パーツ強化について/小技・裏技も加筆しました。</a></li>
+        <li><span class="date">2026.07.29</span><a href="events.html">新規ページ「大会一覧」を公開。全16大会+エンディング後2大会の開催地・賞金・対戦相手の正確な順番を掲載。これで全15ページが完成しました。</a></li>
+        <li><span class="date">2026.07.29</span><a href="glossary.html">新規ページ「用語集」を公開。ゲーム中の項目名を五十音順に26語まとめました。</a></li>
+        <li><span class="date">2026.07.29</span><a href="tips.html">新規ページ「小技・裏技」を公開。レース必勝法・コース別キャラクター選択表・ピットイン短縮法などを掲載しています。</a></li>
+        <li><span class="date">2026.07.29</span><a href="upgrade.html">「パーツ強化について」を大幅拡充。強化素材の能力変化表(全カテゴリ)、成長するパーツ、シルバー/ゴールドパーツ、通信交換の変化パーツ全16種を追加しました。</a></li>
+        <li><span class="date">2026.07.29</span><a href="comm.html">「通信について」に対戦成績・コースレコード・トロフィーの項目を追加しました。</a></li>
+        <li><span class="date">2026.07.29</span><a href="courses.html">新規ページ「コース一覧」を公開。基本コース7種+通信対戦専用コース1種の目標タイム・草レース開催地・通信対戦おすすめセッティングを掲載しています。</a></li>
+        <li><span class="date">2026.07.29</span><a href="parts.html#body">パーツ図鑑「マシン本体」のデータが完成しました(全11種)。これでパーツ図鑑は全11カテゴリが完成です。</a></li>
+        <li><span class="date">2026.07.29</span><a href="shops.html">新規ページ「取扱店一覧」を公開。全10店舗の品揃えと「つくも屋の秘密」(シルバーパーツ交換表)を掲載しています。</a></li>
+        <li><span class="date">2026.07.29</span><a href="towns.html">新規ページ「街・マップ一覧」を公開。プレーヤーの町・東京・大神学園・大神ラボラトリ・土屋ラボラトリ・風輪町の施設一覧を掲載しています(地図画像は準備中)。</a></li>
+        <li><span class="date">2026.07.28</span><a href="walkthrough.html">「攻略チャート(通常版)」を新規公開。公式ガイドブックの第1部〜第4部をもとに、各カップのおすすめセッティングも掲載しています。</a></li>
+        <li><span class="date">2026.07.28</span><a href="system.html">キャラクター図鑑にマシン名を追加、システム解説に「レース形態」「コースセレクト」「ピットインの判断基準」を追加、パーツ強化についてに強化パターンA/Bの仕組みを追加しました。</a></li>
+        <li><span class="date">2026.07.28</span><a href="parts.html">パーツ図鑑、全10カテゴリのデータが完成しました(ウイング・バンパー・リヤー・サイド・ローラー・でんち・モーター・オプション・タイヤ・素材)。</a></li>
+        <li><span class="date">2026.07.24</span><a href="characters.html">取扱説明書をもとに「キャラクター図鑑」「システム解説」を新規公開。「通信について」「パーツ強化について」「このゲームについて」も内容を全面的に更新しました。</a></li>
+        <li><span class="date">2026.07.24</span><a href="chart.html">「攻略チャート」を公開しました(オープニング〜エンディング全13章)。</a></li>
+        <li><span class="date">2026.07.24</span><a href="about.html">「このゲームについて」「通信について」「パーツ強化について」の3ページを追加しました。</a></li>
+        <li><span class="date">2026.07.24</span><a href="#">サイトをリニューアルしました。トップページを一新しています。</a></li>
+        <li><span class="date">2026.07.24</span><a href="parts.html">「パーツ図鑑」ページを公開しました(データ整備中)。</a></li>
+        <li><span class="date">2026.07.24</span><a href="#">サイトの骨組みを公開しました。</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head"><span class="tag">i</span>サイト情報</div>
+    <div class="mini-panel">
+      <div class="counter">000128<span>TOTAL ACCESS (ダミー表示)</span></div>
+      <div class="side-note">今日: 12　昨日: 34</div>
+      <div style="font-weight:800;font-size:12px;margin-bottom:6px;">🏆 人気ページ</div>
+      <ol class="rank">
+        <li><a href="walkthrough.html">攻略チャート(通常版)</a></li>
+        <li><a href="chart.html">攻略チャート(RTA)</a></li>
+        <li><a href="parts.html">パーツ図鑑</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<footer>
+  当サイトは個人のファン活動として制作しています。「ミニ四駆」はタミヤ株式会社の登録商標です。<br>
+  © 2026 ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式)
+</footer>
+
+</body>
+</html>

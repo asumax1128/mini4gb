@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>パーツ強化について - ミニ四駆GB Let's&amp;Go!! 徹底攻略</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;background:#EDEDED;color:#111;font-family:"MS PGothic","Hiragino Kaku Gothic ProN",sans-serif;font-size:13px;}
+  a{color:#0000EE;}
+  a:visited{color:#551A8B;}
+  a:hover{color:#CC0000;}
+  #siteband{background:#1B3358;color:#fff;padding:6px 14px;font-size:11px;display:flex;justify-content:space-between;}
+  #siteband a{color:#cfe0f5;margin-left:10px;}
+  #navstrip{background:#fff;border-bottom:2px solid #1B3358;padding:8px 14px;font-size:12px;font-weight:bold;}
+  #navstrip a{margin-right:10px;white-space:nowrap;}
+  #navstrip .sep{color:#999;margin-right:10px;}
+  #wrap{max-width:900px;margin:12px auto;background:#fff;border:1px solid #999;padding:14px 18px 26px;}
+  .breadcrumb{font-size:11px;color:#555;margin-bottom:10px;}
+  h1.page-title{font-size:19px;border-bottom:3px solid #1B3358;padding-bottom:6px;margin:0 0 4px;}
+  p.page-desc{font-size:12.5px;color:#444;margin:0 0 18px;}
+  h2.blk{background:#1B3358;color:#fff;font-size:13px;padding:5px 9px;margin:22px 0 8px;}
+  h3.blk2{border-left:5px solid #1B3358;padding-left:7px;font-size:13px;margin:16px 0 6px;}
+  table.dat{border-collapse:collapse;width:100%;font-size:12px;margin-bottom:12px;}
+  table.dat th,table.dat td{border:1px solid #999;padding:4px 6px;text-align:left;}
+  table.dat th{background:#DCE4EC;}
+  table.dat tr:nth-child(even) td{background:#F7F9FB;}
+  .note{background:#FFF9DB;border:1px dashed #C9AF52;padding:6px 9px;font-size:11.5px;color:#665500;margin:8px 0;}
+  #toc{background:#F4F6F8;border:1px solid #ccc;padding:8px 12px;font-size:12px;margin-bottom:16px;}
+  #toc .hd{font-weight:bold;margin-bottom:4px;}
+  #toc ul{margin:0;padding-left:18px;columns:2;}
+  #ftr{max-width:900px;margin:0 auto 30px;text-align:center;font-size:10.5px;color:#666;}
+</style>
+</head>
+<body>
+
+<div id="siteband">
+  <span>ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式)</span>
+  <span><a href="index.html">トップへ戻る</a></span>
+</div>
+
+<div id="navstrip">
+  <a href="index.html">TOP</a><span class="sep">|</span>
+  <a href="about.html">このゲームについて</a><span class="sep">|</span>
+  <a href="chart.html">攻略チャート(RTA)</a><span class="sep">|</span>
+  <a href="walkthrough.html">攻略チャート(通常)</a><span class="sep">|</span>
+  <a href="parts.html">パーツ図鑑</a><span class="sep">|</span>
+  <a href="upgrade.html">パーツ強化について</a><span class="sep">|</span>
+  <a href="shops.html">取扱店</a><span class="sep">|</span>
+  <a href="towns.html">街・マップ</a><span class="sep">|</span>
+  <a href="characters.html">キャラ図鑑</a><span class="sep">|</span>
+  <a href="courses.html">コース</a><span class="sep">|</span>
+  <a href="events.html">大会一覧</a><span class="sep">|</span>
+  <a href="comm.html">通信について</a><span class="sep">|</span>
+  <a href="system.html">システム解説</a><span class="sep">|</span>
+  <a href="tips.html">小技・裏技</a><span class="sep">|</span>
+  <a href="glossary.html">用語集</a>
+</div>
+
+<div id="wrap">
+  <div class="breadcrumb"><a href="index.html">TOP</a> &gt; パーツ強化について</div>
+
+  <h1 class="page-title">パーツ強化について</h1>
+  <p class="page-desc">このゲームでは「パーツが古くなる/壊れる」という耐久面の要素、「パーツを組み合わせて強力な別パーツに変える」強化面の要素、そして「使うほど性能が伸びる/落ちる」成長パーツの要素があります。通信交換で起きる特殊な変化もあわせてまとめています。</p>
+
+  <div id="toc">
+    <div class="hd">目次</div>
+    <ul>
+      <li><a href="#taikyu">パーツ年齢(耐久度)</a></li>
+      <li><a href="#kyoka">パーツ強化(きょうか)</a></li>
+      <li><a href="#seicho">成長するパーツ</a></li>
+      <li><a href="#kokan">パーツ交換(こうかん)</a></li>
+      <li><a href="#silver">シルバー/ゴールドパーツ</a></li>
+      <li><a href="#maboroshi">幻のパーツ(変化パーツ)</a></li>
+    </ul>
+  </div>
+
+  <h2 class="blk" id="taikyu">■ パーツ年齢(耐久度)</h2>
+  <p>すべてのパーツには「パーツ年齢」が設定されており、使うほど年齢が進みます。年齢が<b>99</b>を超えると、そのパーツは壊れてしまいます。耐久度の数値が高いパーツほど、年齢が上がりにくくなっています。壊れる前に買い替える・予備を持っておくといった管理が必要です。</p>
+
+  <h2 class="blk" id="kyoka">■ パーツ強化(きょうか)</h2>
+  <p>ストーリーを進めて<b>オータムカップで優勝</b>すると、土屋博士が鉄心先生を紹介してくれる。この鉄心先生に「てっしんのかまど」でレースを挑んで勝てば、以後いつでもパーツ強化をしてもらえるようになる(腕前を認められないと強化はしてもらえない)。強化素材を使って、パーツごとに決まっている「強化限界数」の分だけ性能を伸ばせる。</p>
+  <h3 class="blk2">強化で起こるパーツの変化</h3>
+  <p>パーツには長所と短所がある。強化をすれば、短所を補ったり長所を伸ばしたりできるが、とくに<b>長所をさらに伸ばす強化が効果的</b>。たとえば空力性能が長所のエアロウイングに、空力性能を伸ばす強化素材(空力チップなど)を使うと、パワーが55から57にアップするといった具合。逆に短所を狙って強化しても、伸びしろは小さい。</p>
+  <h3 class="blk2">強化の手順</h3>
+  <ol>
+    <li>鉄心先生のかまどで「きょうか」を選ぶ</li>
+    <li>強化したいパーツを選ぶ</li>
+    <li>強化素材を選ぶ</li>
+    <li>確認画面で「はい」を選ぶと強化開始</li>
+    <li>強化後のパーツ性能を確認できる</li>
+  </ol>
+  <p>強化限界数を超えても強化を試みることはできますが、その場合は失敗する確率が上がります。<b>強化に失敗すると、パーツ年齢が上昇してしまう</b>ので注意が必要です。</p>
+
+  <h3 class="blk2">強化のパターンは2種類</h3>
+  <table class="dat">
+    <tr><th>パターン</th><th>組み合わせ</th><th>内容</th></tr>
+    <tr><td>ふつうの強化<br>(パターンA)</td><td>パーツ + 強化素材</td><td>もっとも基本的な強化。パーツと強化素材の性能が合体する形で、<a href="parts.html#material">素材ごとの効果表</a>の通りに確実にパーツの能力がアップする。(例:バンパー+金属素材で、たいきゅうど70→78)</td></tr>
+    <tr><td>クリスタルをプラス<br>(パターンB)</td><td>パーツ + 強化素材 + クリスタル系素材</td><td>特殊な強化方法。パターンAの組み合わせに、クリスタル(エボクリスタルなど)をさらに加えた強化。ふつうの強化とは違うスゴイ変化が起こる。効果はランダムで、大幅にアップすることもあれば、必ずしもよい結果になるとは限らない(ダウンすることもある)。運が良ければとんでもない性能のパーツが生まれることも。</td></tr>
+  </table>
+
+  <h3 class="blk2">強化できる回数</h3>
+  <p>パーツには最大強化回数(強化限界数)が決まっており、普通のパーツは6〜7回、なかには強化できる回数の多いパーツもあります(強化数10のパーツなど)。基本以上の強化を行うと、その数だけ強化失敗を起こしやすくなり、失敗するとパーツ年齢が増えてしまいます。</p>
+  <div class="note">⚠️ <b>オプションパーツ全17種は、絶対に強化することができません。</b>このパーツ自体がモーターやでんちを補助するサポート役だからのようです。</div>
+
+  <h3 class="blk2">強化素材の解放</h3>
+  <p>強化素材は最初からすべて使えるわけではありません。ストーリーを進めてイベントをクリアすることで、新しい強化素材が少しずつ使えるようになっていきます。目安として、<b>パーツレベルが3・4・6・8になったタイミング</b>で鉄心のかまどへ行くと、使える強化素材の種類が増えます。また、東京の<a href="towns.html#tokyo">つくも屋</a>でも強化素材が手に入りますが、そちらは入手しづらい貴重な素材ばかりです(→<a href="towns.html#tokyo">街・マップ一覧の東京</a>)。素材は無限にあるわけではなく、レースに出場することで補充されます(補充に必要なレース数は<a href="parts.html#material">パーツ図鑑の「素材」</a>を参照)。ある程度レースをこなせば素材は自然に補充されるので、強化しすぎて素材がなくなってしまった場合は、まずレースに出場しましょう。</p>
+
+  <div class="note">✅ 強化素材の一覧・入手時期・効果は<a href="parts.html#material">パーツ図鑑の「素材」</a>にまとめました。金属系(耐久度)、ギア系(モーター用)、チップ系(様々な効果)など、素材によって強化できるパーツの系統が異なります。</div>
+
+  <h3 class="blk2">強化5:素材別・能力変化表</h3>
+  <p>各強化素材が具体的にパーツのどの性能に効果を及ぼすのかをまとめた一覧です。「LV」は入手が可能になるレベル、「試」はその素材が1個増えるまでに必要なレース試合数です(→<a href="parts.html#material">パーツ図鑑の素材にも同種の一覧があります</a>)。</p>
+  <table class="dat">
+    <tr><th>素材名</th><th>LV</th><th>効果</th><th>試</th><th>ひとこと</th></tr>
+    <tr><td colspan="5" style="background:#DCE4EC;font-weight:bold;">ギア(モーター専用)</td></tr>
+    <tr><td>スピードギア</td><td>1</td><td>回転数+1、トルク−1</td><td>0.5</td><td>スピード重視。ストレートでの最高速度が速くなる。</td></tr>
+    <tr><td>トルクギア</td><td>1</td><td>回転数−1、トルク+1</td><td>0.5</td><td>トルク重視。スタートダッシュや坂道に強くなる。</td></tr>
+    <tr><td>デュアルギア</td><td>6</td><td>回転数+2、トルク+2、発熱度+6</td><td>1</td><td>性能のよいギア。ダッシュ力と直線での伸びがアップ。</td></tr>
+    <tr><td>デュアルギアSP</td><td>8</td><td>回転数+2、トルク+2、発熱度+10</td><td>5</td><td>高性能な最新ギア。さらにダッシュ力と直線の伸びが増す。</td></tr>
+    <tr><td>ダウンギア</td><td>3</td><td>回転数−1、トルク−1、発熱度−2</td><td>1</td><td>製造ミスで生まれる不良品。ただの役立たずか!?</td></tr>
+    <tr><td>けいりょうTZギア</td><td>6</td><td>回転数+3、トルク−1</td><td>1</td><td>スピードギアの強化版。最高速度が飛躍的に伸びる。</td></tr>
+    <tr><td>SPトルクギア</td><td>6</td><td>回転数−1、トルク+3</td><td>1</td><td>トルクギアの最高峰。すさまじいダッシュ力を得られる。</td></tr>
+
+    <tr><td colspan="5" style="background:#DCE4EC;font-weight:bold;">スペーサー(ウ/バ/リ/サ/ロ/モ 共通)</td></tr>
+    <tr><td>スペーサー</td><td>1</td><td>重量+0.1、安定性+1</td><td>0.5</td><td>プラスチック加工に使われるパテ。安定性がアップ。</td></tr>
+    <tr><td>ビッグスペーサー</td><td>6</td><td>重量+0.2、安定性+1</td><td>1</td><td>スペーサーの強化版。大きな安定性が欲しいならコイツだ。</td></tr>
+
+    <tr><td colspan="5" style="background:#DCE4EC;font-weight:bold;">安定性チップ(ウ/バ/リ/サ/ロ/モ 共通)</td></tr>
+    <tr><td>セーフティチップ</td><td>1</td><td>耐久度−6、安定性+1</td><td>0.5</td><td>安定性についてのデータが詰まったコンピュータチップ。</td></tr>
+    <tr><td>SPセーフティチップ</td><td>6</td><td>耐久度−10、安定性+2</td><td>1</td><td>安定性を追求するための膨大なデータが記憶されたチップ。</td></tr>
+
+    <tr><td colspan="5" style="background:#DCE4EC;font-weight:bold;">金属(ウ/バ/リ/サ/ロ/モ/タ 共通)</td></tr>
+    <tr><td>スチール</td><td>1</td><td>重量+0.1、耐久度+4、発熱度−6</td><td>0.5</td><td>鉄を鍛えて作った金属素材。パーツを丈夫にする効果。</td></tr>
+    <tr><td>ステンレス</td><td>6</td><td>重量+0.2、耐久度+8、発熱度−8</td><td>1</td><td>ニッケルやクロムなどの合成金属。耐久性がアップ。</td></tr>
+    <tr><td>アルミ</td><td>1</td><td>重量−0.2、耐久度−4、発熱度+4</td><td>0.5</td><td>ボーキサイトが主原料の軽い金属。軽量化に使おう。</td></tr>
+    <tr><td>セラミック</td><td>6</td><td>重量−0.4、耐久度−8、発熱度+6</td><td>1</td><td>人工的に開発した新物質。パーツの軽量化に最適な素材。</td></tr>
+    <tr><td>チタン</td><td>6</td><td>重量+0.1、耐久度+6、安定性+1、発熱度−2</td><td>5</td><td>堅いうえに腐食に強い。性能が全体的にレベルアップする。</td></tr>
+    <tr><td>ZMC</td><td>8</td><td>重量+0.1、耐久度+10、安定性+2、発熱度+2</td><td>20</td><td>鉄心先生が開発したセラミックス。能力がグンと跳ね上がる。</td></tr>
+
+    <tr><td colspan="5" style="background:#DCE4EC;font-weight:bold;">ゴム(タイヤ専用)</td></tr>
+    <tr><td>ゴム</td><td>1</td><td>重量+0.1、耐久度−4、グリップ+2</td><td>0.5</td><td>ゴムの木の樹液が主原料の物質。グリップ力を補う。</td></tr>
+    <tr><td>きょうかゴム</td><td>6</td><td>重量+0.2、耐久度−8、グリップ+4</td><td>1</td><td>ゴムにほかの物質を混ぜたもの。よりグリップ力が上がる。</td></tr>
+
+    <tr><td colspan="5" style="background:#DCE4EC;font-weight:bold;">ベアリング(ローラー専用)</td></tr>
+    <tr><td>ベアリング</td><td>1</td><td>安定性−1、摩擦力−10</td><td>0.5</td><td>精密機械などに使われる金属ローラー。摩擦抵抗を減らす。</td></tr>
+    <tr><td>ハイブリッドベアリング</td><td>6</td><td>安定性−2、摩擦力−20</td><td>1</td><td>多くの物質を合成したローラー。いっそう摩擦抵抗が減少。</td></tr>
+
+    <tr><td colspan="5" style="background:#DCE4EC;font-weight:bold;">グリップアップ(タイヤ専用)</td></tr>
+    <tr><td>グリップアップ</td><td>1</td><td>重量+0.2、グリップ+3</td><td>0.5</td><td>家庭用品の滑り止めなどに使うもの。グリップ力アップに。</td></tr>
+    <tr><td>SPグリップアップ</td><td>6</td><td>重量+0.4、グリップ+6</td><td>1</td><td>工業製品の滑り止めに使うもの。さらにグリップ力がアップ。</td></tr>
+
+    <tr><td colspan="5" style="background:#DCE4EC;font-weight:bold;">ホイール(タイヤ専用・デフ切替)</td></tr>
+    <tr><td>ノーマルホイール</td><td>3</td><td>デフを×にする</td><td>2</td><td>タイヤの中心にある輪。プラスチックや金属でできている。</td></tr>
+    <tr><td>デフホイール</td><td>3</td><td>重量+0.2、デフを○にする</td><td>10</td><td>歯車がマシンの内輪差を補正。タイヤにデフの属性がつく。</td></tr>
+
+    <tr><td colspan="5" style="background:#DCE4EC;font-weight:bold;">空力・ダウンフォースチップ(ウ/バ/リ/サ/ロ/モ 共通)</td></tr>
+    <tr><td>くうりきチップ</td><td>2</td><td>空力性能+2、DF−2</td><td>0.5</td><td>Vマグナム開発時に得た空力情報を詰めたデータチップ。</td></tr>
+    <tr><td>SPくうりきチップ</td><td>6</td><td>空力性能+3、DF−3</td><td>1</td><td>サイクロンマグナムから得た、高速マシンのデータチップ。</td></tr>
+    <tr><td>ダウンフォースチップ</td><td>3</td><td>空力性能−2、DF+3</td><td>0.5</td><td>トライダガーXのダウンフォースを分析したデータチップ。</td></tr>
+    <tr><td>ダウンフォースチップZ</td><td>6</td><td>空力性能−3、DF+4</td><td>1</td><td>トライダガーZMCの情報がいっぱい詰まったデータチップ。</td></tr>
+    <tr><td>エアロチップ</td><td>3</td><td>耐久度−6、安定性−1、空力性能+1、DF+2</td><td>1</td><td>初代セイバーの空力とダウンフォース情報のデータチップ。</td></tr>
+    <tr><td>SPエアロチップ</td><td>6</td><td>耐久度−10、安定性−1、空力性能+2、DF+4</td><td>1</td><td>ハリケーンソニックの空力とダウンフォース情報のチップ。</td></tr>
+
+    <tr><td colspan="5" style="background:#DCE4EC;font-weight:bold;">でんち強化チップ(でんち専用)</td></tr>
+    <tr><td>ストレージチップ</td><td>3</td><td>容量+6、パワー−1</td><td>0.5</td><td>コンピュータのデータ圧縮プログラム。電池容量を増やす。</td></tr>
+    <tr><td>ダブルストレージチップ</td><td>6</td><td>容量+10、パワー−3</td><td>1</td><td>超効率データ圧縮プログラム。電池の容量がさらにアップ。</td></tr>
+    <tr><td>パワーチップ</td><td>3</td><td>容量−3、パワー+2</td><td>0.5</td><td>大神博士作のパワーマシンのデータ。電池のパワーアップに。</td></tr>
+    <tr><td>ハイパワーチップ</td><td>6</td><td>容量−6、パワー+4</td><td>1</td><td>ブロッケンGの情報チップ。より電池がパワーアップする。</td></tr>
+
+    <tr><td colspan="5" style="background:#DCE4EC;font-weight:bold;">クリスタル・特殊チップ(全パーツ対応)</td></tr>
+    <tr><td>エボクリスタル</td><td>4</td><td>強化の効果を少しだけ変化(ランダム)</td><td>12.5</td><td>ジュラ期の地層から発見された謎の透明物質。何かが起こる。</td></tr>
+    <tr><td>スーパーエボクリスタル</td><td>6</td><td>強化の効果を大きく変化(ランダム)</td><td>50</td><td>マリアナ海溝で見つかった青く輝く透明物質。何かが起こる。</td></tr>
+    <tr><td>メガエボクリスタル</td><td>8</td><td>強化の効果をかなり大きく変化(ランダム)</td><td>100</td><td>隕石の中から見つかった超硬質クリスタル。何かが起こる。</td></tr>
+    <tr><td>リバースチップ</td><td>4</td><td>強化での変化をもとに戻す</td><td>10</td><td>強化での変化をもとに戻すプログラムを組み込んだチップ。</td></tr>
+  </table>
+  <div class="note">⚠️ この表は公式ガイドブックp.56-59「強化5:素材別・能力変化表」からの転記です。すでに<a href="parts.html#material">パーツ図鑑の素材</a>に掲載していた数値(同ガイドブックp.106-111のパーツ完全データより)と突き合わせたところ、大部分は一致しましたが、以下の項目は数値の食い違いが見つかりました。どちらが正確か実物での再確認が必要です。
+    <ul>
+      <li>ギア各種の回転数・トルクの上昇値(この表の方が小さめの数値)</li>
+      <li>ベアリング/ハイブリッドベアリングの対象項目(この表では「安定性」低下、パーツ図鑑側では「耐久度」低下と記載)</li>
+      <li>ビッグスペーサーの安定性上昇値(この表では+1、パーツ図鑑側では+3)</li>
+    </ul>
+  </div>
+
+  <h2 class="blk" id="seicho">■ 成長するパーツ</h2>
+  <p>パーツ強化とは別に、<b>使い込むこと自体で性能が変化していく「成長パーツ」</b>が存在します。テスト走行などでパーツねんれいを進めながら見極めるのがコツです。</p>
+  <table class="dat">
+    <tr><th>種別</th><th>性能の変化</th></tr>
+    <tr><td>通常パーツ<br>(ウイング・バンパーなど)</td><td>パーツ年齢0のときが性能のピークで、その状態がある程度の年齢まで一定に保たれたあと、性能が徐々に低下していく。壊れる(年齢99)前に、下がりきる前の早めの交換がおすすめ。</td></tr>
+    <tr><td>通常パーツ<br>(タイヤ・電池など)</td><td>パーツ年齢が進むと同時に性能が落ち始める。ある年齢を境に、性能が一気に下がっていくのが特徴。使う場合は下がる限界まで使ってもいいが、早めの交換の方が安心。</td></tr>
+    <tr><td>通常パーツ<br>(モーターなど)</td><td>新品時点では性能が低く、年齢30前後でピークに達したあと、しばらくピークを維持し続ける。テスト走行でモーターをこの「おいしい年齢」に合わせておくのが、大レースに勝つためのテクニック。</td></tr>
+    <tr><td>グングンパーツ&amp;Xパーツ</td><td>使い込むと性能がアップする不思議なパーツ。パーツ年齢が上がるほど性能が良くなり、90を越えたあたりから普通のパーツよりダントツに高い性能を発揮するようになる。ただし年齢が99になると壊れてしまうのはほかのパーツと同じ。性能がベストな状態になったら、強化で耐久度を上げて大切に使おう。Xパーツはモーターと電池だけに存在する。</td></tr>
+    <tr><td>ワンダーパーツ</td><td>使い始めてすぐは性能が低下するが、あきらめずに使い続けると購入時より高い性能を発揮する。この性能は壊れるまで安定して持続する。</td></tr>
+  </table>
+  <div class="note">📷 公式ガイドブックp.39-40、およびオフィシャル常勝ガイドp.74-75「パーツ年齢による能力の低下例」の写真から転記(2026/07/29分)。カスタムバッテリー(パーツ年齢が10を越えると突然パワー値が上昇し、20〜70まで高いパワー値を維持する特殊な電池)のような、成長曲線が個性的なパーツも存在します。</div>
+
+  <h2 class="blk" id="kokan">■ パーツ交換(こうかん)</h2>
+  <p>パーツ交換は、通信ケーブルで繋いだ相手と、お互いの「そうこ」に入れたパーツ同士で行います。ツールボックスに入れているパーツは交換できません。この機能を使わないと手に入らないアイテムも存在します。</p>
+  <h3 class="blk2">交換の手順</h3>
+  <ol>
+    <li>通信交換を開始すると、まず通信相手とキミの倉庫に入っているパーツ情報が交換される</li>
+    <li>パーツを選ぶ画面で、右を押すと相手の倉庫の中身を覗ける。どのパーツを交換に出すか相談して決めよう</li>
+    <li>自分が交換したいパーツを選び、「トレードにだす」を選ぶ</li>
+    <li>相手との交換内容を確認し、よければ「はい」を選ぶ</li>
+    <li>交換が行われる</li>
+    <li>交換後のパーツ性能を確認できる</li>
+  </ol>
+  <p>交換したいパーツはあらかじめ倉庫に入れておく必要があります(倉庫に入っていないパーツは交換候補として提示されません)。</p>
+
+  <h3 class="blk2">交換で起こる3パターンの結果</h3>
+  <table class="dat">
+    <tr><th>結果</th><th>内容</th></tr>
+    <tr><td>普通の交換</td><td>突然のトラブルも起きず、無事に交換が終了。通信交換の基本はこのパターン。</td></tr>
+    <tr><td>パーツ年齢完全回復</td><td>交換すると必ずパーツの年齢が回復する。何度も交換を繰り返せば、パーツ年齢が10回復する…といった具合に、回数を重ねるほど完全に回復していく。</td></tr>
+    <tr><td>パーツが変化した!?</td><td>特定のパーツどおしを交換すると、そのパーツそのものが別のパーツへと変化する。これが下記の「変化パーツ」の正体(16通りの組み合わせがある)。</td></tr>
+  </table>
+  <div class="note">運がよければ、強化数が0になった状態(強化された能力はそのままで、強化数のみが限界まで超えてくる)のパーツが、強化数完全回復という超ラッキーな状態になることもあります。</div>
+
+  <h3 class="blk2">作者名について</h3>
+  <p>パーツには、それぞれの持ち主(正確には最初にそのパーツを持っていた人)の「作者名」が表示されます。パーツを交換して相手のパーツが自分の倉庫に移ったとしても、パーツに入っている作者名がまったく知らない人の名前だったとしても、その名前が変わることは絶対にありません。貴重なパーツを持っているだけでも自慢できるので、シルバーパーツなどなかなか入手できない貴重なパーツは、友だちに自分の名前入りパーツとして印象づけておくのも一興です。</p>
+
+  <h3 class="blk2" id="silver">シルバーパーツ／ゴールドパーツ</h3>
+  <p>お店では購入できない特殊パーツとして、シルバーパーツとゴールドパーツが存在します。</p>
+  <table class="dat">
+    <tr><th>種別</th><th>入手方法</th><th>特徴</th></tr>
+    <tr><td>シルバーパーツ</td><td><a href="towns.html#tokyo">つくも屋</a>(パーツねんれい99のパーツと交換、→<a href="shops.html#tsukumoya">取扱店一覧のつくも屋の秘密</a>)、または4大メジャーカップのうち<b>サマーカップ以外の3つ</b>で優勝したときの賞品</td><td>シルバーパーツ自体の性能はそれほど優れていない。全8種類ある。</td></tr>
+    <tr><td>ゴールドパーツ</td><td>シルバーパーツ8種類すべてを集めて<a href="towns.html#tsuchiyalab">土屋研究所</a>に持っていくと、土屋博士が1種類のゴールドパーツと交換してくれる</td><td>性能が高いだけでなく、10回も強化ができるため、プレイヤーの思いどおりのパーツに作り替えられる。ただしパーツレベルが8になるまで使用できない。</td></tr>
+  </table>
+  <div class="note">🚧 シルバーパーツ8種類それぞれの名前・つくも屋のIDNo.対応表は<a href="shops.html#tsukumoya">取扱店一覧のつくも屋の秘密</a>を参照。どの大会の優勝賞品がどのシルバーパーツになるかの詳細な対応は、実プレイでの確認待ちです。</div>
+
+  <h3 class="blk2" id="maboroshi">幻のパーツ(変化パーツ)</h3>
+  <p>通信交換でしか入手できない特殊なパーツも存在します。特定のパーツどうしを交換すると、そのパーツが別の「変化パーツ」に変化する現象で、これが唯一の入手方法です。変化パーツは全部で16個あります。</p>
+  <table class="dat">
+    <tr><th>変化パーツ名</th><th>組み合わせその1</th><th>組み合わせその2</th></tr>
+    <tr><td>メガワンダーマウント</td><td>カナードウイング(<a href="shops.html#shop04">スピード模型店</a>)</td><td>ワンダーマウント(<a href="shops.html#shop10">学園購買部</a>)</td></tr>
+    <tr><td>Tウイング</td><td>かへんウイング(<a href="shops.html#shop09">大神模型店</a>)</td><td>Vマウント(<a href="shops.html#shop10">学園購買部</a>)</td></tr>
+    <tr><td>エアスラッシュバンパー</td><td>ダウンフォースバンパー(<a href="shops.html#shop08">土屋模型店</a>)</td><td>スプラッシュバンパー2(<a href="shops.html#shop09">大神模型店</a>)</td></tr>
+    <tr><td>Tバンパー</td><td>ネオスライドバンパー(<a href="shops.html#shop06">佐上模型店</a>)</td><td>フォーミュラーバンパー(<a href="shops.html#shop05">トイランド</a>)</td></tr>
+    <tr><td>リヤーロングスキッド</td><td>リヤーダンパーダッシュ(<a href="shops.html#shop04">スピード模型店</a>)</td><td>リヤーフレームステー(<a href="shops.html#shop05">トイランド</a>)</td></tr>
+    <tr><td>リヤーTスキッド</td><td>リヤーグランドステー(<a href="shops.html#shop06">佐上模型店</a>)</td><td>リヤーオイルダンパー(<a href="shops.html#shop05">トイランド</a>)</td></tr>
+    <tr><td>Tサイド</td><td>グングンサイド(<a href="shops.html#shop08">土屋模型店</a>)</td><td>グランドサイドベータ(<a href="shops.html#shop05">トイランド</a>)</td></tr>
+    <tr><td>TローラーS</td><td>MAXスタビポールS(<a href="shops.html#shop06">佐上模型店</a>)</td><td>ダークローラーS(<a href="shops.html#shop10">学園購買部</a>)</td></tr>
+    <tr><td>TローラーL</td><td>MAXスタビポールL(<a href="shops.html#shop06">佐上模型店</a>)</td><td>ダークローラーL(<a href="shops.html#shop10">学園購買部</a>)</td></tr>
+    <tr><td>Tパワー</td><td>リチウムでんち(<a href="shops.html#shop04">スピード模型店</a>)</td><td>アトミックパワー(<a href="shops.html#shop05">トイランド</a>)</td></tr>
+    <tr><td>Qスペシャルモーター</td><td>スペシャルモーター(<a href="shops.html#shop08">土屋模型店</a>)</td><td>ギガトルクモーター(<a href="shops.html#shop06">佐上模型店</a>)</td></tr>
+    <tr><td>Tモーター</td><td>マッハダッシュモーター(<a href="shops.html#shop07">ゴールド模型</a>)</td><td>SPグングンモーター(<a href="shops.html#shop05">トイランド</a>)</td></tr>
+    <tr><td>ダークタイヤS</td><td>グングンタイヤS(<a href="shops.html#shop03">デパート</a>)</td><td>SPグングンタイヤS(<a href="shops.html#shop05">トイランド</a>)</td></tr>
+    <tr><td>ダークタイヤL</td><td>グングンタイヤL(<a href="shops.html#shop03">デパート</a>)</td><td>SPグングンタイヤL(<a href="shops.html#shop05">トイランド</a>)</td></tr>
+    <tr><td>TタイヤS</td><td>レストンタイヤS(<a href="shops.html#shop08">土屋模型店</a>)</td><td>QラリータイヤS(<a href="shops.html#shop10">学園購買部</a>)</td></tr>
+    <tr><td>TタイヤL</td><td>レストンタイヤL(<a href="shops.html#shop08">土屋模型店</a>)</td><td>QラリータイヤL(<a href="shops.html#shop10">学園購買部</a>)</td></tr>
+  </table>
+  <div class="note">⚠️ 交換するパーツ同士の作者名にも注意。ある一定の組み合わせでパーツを変化させるには、交換したときにパーツの作者名が「自分の名前」と「自分の名前以外」の組み合わせでないと変化が発生しません。自分のものだけ、相手からもらったものだけ、といった交換では変化しないので注意しましょう。★ローラーとタイヤに関しては、上記以外にもその変化パーツになる組み合わせが存在するようです。</div>
+  <p class="note">📷 パーツ交換の仕組み・シルバーパーツの入手条件・変化パーツの全リストは、オフィシャル常勝ガイドp.39-40・50-55の写真から転記しています(2026/07/29分)。</p>
+
+  <h2 class="blk">■ まとめ</h2>
+  <table class="dat">
+    <tr><th>要素</th><th>内容</th></tr>
+    <tr><td>耐久(パーツ年齢)</td><td>使うほど劣化し、年齢99超で破損。</td></tr>
+    <tr><td>強化(きょうか)</td><td>オータムカップ優勝後、鉄心先生のかまどで強化素材を使って性能アップ。失敗すると年齢が悪化。</td></tr>
+    <tr><td>成長パーツ</td><td>グングンパーツ/Xパーツは使うほど性能アップ、ワンダーパーツは使い込むと初期性能を上回る。</td></tr>
+    <tr><td>交換(こうかん)</td><td>通信でそうこ同士のパーツを交換。年齢が回復したり、特定の組み合わせでパーツが変化することも。</td></tr>
+    <tr><td>シルバー→ゴールド交換</td><td>シルバーパーツ8種(つくも屋/4大カップの3つ)を揃えて土屋研究所でゴールドパーツと交換。</td></tr>
+  </table>
+
+</div>
+
+<div id="ftr">
+  © 2026 ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式) ／ 「ミニ四駆」はタミヤ株式会社の登録商標です。
+</div>
+
+</body>
+</html>

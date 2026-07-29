@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>キャラクター図鑑 - ミニ四駆GB Let's&amp;Go!! 徹底攻略</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;background:#EDEDED;color:#111;font-family:"MS PGothic","Hiragino Kaku Gothic ProN",sans-serif;font-size:13px;}
+  a{color:#0000EE;}
+  a:visited{color:#551A8B;}
+  a:hover{color:#CC0000;}
+  #siteband{background:#1B3358;color:#fff;padding:6px 14px;font-size:11px;display:flex;justify-content:space-between;}
+  #siteband a{color:#cfe0f5;margin-left:10px;}
+  #navstrip{background:#fff;border-bottom:2px solid #1B3358;padding:8px 14px;font-size:12px;font-weight:bold;}
+  #navstrip a{margin-right:10px;white-space:nowrap;}
+  #navstrip .sep{color:#999;margin-right:10px;}
+  #wrap{max-width:900px;margin:12px auto;background:#fff;border:1px solid #999;padding:14px 18px 26px;}
+  .breadcrumb{font-size:11px;color:#555;margin-bottom:10px;}
+  h1.page-title{font-size:19px;border-bottom:3px solid #1B3358;padding-bottom:6px;margin:0 0 4px;}
+  p.page-desc{font-size:12.5px;color:#444;margin:0 0 18px;}
+  h2.blk{background:#1B3358;color:#fff;font-size:13px;padding:5px 9px;margin:22px 0 8px;}
+  .note{background:#FFF9DB;border:1px dashed #C9AF52;padding:6px 9px;font-size:11.5px;color:#665500;margin:8px 0;}
+
+  .chara-card{display:flex;border:1px solid #999;margin-bottom:8px;background:#fff;}
+  .chara-img{
+    width:70px;flex-shrink:0;border-right:1px solid #999;
+    background-image:
+      linear-gradient(45deg,#ddd 25%,transparent 25%),
+      linear-gradient(-45deg,#ddd 25%,transparent 25%),
+      linear-gradient(45deg,transparent 75%,#ddd 75%),
+      linear-gradient(-45deg,transparent 75%,#ddd 75%);
+    background-size:14px 14px;
+    background-position:0 0,0 7px,7px -7px,-7px 0px;
+    background-color:#f5f5f5;
+    display:flex;align-items:center;justify-content:center;color:#c9c9c9;font-size:18px;
+  }
+  .chara-img img{max-width:100%;max-height:110px;display:block;image-rendering:pixelated;}
+  .chara-info{padding:7px 10px;flex:1;}
+  .chara-name{font-weight:bold;font-size:13px;}
+  .chara-name .yomi{font-weight:normal;font-size:10.5px;color:#666;margin-left:4px;}
+  .chara-desc{font-size:12px;color:#333;margin:0;}
+  .chara-machine{font-size:11px;color:#1B3358;margin:2px 0 1px;}
+  .chara-point{font-size:10.5px;color:#8a5a00;margin:0 0 3px;}
+  .expr-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:5px;}
+  .expr-img{width:40px;height:40px;object-fit:cover;border:1px solid #999;image-rendering:pixelated;}
+  .expr-label{font-size:10.5px;color:#666;}
+</style>
+</head>
+<body>
+
+<div id="siteband">
+  <span>ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式)</span>
+  <span><a href="index.html">トップへ戻る</a></span>
+</div>
+
+<div id="navstrip">
+  <a href="index.html">TOP</a><span class="sep">|</span>
+  <a href="about.html">このゲームについて</a><span class="sep">|</span>
+  <a href="chart.html">攻略チャート(RTA)</a><span class="sep">|</span>
+  <a href="walkthrough.html">攻略チャート(通常)</a><span class="sep">|</span>
+  <a href="parts.html">パーツ図鑑</a><span class="sep">|</span>
+  <a href="upgrade.html">パーツ強化について</a><span class="sep">|</span>
+  <a href="shops.html">取扱店</a><span class="sep">|</span>
+  <a href="towns.html">街・マップ</a><span class="sep">|</span>
+  <a href="characters.html">キャラ図鑑</a><span class="sep">|</span>
+  <a href="courses.html">コース</a><span class="sep">|</span>
+  <a href="events.html">大会一覧</a><span class="sep">|</span>
+  <a href="comm.html">通信について</a><span class="sep">|</span>
+  <a href="system.html">システム解説</a><span class="sep">|</span>
+  <a href="tips.html">小技・裏技</a><span class="sep">|</span>
+  <a href="glossary.html">用語集</a>
+</div>
+
+<div id="wrap">
+  <div class="breadcrumb"><a href="index.html">TOP</a> &gt; キャラクター図鑑</div>
+
+  <h1 class="page-title">キャラクター図鑑</h1>
+  <p class="page-desc">作中に登場するレーサー・キャラクターをまとめています。紹介文は取扱説明書の内容を参考に、独自の表現でまとめ直したものです。</p>
+
+  <h2 class="blk">■ 主人公サイド</h2>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">星馬 烈<span class="yomi">せいば れつ</span></div>
+      <div class="chara-point">初登場：オータムカップ</div>
+      <div class="chara-machine">使用マシン：ハリケーンソニック</div>
+      <p class="chara-desc">ミニ四駆に熱い情熱を抱く星馬兄弟の長男。冷静な判断力と決断力でレースを進める理論派。</p>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">星馬 豪<span class="yomi">せいば ごう</span></div>
+      <div class="chara-point">初登場：オータムカップ</div>
+      <div class="chara-machine">使用マシン：サイクロンマグナム</div>
+      <p class="chara-desc">大の負けず嫌いで意地っ張り。烈の弟で、レースではどんなときでも熱い走りを見せつけてくれる。</p>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">こひろ まこと</div>
+      <div class="chara-point">初登場：学校</div>
+      <div class="chara-machine">使用マシン：セイバー600</div>
+      <p class="chara-desc">普段はあまり目立たないが、レースでは安定した走りで存在をアピールする。</p>
+    </div>
+  </div>
+
+  <h2 class="blk">■ 草レースのライバルたち</h2>
+  <p class="page-desc" style="margin-bottom:8px;">プレーヤーの町を中心に登場する、草レースでおなじみの6人。ゲームオリジナルのキャラクターで、使用マシンはいずれもセイバー600。</p>
+  <div class="chara-card">
+    <div class="chara-img"><img src="images/character_takuya.jpeg" alt="たくや"></div>
+    <div class="chara-info">
+      <div class="chara-name">たくや</div>
+      <div class="chara-point">初登場：おもちゃのナガイカップ</div>
+      <div class="chara-machine">使用マシン：セイバー600</div>
+      <p class="chara-desc">めんどう見のいいガキ大将。草レース仲間をまとめる兄貴分的存在。</p>
+      <div class="expr-row">
+        <img class="expr-img" src="images/character_takuya_win.jpeg" alt="たくや(勝利時)">
+        <span class="expr-label">勝利時の表情</span>
+        <img class="expr-img" src="images/character_takuya_lose.jpeg" alt="たくや(敗北時)">
+        <span class="expr-label">敗北時の表情</span>
+      </div>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img"><img src="images/character_shota.jpeg" alt="しょうた"></div>
+    <div class="chara-info">
+      <div class="chara-name">しょうた</div>
+      <div class="chara-point">初登場：学校</div>
+      <div class="chara-machine">使用マシン：セイバー600</div>
+      <p class="chara-desc">最初の対戦相手になる、みんなの弟分。</p>
+      <div class="expr-row">
+        <img class="expr-img" src="images/character_shota_win.jpeg" alt="しょうた(勝利時)">
+        <span class="expr-label">勝利時の表情</span>
+        <img class="expr-img" src="images/character_shota_lose.jpeg" alt="しょうた(敗北時)">
+        <span class="expr-label">敗北時の表情</span>
+      </div>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img"><img src="images/character_mamoru.jpeg" alt="まもる"></div>
+    <div class="chara-info">
+      <div class="chara-name">まもる</div>
+      <div class="chara-point">初登場：学校</div>
+      <div class="chara-machine">使用マシン：セイバー600</div>
+      <p class="chara-desc">「計算によると」が口癖の優等生。</p>
+      <div class="expr-row">
+        <img class="expr-img" src="images/character_mamoru_win.jpeg" alt="まもる(勝利時)">
+        <span class="expr-label">勝利時の表情</span>
+        <img class="expr-img" src="images/character_mamoru_lose.jpeg" alt="まもる(敗北時)">
+        <span class="expr-label">敗北時の表情</span>
+      </div>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img"><img src="images/character_kenta.jpeg" alt="ケンタ"></div>
+    <div class="chara-info">
+      <div class="chara-name">ケンタ</div>
+      <div class="chara-point">初登場：公園</div>
+      <div class="chara-machine">使用マシン：セイバー600</div>
+      <p class="chara-desc">軽い性格で、まだまだ未熟なところが残る少年。</p>
+      <div class="expr-row">
+        <img class="expr-img" src="images/character_kenta_win.jpeg" alt="ケンタ(勝利時)">
+        <span class="expr-label">勝利時の表情</span>
+        <img class="expr-img" src="images/character_kenta_lose.jpeg" alt="ケンタ(敗北時)">
+        <span class="expr-label">敗北時の表情</span>
+      </div>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">あや</div>
+      <div class="chara-point">初登場：鷹羽レース場</div>
+      <div class="chara-machine">使用マシン：セイバー600</div>
+      <p class="chara-desc">ミニ四駆好きな女の子。</p>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">テツ</div>
+      <div class="chara-point">初登場：東京タワー(草レース)</div>
+      <div class="chara-machine">使用マシン：セイバー600</div>
+      <p class="chara-desc">真剣に勝負に臨む硬派な少年。</p>
+    </div>
+  </div>
+
+  <h2 class="blk">■ ライバル・鷹羽兄弟</h2>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">鷹羽 リョウ<span class="yomi">たかば りょう</span></div>
+      <div class="chara-point">初登場：鷹羽レース場</div>
+      <div class="chara-machine">使用マシン：トライダガーZMC</div>
+      <p class="chara-desc">風を味方につける独自の走行をあみだした一流レーサー。彼の走りはまさに神風。</p>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">鷹羽 二郎丸<span class="yomi">たかば じろうまる</span></div>
+      <div class="chara-point">初登場：鷹羽レース場</div>
+      <div class="chara-machine">使用マシン：トライダガーZMC</div>
+      <p class="chara-desc">負けることが大嫌いな少年。兄のリョウに追いつこうと毎日腕をみがいている。</p>
+    </div>
+  </div>
+
+  <h2 class="blk">■ その他のライバル</h2>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">三国 藤吉<span class="yomi">みくに とうきち</span></div>
+      <div class="chara-point">初登場：オータムカップ</div>
+      <div class="chara-machine">使用マシン：スピンコブラ</div>
+      <p class="chara-desc">三国財閥の御曹司で陽気なお調子者。見た目によらず、レーサーとしての実力は確かなもの。</p>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">三国 チイコ<span class="yomi">みくに ちいこ</span></div>
+      <div class="chara-point">初登場：藤吉の屋敷</div>
+      <div class="chara-machine">使用マシン：ハリケーンソニック</div>
+      <p class="chara-desc">レツに恋をしている藤吉の妹。お嬢様なのでレースにはあまり参加してくれない。</p>
+    </div>
+  </div>
+
+  <h3 style="font-size:12px;margin:14px 0 6px;color:#1B3358;border-bottom:1px solid #ccc;padding-bottom:3px;">ブラックセイバー軍団</h3>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">黒沢 太<span class="yomi">くろさわ ふとし</span></div>
+      <div class="chara-point">初登場：JETカップ</div>
+      <div class="chara-machine">使用マシン：ブラックセイバー</div>
+      <p class="chara-desc">悪のブラックセイバー軍団のリーダー。自分より弱い者には容赦せず、勝つためには手段を選ばない。</p>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img"><img src="images/character_rokukawa.jpeg" alt="ロクカワ"></div>
+    <div class="chara-info">
+      <div class="chara-name">ロクカワ</div>
+      <div class="chara-point">初登場：JETカップ</div>
+      <div class="chara-machine">使用マシン：ブラックセイバー</div>
+      <p class="chara-desc">軍団の中でトップクラスのレースの実力を持っている。</p>
+      <div class="expr-row">
+        <img class="expr-img" src="images/character_rokukawa_win.jpeg" alt="ロクカワ(勝利時)">
+        <span class="expr-label">勝利時の表情</span>
+        <img class="expr-img" src="images/character_rokukawa_lose.jpeg" alt="ロクカワ(敗北時)">
+        <span class="expr-label">敗北時の表情</span>
+      </div>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">マサ</div>
+      <div class="chara-point">初登場：JETカップ</div>
+      <div class="chara-machine">使用マシン：ブラックセイバー</div>
+      <p class="chara-desc">敵を確実にしとめるため、別名ハンターとも呼ばれる黒沢の子分。</p>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img"><img src="images/character_timota.jpeg" alt="ティモタ"></div>
+    <div class="chara-info">
+      <div class="chara-name">ティモタ</div>
+      <div class="chara-point">初登場：JETカップ</div>
+      <div class="chara-machine">使用マシン：ブラックセイバー</div>
+      <p class="chara-desc">自分のマシンの速さに絶対の自信を持っている。</p>
+    </div>
+  </div>
+
+  <h2 class="blk">■ 大神博士サイド</h2>
+  <div class="chara-card">
+    <div class="chara-img">🧪</div>
+    <div class="chara-info">
+      <div class="chara-name">大神博士<span class="yomi">おおがみはかせ</span></div>
+      <div class="chara-point">初登場：大神研究所</div>
+      <p class="chara-desc">強いマシンを作りだすことに執念を燃やす博士。昔は土屋博士とミニ四駆の研究をしていた。</p>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">J<span class="yomi">ジェイ</span></div>
+      <div class="chara-point">初登場：大神研究所</div>
+      <div class="chara-machine">使用マシン：プロトセイバーJB</div>
+      <p class="chara-desc">かつては大神博士の手下だったが、土屋博士と出会うことにより正義に目覚める。</p>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">沖田 カイ<span class="yomi">おきた かい</span></div>
+      <div class="chara-point">初登場：大神研究所</div>
+      <div class="chara-machine">使用マシン：ビークスパイダー</div>
+      <p class="chara-desc">大神学園からきた風の刃を操る闇の使者。彼に近づくマシンはすべて切り刻まれる。</p>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">近藤 ゲン<span class="yomi">こんどう げん</span></div>
+      <div class="chara-point">初登場：鍾乳洞</div>
+      <div class="chara-machine">使用マシン：ブロッケンギガント</div>
+      <p class="chara-desc">自分のマシンより弱いものだけを破壊するように教育されてきた少年。</p>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">土方 レイ<span class="yomi">ひじかた れい</span></div>
+      <div class="chara-point">初登場：鍾乳洞</div>
+      <div class="chara-machine">使用マシン：レイスティンガー</div>
+      <p class="chara-desc">ミニ四駆を破壊することを楽しみとする冷血漢。レイに狙われて無事にすむマシンはない。</p>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">PS戦隊<span class="yomi">ピーエスせんたい</span></div>
+      <div class="chara-point">初登場：大神研究所</div>
+      <div class="chara-machine">使用マシン：プロトセイバーJB(全員共通)</div>
+      <p class="chara-desc">敵を倒すためだけに編成された部隊。メンバーはピンク・イエロー・レッド・ホワイト・グリーンの5人。</p>
+    </div>
+  </div>
+
+  <h2 class="blk">■ 大人キャラ・協力者たち</h2>
+  <div class="chara-card">
+    <div class="chara-img">👨‍🔬</div>
+    <div class="chara-info">
+      <div class="chara-name">鉄心先生<span class="yomi">てっしんせんせい</span></div>
+      <div class="chara-point">初登場：鉄心のかまど</div>
+      <p class="chara-desc">土屋博士の師匠で、変わり者だが、ZMCという特殊素材を作りだした天才。パーツ強化を担当してくれる。</p>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img">👨‍🔬</div>
+    <div class="chara-info">
+      <div class="chara-name">土屋博士<span class="yomi">つちやはかせ</span></div>
+      <p class="chara-desc">セイバーシリーズの生みの親。子供たちに夢を与えるマシンを作ろうとしている、主人公たちの心強い理解者。通信機能を使えるようにしてくれる。</p>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img">🎤</div>
+    <div class="chara-info">
+      <div class="chara-name">ミニ四ファイター</div>
+      <div class="chara-point">初登場：おもちゃのナガイカップ</div>
+      <p class="chara-desc">いろんなミニ四駆大会の司会をやっている、みんなの人気者。レース前の車検も担当する。</p>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img">🏪</div>
+    <div class="chara-info">
+      <div class="chara-name">佐上 タモツ<span class="yomi">さがみ たもつ</span></div>
+      <div class="chara-point">初登場：佐上模型店</div>
+      <p class="chara-desc">佐上模型店の店主。ミニ四レーサーたちを良く理解している、頼りになる存在。</p>
+    </div>
+  </div>
+  <div class="chara-card">
+    <div class="chara-img">🏁</div>
+    <div class="chara-info">
+      <div class="chara-name">佐上 ジュン<span class="yomi">さがみ じゅん</span></div>
+      <div class="chara-point">初登場：佐上模型店</div>
+      <div class="chara-machine">使用マシン：サイクロンマグナム</div>
+      <p class="chara-desc">タモツのひとり娘で、ミニ四駆よりも野球が大好きというボーイッシュな女の子。佐上模型杯にも参戦してくる。</p>
+    </div>
+  </div>
+
+  <div class="note">📷 公式ガイドブックp.4-5、オフィシャル常勝ガイドp.4-11のキャラクターガイドをもとに更新しました(2026/07/28分)。「初登場：〜」は、そのキャラに最初に会える場所の目安です。草レースのライバル6人は2026/07/29に追加(→<a href="tips.html#rivals">小技・裏技にも掲載</a>)。キャラクター画像は準備中ですが、修亮さん自作のドット絵が届き次第、随時反映していきます(たくやは反映済み)。</div>
+
+</div>
+
+<div id="ftr">
+  © 2026 ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式) ／ 「ミニ四駆」はタミヤ株式会社の登録商標です。
+</div>
+
+</body>
+</html>

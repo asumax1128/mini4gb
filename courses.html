@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>コース一覧 - ミニ四駆GB Let's&amp;Go!! 徹底攻略</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;background:#EDEDED;color:#111;font-family:"MS PGothic","Hiragino Kaku Gothic ProN",sans-serif;font-size:13px;}
+  a{color:#0000EE;}
+  a:visited{color:#551A8B;}
+  a:hover{color:#CC0000;}
+  #siteband{background:#1B3358;color:#fff;padding:6px 14px;font-size:11px;display:flex;justify-content:space-between;}
+  #siteband a{color:#cfe0f5;margin-left:10px;}
+  #navstrip{background:#fff;border-bottom:2px solid #1B3358;padding:8px 14px;font-size:12px;font-weight:bold;}
+  #navstrip a{margin-right:10px;white-space:nowrap;}
+  #navstrip .sep{color:#999;margin-right:10px;}
+  #wrap{max-width:900px;margin:12px auto;background:#fff;border:1px solid #999;padding:14px 18px 26px;}
+  .breadcrumb{font-size:11px;color:#555;margin-bottom:10px;}
+  h1.page-title{font-size:19px;border-bottom:3px solid #1B3358;padding-bottom:6px;margin:0 0 4px;}
+  p.page-desc{font-size:12.5px;color:#444;margin:0 0 10px;}
+  h2.blk{background:#1B3358;color:#fff;font-size:13px;padding:5px 9px;margin:22px 0 8px;}
+  h3.blk2{border-left:5px solid #1B3358;padding-left:7px;font-size:13px;margin:16px 0 6px;}
+  table.dat{border-collapse:collapse;width:100%;font-size:12px;margin-bottom:12px;}
+  table.dat th,table.dat td{border:1px solid #999;padding:4px 6px;text-align:left;}
+  table.dat th{background:#DCE4EC;}
+  table.dat tr:nth-child(even) td{background:#F7F9FB;}
+  table.dat.mini{font-size:10.5px;margin-bottom:4px;}
+  table.dat.mini th,table.dat.mini td{padding:2px 4px;}
+  .note{background:#FFF9DB;border:1px dashed #C9AF52;padding:6px 9px;font-size:11.5px;color:#665500;margin:8px 0;}
+  #toc{background:#F4F6F8;border:1px solid #ccc;padding:8px 12px;font-size:12px;margin-bottom:16px;}
+  #toc .hd{font-weight:bold;margin-bottom:4px;}
+  #toc ul{margin:0;padding-left:18px;columns:2;}
+  #ftr{max-width:900px;margin:0 auto 30px;text-align:center;font-size:10.5px;color:#666;}
+  .part-desc{font-size:11.5px;color:#333;margin:4px 0;}
+
+  /* コースカード */
+  .course-card{border:1px solid #999;background:#fff;padding:10px;margin-bottom:16px;}
+  .course-head{display:flex;align-items:baseline;gap:8px;margin-bottom:8px;}
+  .course-head .tag{background:#1B3358;color:#fff;font-size:11px;padding:2px 7px;border-radius:2px;}
+  .course-head .cname{font-weight:bold;font-size:14px;}
+  .course-body{display:flex;flex-wrap:wrap;gap:12px;}
+  .course-img{
+    width:220px;height:150px;flex-shrink:0;border:1px solid #999;
+    background-image:
+      linear-gradient(45deg,#ddd 25%,transparent 25%),
+      linear-gradient(-45deg,#ddd 25%,transparent 25%),
+      linear-gradient(45deg,transparent 75%,#ddd 75%),
+      linear-gradient(-45deg,transparent 75%,#ddd 75%);
+    background-size:16px 16px;
+    background-position:0 0,0 8px,8px -8px,-8px 0px;
+    background-color:#f5f5f5;
+    display:flex;align-items:center;justify-content:center;
+    flex-direction:column;color:#b3b3b3;font-size:11px;text-align:center;
+  }
+  .course-img .ph-mark{font-size:24px;color:#c9c9c9;margin-bottom:4px;}
+  .course-info{flex:1;min-width:260px;}
+  .setting-cols{display:flex;gap:12px;flex-wrap:wrap;}
+  table.setting{flex:1;min-width:220px;}
+  table.setting th{width:42%;background:#F4E9B8;white-space:nowrap;}
+</style>
+</head>
+<body>
+
+<div id="siteband">
+  <span>ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式)</span>
+  <span><a href="index.html">トップへ戻る</a></span>
+</div>
+
+<div id="navstrip">
+  <a href="index.html">TOP</a><span class="sep">|</span>
+  <a href="about.html">このゲームについて</a><span class="sep">|</span>
+  <a href="chart.html">攻略チャート(RTA)</a><span class="sep">|</span>
+  <a href="walkthrough.html">攻略チャート(通常)</a><span class="sep">|</span>
+  <a href="parts.html">パーツ図鑑</a><span class="sep">|</span>
+  <a href="upgrade.html">パーツ強化について</a><span class="sep">|</span>
+  <a href="shops.html">取扱店</a><span class="sep">|</span>
+  <a href="towns.html">街・マップ</a><span class="sep">|</span>
+  <a href="characters.html">キャラ図鑑</a><span class="sep">|</span>
+  <a href="courses.html">コース</a><span class="sep">|</span>
+  <a href="events.html">大会一覧</a><span class="sep">|</span>
+  <a href="comm.html">通信について</a><span class="sep">|</span>
+  <a href="system.html">システム解説</a><span class="sep">|</span>
+  <a href="tips.html">小技・裏技</a><span class="sep">|</span>
+  <a href="glossary.html">用語集</a>
+</div>
+
+<div id="wrap">
+  <div class="breadcrumb"><a href="index.html">TOP</a> &gt; コース一覧</div>
+
+  <h1 class="page-title">コース一覧</h1>
+  <p class="page-desc">ゲーム中に登場する基本コース7種と、通信対戦のセッティング紹介にのみ登場する特別コース1種をまとめています。各コースには目標タイム・草レース開催地(<a href="towns.html">街・マップ一覧</a>参照)に加え、通信対戦用のおすすめセッティングも掲載しています。コース図は版権イラストのためダミー表示です。</p>
+
+  <div id="toc">
+    <div class="hd">目次</div>
+    <ul>
+      <li><a href="#testrun">テスト走行・ならし走行・成長するパーツ</a></li>
+      <li><a href="#c01">コースNo.1 オーバルコース</a></li>
+      <li><a href="#c02">コースNo.2 コーナリングコース1</a></li>
+      <li><a href="#c03">コースNo.3 オフロードコース1</a></li>
+      <li><a href="#c04">コースNo.4 コーナリングコース2</a></li>
+      <li><a href="#c05">コースNo.5 高速コース</a></li>
+      <li><a href="#c06">コースNo.6 オフロードコース2</a></li>
+      <li><a href="#c07">コースNo.7 ストレートコース</a></li>
+      <li><a href="#c08">TRFスーパーゼロヨンコース(通信対戦専用)</a></li>
+    </ul>
+  </div>
+
+  <div class="note">📷 公式ガイドブックp.42-49「コースNo.1〜7」、およびオフィシャル常勝ガイドp.58-64「データ通信編 通信対戦用セッティング」の写真から転記(2026/07/29分)。攻略コメントは独自の言葉でまとめ直しています。</div>
+
+  <h2 class="blk" id="testrun">■ テスト走行・ならし走行・成長するパーツ</h2>
+  <p>コースを入手すると、自宅でテスト走行ができるようになる。各コースには目標タイムが設定されているので、腕試しに挑戦してみよう。</p>
+  <ul>
+    <li><b>ならし走行</b>:モーターは買ったばかりの状態だと本来の性能が出ていない。購入後はならし走行をしてから使うと、素の状態より速く走れるようになる。コーナーの少ないオーバルコース(コースNo.1)はならし走行にうってつけ。</li>
+    <li><b>成長するパーツ</b>:使うほど性能が上がっていく特殊なパーツが存在する。
+      <ul>
+        <li>グングンパーツ:初期性能は低いが、使い込むうちに最高の性能に化ける。</li>
+        <li>ワンダーパーツ:使い始めは性能が落ちるが、あきらめずに使い続けると初期性能より高い性能を発揮する。</li>
+        <li>Xパーツ:グングンパーツと同じ系統の成長パーツ。パーツねんれいが99に近いほど性能が良くなる。</li>
+      </ul>
+      これらを使いこなすにはテスト走行での見極めが欠かせない。
+    </li>
+  </ul>
+
+  <div class="course-card" id="c01">
+    <div class="course-head"><span class="tag">コースNo.1</span><span class="cname">オーバルコース</span></div>
+    <div class="course-body">
+      <div class="course-img"><span class="ph-mark">🛣️</span>コース図<br>準備中</div>
+      <div class="course-info">
+        <table class="dat mini"><tr><th>目標タイム</th><th>草レース開催地</th></tr><tr><td>00:09:42</td><td><a href="towns.html#playertown">プレーヤーの町</a> 学校</td></tr></table>
+        <p class="part-desc">ミニ四駆を初めて買ったあとにお父さんがプレゼントしてくれるコース。コーナーが少ない単純な形状で、スピード重視のセッティングを煮詰めたり、モーターのならし走行をするのにぴったり。</p>
+      </div>
+    </div>
+    <h3 class="blk2">通信対戦おすすめセッティング①(モデルマシン:セイバー600)</h3>
+    <p class="part-desc">シンプルな形状な分、スタートでの出遅れは厳禁。4つのコーナーがちょっとしたクセモノで、コーナリング安定性を持たせておかないとコースアウトの危険性が高い。ローラーのセッティングはバランスよく確実に。</p>
+    <div class="setting-cols"><table class="dat mini setting"><tr><th>ウイング</th><td>Vウイング</td></tr><tr><th>リヤー</th><td>リヤースポイラー2</td></tr><tr><th>リヤーローラー右</th><td>セーフスタビローラーS</td></tr><tr><th>リヤーローラー左</th><td>セーフスタビローラーS</td></tr><tr><th>モーター</th><td>サンダーモーター</td></tr><tr><th>電池</th><td>バッテリーオブサンダー</td></tr><tr><th>オプション前</th><td>&mdash;</td></tr><tr><th>オプション後</th><td>&mdash;</td></tr></table><table class="dat mini setting"><tr><th>バンパー</th><td>フォーミュラーバンパー</td></tr><tr><th>フロントローラー右</th><td>セーフスタビローラーS</td></tr><tr><th>フロントローラー左</th><td>セーフスタビローラーS</td></tr><tr><th>フロントタイヤ</th><td>QゴムタイヤS</td></tr><tr><th>サイド</th><td>&mdash;</td></tr><tr><th>サイドローラー右</th><td>&mdash;</td></tr><tr><th>サイドローラー左</th><td>&mdash;</td></tr><tr><th>リヤータイヤ</th><td>QゴムタイヤL</td></tr></table></div>
+  </div>
+
+  <div class="course-card" id="c02">
+    <div class="course-head"><span class="tag">コースNo.2</span><span class="cname">コーナリングコース1</span></div>
+    <div class="course-body">
+      <div class="course-img"><span class="ph-mark">🛣️</span>コース図<br>準備中</div>
+      <div class="course-info">
+        <table class="dat mini"><tr><th>目標タイム</th><th>草レース開催地</th></tr><tr><td>00:13:47</td><td><a href="towns.html#playertown">プレーヤーの町</a> 公園</td></tr></table>
+        <p class="part-desc">ローラーの付けかたでタイムが大きく変わるテクニカルコース。スピード重視よりトルク重視のセッティングの方が向いており、カーブを曲がりきれないという事態は避けたい。</p>
+      </div>
+    </div>
+    <h3 class="blk2">通信対戦おすすめセッティング②(モデルマシン:セイバー600)</h3>
+    <p class="part-desc">マシンのコーナリング性能が悪いと、直線後のコーナーでコースアウトしやすくなる。ローラーの摩擦力はある程度必要。直線よりコーナーでのスピードを重視して、連続コーナーに対応できるようモーターはトルクの高いものを使おう。</p>
+    <div class="setting-cols"><table class="dat mini setting"><tr><th>ウイング</th><td>Vマウント</td></tr><tr><th>リヤー</th><td>リヤーオイルダンパー</td></tr><tr><th>リヤーローラー右</th><td>セーフスタビローラーL</td></tr><tr><th>リヤーローラー左</th><td>セーフスタビローラーL</td></tr><tr><th>モーター</th><td>ファイヤーモーター</td></tr><tr><th>電池</th><td>バッテリーオブサンダー</td></tr><tr><th>オプション前</th><td>&mdash;</td></tr><tr><th>オプション後</th><td>メガエレクトロターボ</td></tr></table><table class="dat mini setting"><tr><th>バンパー</th><td>スポイラーMK2</td></tr><tr><th>フロントローラー右</th><td>セーフスタビローラーS</td></tr><tr><th>フロントローラー左</th><td>セーフスタビローラーS</td></tr><tr><th>フロントタイヤ</th><td>QタイヤS</td></tr><tr><th>サイド</th><td>&mdash;</td></tr><tr><th>ウイングローラー右</th><td>セーフスタビローラーS</td></tr><tr><th>ウイングローラー左</th><td>セーフスタビローラーS</td></tr><tr><th>リヤータイヤ</th><td>QタイヤS</td></tr></table></div>
+  </div>
+
+  <div class="course-card" id="c03">
+    <div class="course-head"><span class="tag">コースNo.3</span><span class="cname">オフロードコース1</span></div>
+    <div class="course-body">
+      <div class="course-img"><span class="ph-mark">🛣️</span>コース図<br>準備中</div>
+      <div class="course-info">
+        <table class="dat mini"><tr><th>目標タイム</th><th>草レース開催地</th></tr><tr><td>00:16:72</td><td><a href="towns.html#tokyo">東京</a> 東京タワー</td></tr></table>
+        <p class="part-desc">デコボコした路面のオフロードコース。急な傾斜があるため、ラリータイヤを履かせたパワー重視のセッティングで挑もう。下り坂でコースアウトしないよう、ダウンフォースの強化も忘れずに。</p>
+      </div>
+    </div>
+    <h3 class="blk2">通信対戦おすすめセッティング③(モデルマシン:ネオトライダガーZMC)</h3>
+    <p class="part-desc">コーナリング性能が悪いと直後のコーナーでコースアウトの危険がある。モーターのトルクや電池のパワーが足りないと坂で明らかにスピードが落ちる。登りスロープの頂点でマシンが浮き上がるとコースアウトやスピードダウンにつながるので、ショックアブソーバが対策として役立つ。</p>
+    <div class="setting-cols"><table class="dat mini setting"><tr><th>ウイング</th><td>トライアングルウイング</td></tr><tr><th>リヤー</th><td>&mdash;</td></tr><tr><th>リヤーローラー右</th><td>&mdash;</td></tr><tr><th>リヤーローラー左</th><td>&mdash;</td></tr><tr><th>モーター</th><td>ファイヤーモーター</td></tr><tr><th>電池</th><td>ロングパワーギガント</td></tr><tr><th>オプション前</th><td>メガショックアブソーバ</td></tr><tr><th>オプション後</th><td>メガショックアブソーバ</td></tr></table><table class="dat mini setting"><tr><th>バンパー</th><td>スポイラーMK2</td></tr><tr><th>フロントローラー右</th><td>セーフスタビローラーL</td></tr><tr><th>フロントローラー左</th><td>セーフスタビローラーL</td></tr><tr><th>フロントタイヤ</th><td>QラリータイヤS</td></tr><tr><th>サイド</th><td>オイルダンパーサイド</td></tr><tr><th>サイドローラー右</th><td>セーフスタビローラーS</td></tr><tr><th>サイドローラー左</th><td>セーフスタビローラーS</td></tr><tr><th>リヤータイヤ</th><td>QラリータイヤS</td></tr></table></div>
+  </div>
+
+  <div class="course-card" id="c04">
+    <div class="course-head"><span class="tag">コースNo.4</span><span class="cname">コーナリングコース2</span></div>
+    <div class="course-body">
+      <div class="course-img"><span class="ph-mark">🛣️</span>コース図<br>準備中</div>
+      <div class="course-info">
+        <table class="dat mini"><tr><th>目標タイム</th><th>草レース開催地</th></tr><tr><td>00:15:53</td><td><a href="towns.html#fuurincho">風輪町</a> 公園</td></tr></table>
+        <p class="part-desc">ゆるやかなカーブに傾斜が加わったテクニカルコース。スピードとパワーの両方が必要でセッティングが難しい。ローラーを付けすぎて遅くならないよう注意しながら挑もう。</p>
+      </div>
+    </div>
+    <h3 class="blk2">通信対戦おすすめセッティング④(モデルマシン:スピンコブラ)</h3>
+    <p class="part-desc">直線からコーナーに突入したときにがくっと減速するようでは、まだセッティング改良の余地あり。多少のアップダウンとS字コーナーが待っているが、恐れずすばやいコーナリングで攻めよう。サンダードリフト走行が決まれば対戦相手を驚かせられるはず。</p>
+    <div class="setting-cols"><table class="dat mini setting"><tr><th>ウイング</th><td>Vマウント</td></tr><tr><th>リヤー</th><td>リヤースポイラー2</td></tr><tr><th>リヤーローラー右</th><td>ちょうでんじローラーS</td></tr><tr><th>リヤーローラー左</th><td>ちょうでんじローラーS</td></tr><tr><th>モーター</th><td>ファイヤーモーター</td></tr><tr><th>電池</th><td>バッテリーオブサンダー</td></tr><tr><th>オプション前</th><td>メガエレクトロターボ</td></tr><tr><th>オプション後</th><td>メガチャージャー</td></tr></table><table class="dat mini setting"><tr><th>バンパー</th><td>スポイラーMK2</td></tr><tr><th>フロントローラー右</th><td>セーフスタビローラーL</td></tr><tr><th>フロントローラー左</th><td>セーフスタビローラーL</td></tr><tr><th>フロントタイヤ</th><td>QタイヤS</td></tr><tr><th>サイド</th><td>&mdash;</td></tr><tr><th>ウイングローラー右</th><td>リニアローラーS</td></tr><tr><th>ウイングローラー左</th><td>リニアローラーS</td></tr><tr><th>リヤータイヤ</th><td>QタイヤS</td></tr></table></div>
+  </div>
+
+  <div class="course-card" id="c05">
+    <div class="course-head"><span class="tag">コースNo.5</span><span class="cname">高速コース</span></div>
+    <div class="course-body">
+      <div class="course-img"><span class="ph-mark">🛣️</span>コース図<br>準備中</div>
+      <div class="course-info">
+        <table class="dat mini"><tr><th>目標タイム</th><th>草レース開催地</th></tr><tr><td>00:15:24</td><td><a href="towns.html#fuurincho">風輪町</a> レース場</td></tr></table>
+        <p class="part-desc">オーバルコースよりカーブが多いが、セッティングの考え方は同じ。スタート直後にオフロードエリアがあるが距離が短いのであまり意識しなくてよい。トップスピード重視で勝負しよう。</p>
+      </div>
+    </div>
+    <h3 class="blk2">通信対戦おすすめセッティング⑤(モデルマシン:ハリケーンソニック)</h3>
+    <p class="part-desc">高速で走ってきたときのヘアピンはコースアウトへの入口で、このコース最大の危険ポイント。あまりマシンが軽すぎると立体交差でコースアウトしてしまう可能性があるので軽量化はほどほどに。モーターや電池のパワーを最大限に発揮するため、軽量かつ空力を重視したセッティングを。</p>
+    <div class="setting-cols"><table class="dat mini setting"><tr><th>ウイング</th><td>Vウイング</td></tr><tr><th>リヤー</th><td>&mdash;</td></tr><tr><th>リヤーローラー右</th><td>&mdash;</td></tr><tr><th>リヤーローラー左</th><td>&mdash;</td></tr><tr><th>モーター</th><td>サンダーモーター</td></tr><tr><th>電池</th><td>バッテリーオブサンダー</td></tr><tr><th>オプション前</th><td>&mdash;</td></tr><tr><th>オプション後</th><td>&mdash;</td></tr></table><table class="dat mini setting"><tr><th>バンパー</th><td>フォーミュラーバンパー</td></tr><tr><th>フロントローラー右</th><td>セーフスタビローラーL</td></tr><tr><th>フロントローラー左</th><td>セーフスタビローラーL</td></tr><tr><th>フロントタイヤ</th><td>QタイヤS</td></tr><tr><th>サイド</th><td>Vサイド</td></tr><tr><th>サイドローラー右</th><td>セーフスタビローラーL</td></tr><tr><th>サイドローラー左</th><td>セーフスタビローラーL</td></tr><tr><th>リヤータイヤ</th><td>QタイヤL</td></tr></table></div>
+  </div>
+
+  <div class="course-card" id="c06">
+    <div class="course-head"><span class="tag">コースNo.6</span><span class="cname">オフロードコース2</span></div>
+    <div class="course-body">
+      <div class="course-img"><span class="ph-mark">🛣️</span>コース図<br>準備中</div>
+      <div class="course-info">
+        <table class="dat mini"><tr><th>目標タイム</th><th>草レース開催地</th></tr><tr><td>00:17:42</td><td><a href="towns.html#tokyo">東京</a> 上野公園</td></tr></table>
+        <p class="part-desc">坂の多いラリーコース。オフロードにスポンジタイヤやゴムタイヤを履かせると遅くなるだけなので、面倒でもラリータイヤで挑んだ方がいいタイムを出せる。傾斜が多いため、迷わずパワー重視でレースに挑もう。</p>
+      </div>
+    </div>
+    <h3 class="blk2">通信対戦おすすめセッティング⑥(モデルマシン:サイクロンマグナム)</h3>
+    <p class="part-desc">車体を傾けながらコーナーを曲がるバンクコーナーがあり、進行方向右側のローラーが激しくダメージを受ける。アップダウンやコーナーが多く、やわなセッティングでは走りきれないので、ショックや熱を吸収するパーツを使ってマシンの能力を一定に保てるようにしよう。</p>
+    <div class="setting-cols"><table class="dat mini setting"><tr><th>ウイング</th><td>Vウイング</td></tr><tr><th>リヤー</th><td>リヤーオイルダンパー</td></tr><tr><th>リヤーローラー右</th><td>セーフスタビローラーS</td></tr><tr><th>リヤーローラー左</th><td>セーフスタビローラーS</td></tr><tr><th>モーター</th><td>サンダーモーター</td></tr><tr><th>電池</th><td>ロングパワーギガント</td></tr><tr><th>オプション前</th><td>メガコンデンサ</td></tr><tr><th>オプション後</th><td>すいれいクーラー</td></tr></table><table class="dat mini setting"><tr><th>バンパー</th><td>スポイラーMK2</td></tr><tr><th>フロントローラー右</th><td>セーフスタビローラーS</td></tr><tr><th>フロントローラー左</th><td>セーフスタビローラーS</td></tr><tr><th>フロントタイヤ</th><td>QゴムタイヤL</td></tr><tr><th>サイド</th><td>&mdash;</td></tr><tr><th>サイドローラー右</th><td>&mdash;</td></tr><tr><th>サイドローラー左</th><td>&mdash;</td></tr><tr><th>リヤータイヤ</th><td>QゴムタイヤL</td></tr></table></div>
+  </div>
+
+  <div class="course-card" id="c07">
+    <div class="course-head"><span class="tag">コースNo.7</span><span class="cname">ストレートコース</span></div>
+    <div class="course-body">
+      <div class="course-img"><span class="ph-mark">🛣️</span>コース図<br>準備中</div>
+      <div class="course-info">
+        <table class="dat mini"><tr><th>目標タイム</th><th>草レース開催地</th></tr><tr><td>00:02:49</td><td><a href="towns.html#ogamigakuen">大神学園</a> 学園滑走路</td></tr></table>
+        <p class="part-desc">直線だけが400メートル続くストレートコース。セッティングはトップスピード重視一択だが、このコースに限ってはローラーを外すなど思いきった軽量化でさらなるスピードアップが狙える。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="course-card" id="c08">
+    <div class="course-head"><span class="tag">通信対戦専用</span><span class="cname">TRFスーパーゼロヨンコース</span></div>
+    <div class="course-body">
+      <div class="course-img"><span class="ph-mark">🛣️</span>コース図<br>準備中</div>
+      <div class="course-info">
+        <p class="part-desc">通信対戦セッティング紹介ページのみに登場する直線オンリーのコース。ストレートコースと同系統で、ひたすら直線が続く。コースアウトの心配がないため、とにかく軽量かつパワフルなセッティングで走り抜けたい。使用マシンもサイクロンマグナムやネオトライダガーZMCなど、スピード重視のものが向いている。</p>
+      </div>
+    </div>
+    <h3 class="blk2">通信対戦おすすめセッティング⑦(モデルマシン:サイクロンマグナム)</h3>
+    <p class="part-desc">このコースではとくにスタートのタイミングが重要。勝負はこの一瞬で決まるようなものと言っていい。エアロパーツで高い空力を生み出してスピードアップし、グリップ力の高いタイヤでモーターの回転をすべて路面に伝えよう。</p>
+    <div class="setting-cols"><table class="dat mini setting"><tr><th>ウイング</th><td>エアロウイング</td></tr><tr><th>リヤー</th><td>&mdash;</td></tr><tr><th>リヤーローラー右</th><td>&mdash;</td></tr><tr><th>リヤーローラー左</th><td>&mdash;</td></tr><tr><th>モーター</th><td>サンダーモーター</td></tr><tr><th>電池</th><td>バッテリーオブサンダー</td></tr><tr><th>オプション前</th><td>メガチャージャー</td></tr><tr><th>オプション後</th><td>メガチャージャー</td></tr></table><table class="dat mini setting"><tr><th>バンパー</th><td>エアロバンパー</td></tr><tr><th>フロントローラー右</th><td>ローラーS</td></tr><tr><th>フロントローラー左</th><td>ローラーS</td></tr><tr><th>フロントタイヤ</th><td>QタイヤL</td></tr><tr><th>サイド</th><td>ノーマルサイド</td></tr><tr><th>サイドローラー右</th><td>ローラーS</td></tr><tr><th>サイドローラー左</th><td>ローラーS</td></tr><tr><th>リヤータイヤ</th><td>QタイヤL</td></tr></table></div>
+  </div>
+
+
+</div>
+
+<div id="ftr">
+  © 2026 ミニ四駆GB Let's&amp;Go!! 徹底攻略(非公式) ／ 「ミニ四駆」はタミヤ株式会社の登録商標です。
+</div>
+
+</body>
+</html>
